@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Mom’s Best Friend</title>
+    <subtitle>Nina and Nana</subtitle>
+    <author><name>Kanika G</name></author>
+    <link href="https://kanikag.com" />
+    <link href="https://kanikag.com/category/comics.atom" rel="self" />
+    <id>https://kanikag.com/category/comics.atom</id>
+    <updated>2025-11-13T15:22:33Z</updated>
+        <entry>
+            <title>Pain, Pain, Go Away!</title>
+            <link href="https://kanikag.com/comics-pain-pain.html" rel="alternate" type="text/html" />
+            <updated>2023-12-20T12:00:00Z</updated>
+            <summary>Nina and Nana discuss a fascinating new approach to pain management
+</summary>
+            <id>https://kanikag.com/comics-pain-pain.html</id>
+        </entry>
+
+        <entry>
+            <title>Unami Or Yummy?</title>
+            <link href="https://kanikag.com/comics-unami-or-yummy.html" rel="alternate" type="text/html" />
+            <updated>2023-11-29T12:00:00Z</updated>
+            <summary>Nina and Nana discuss an unusual flavor
+</summary>
+            <id>https://kanikag.com/comics-unami-or-yummy.html</id>
+        </entry>
+
+        <entry>
+            <title>POPEYE!</title>
+            <link href="https://kanikag.com/comics-popeye.html" rel="alternate" type="text/html" />
+            <updated>2023-01-16T12:00:00Z</updated>
+            <summary>Nina and Nana discuss a recent eye popping discovery.
+</summary>
+            <id>https://kanikag.com/comics-popeye.html</id>
+        </entry>
+
+        <entry>
+            <title>Black Is The New Green</title>
+            <link href="https://kanikag.com/comics-black-new-green.html" rel="alternate" type="text/html" />
+            <updated>2022-08-11T12:00:00Z</updated>
+            <summary>Nina and Nana discuss chlorophyll's dark twin.
+</summary>
+            <id>https://kanikag.com/comics-black-new-green.html</id>
+        </entry>
+
+        <entry>
+            <title>Boiled In Bed</title>
+            <link href="https://kanikag.com/comics-boiled-in-bed.html" rel="alternate" type="text/html" />
+            <updated>2022-06-02T12:00:00Z</updated>
+            <summary>Nina and Nana discuss how climate change is not just about isolated catastrophes, but is upsetting our everyday lives.
+</summary>
+            <id>https://kanikag.com/comics-boiled-in-bed.html</id>
+        </entry>
+
+        <entry>
+            <title>Bubble Trouble</title>
+            <link href="https://kanikag.com/comics-bubble-trouble.html" rel="alternate" type="text/html" />
+            <updated>2022-03-09T12:00:00Z</updated>
+            <summary>Will Nana succeed in bursting Nina’s bubble, or has she fortified it like the everlasting bubbles she is fascinated by? Read on to find out.
+</summary>
+            <id>https://kanikag.com/comics-bubble-trouble.html</id>
+        </entry>
+
+        <entry>
+            <title>Live Long and Pester</title>
+            <link href="https://kanikag.com/comics-live-long-and-pester.html" rel="alternate" type="text/html" />
+            <updated>2022-03-02T12:00:00Z</updated>
+            <summary>Nina wants to share a scientific discovery about the secret of long life, but Nana doesn’t buy it. What do you think?
+</summary>
+            <id>https://kanikag.com/comics-live-long-and-pester.html</id>
+        </entry>
+
+        <entry>
+            <title>Halloween Horrors</title>
+            <link href="https://kanikag.com/comics-halloween-horrors.html" rel="alternate" type="text/html" />
+            <updated>2021-10-22T12:00:00Z</updated>
+            <summary>Nina and Nana share some hair-raising Halloween tidbits. You’ll need some candy to get this frighting taste of your mouth, so get ready to Trick or Treat!
+</summary>
+            <id>https://kanikag.com/comics-halloween-horrors.html</id>
+        </entry>
+
+        <entry>
+            <title>Secret Ingredients</title>
+            <link href="https://kanikag.com/comics-secret-ingredient.html" rel="alternate" type="text/html" />
+            <updated>2021-09-16T12:00:00Z</updated>
+            <summary>Nina and Nana discuss the blood curdling ingredients of Martian bricks. I strongly advise that you don't sweat it, or pee in your pants.
+</summary>
+            <id>https://kanikag.com/comics-secret-ingredient.html</id>
+        </entry>
+
+        <entry>
+            <title>Home Improvement</title>
+            <link href="https://kanikag.com/comics-home-improvement.html" rel="alternate" type="text/html" />
+            <updated>2021-08-30T12:00:00Z</updated>
+            <summary>Nina and Nana discuss the world’s deadliest insect’s favorite hangout, and I wouldn’t be surprised if it’s somewhere on your desk right now!
+</summary>
+            <id>https://kanikag.com/comics-home-improvement.html</id>
+        </entry>
+
+        <entry>
+            <title>The Long Run</title>
+            <link href="https://kanikag.com/comics-the-long-run.html" rel="alternate" type="text/html" />
+            <updated>2021-07-14T12:00:00Z</updated>
+            <summary>The journey of evolution is long with weird twists and turns. Robust and effective as evolution is, it is not always optimal. Nina and Nana tell you why.
+</summary>
+            <id>https://kanikag.com/comics-the-long-run.html</id>
+        </entry>
+
+        <entry>
+            <title>Web Medicine</title>
+            <link href="https://kanikag.com/comics-web-medicine.html" rel="alternate" type="text/html" />
+            <updated>2021-07-05T12:00:00Z</updated>
+            <summary>Covid19 has led to rapid developments in online consultations and diagnostic apps, but here Nina and Nana discuss an astounding type of web medicine. Read on to find out.
+</summary>
+            <id>https://kanikag.com/comics-web-medicine.html</id>
+        </entry>
+
+        <entry>
+            <title>Micro-Wars</title>
+            <link href="https://kanikag.com/comics-micro-wars.html" rel="alternate" type="text/html" />
+            <updated>2021-06-18T12:00:00Z</updated>
+            <summary>Vaccines are the great hope of today’s COVID-19 crisis. But what about infections like dengue, for which vaccines don’t offer a simple solution? Nina and Nana discuss a novel approach.
+</summary>
+            <id>https://kanikag.com/comics-micro-wars.html</id>
+        </entry>
+
+        <entry>
+            <title>Arrgh and Voila!</title>
+            <link href="https://kanikag.com/comics-arrrgh-voila.html" rel="alternate" type="text/html" />
+            <updated>2021-06-07T12:00:00Z</updated>
+            <summary>Nina and Nana discuss an explosive new gourmet technique.
+</summary>
+            <id>https://kanikag.com/comics-arrrgh-voila.html</id>
+        </entry>
+
+        <entry>
+            <title>Brain Coolers</title>
+            <link href="https://kanikag.com/comics-brain-coolers.html" rel="alternate" type="text/html" />
+            <updated>2021-05-24T12:00:00Z</updated>
+            <summary>Nina and Nana tell you how the body cools the brain and the mechanism is sure to surprise you!
+</summary>
+            <id>https://kanikag.com/comics-brain-coolers.html</id>
+        </entry>
+
+        <entry>
+            <title>Too Good To Be True</title>
+            <link href="https://kanikag.com/comics-fake-news.html" rel="alternate" type="text/html" />
+            <updated>2021-05-14T12:00:00Z</updated>
+            <summary>Nina and Nana discuss fake news and other perils of the information age.
+</summary>
+            <id>https://kanikag.com/comics-fake-news.html</id>
+        </entry>
+
+        <entry>
+            <title>Collective Craze</title>
+            <link href="https://kanikag.com/comics-collective-craze.html" rel="alternate" type="text/html" />
+            <updated>2021-04-29T12:00:00Z</updated>
+            <summary>Nina and Nana discuss the craze of collective nouns.
+</summary>
+            <id>https://kanikag.com/comics-collective-craze.html</id>
+        </entry>
+
+        <entry>
+            <title>Oh So Very Slow</title>
+            <link href="https://kanikag.com/comics-slow-motion.html" rel="alternate" type="text/html" />
+            <updated>2021-04-20T12:00:00Z</updated>
+            <summary>Nina and Nana tell us why cats don’t need the slow motion replay feature.
+</summary>
+            <id>https://kanikag.com/comics-slow-motion.html</id>
+        </entry>
+
+        <entry>
+            <title>Mango Mania</title>
+            <link href="https://kanikag.com/comics-mango-mania.html" rel="alternate" type="text/html" />
+            <updated>2021-04-13T12:00:00Z</updated>
+            <summary>With the summer raging, it’s mango time. Nina and Nana have a delightful mango flavored story to share.
+</summary>
+            <id>https://kanikag.com/comics-mango-mania.html</id>
+        </entry>
+
+        <entry>
+            <title>Almost, But Not Quite ...</title>
+            <link href="https://kanikag.com/comics-almost.html" rel="alternate" type="text/html" />
+            <updated>2021-04-06T12:00:00Z</updated>
+            <summary>Nina and Nana discuss an open problem in mathematics. This deceptive puzzle, like a siren, is sure to draw you in until you are mesmerised the wonder of it all. Anyone can start working on it, but NO ONE has fully solved it yet. Want to try your luck?
+</summary>
+            <id>https://kanikag.com/comics-almost.html</id>
+        </entry>
+
+        <entry>
+            <title>Some Like It Hot</title>
+            <link href="https://kanikag.com/comics-some-like-it-hot.html" rel="alternate" type="text/html" />
+            <updated>2021-03-16T12:00:00Z</updated>
+            <summary>Nina and Nana discuss the fleeting fad of HOT SODAS and reveal some startling facts about hot drinks.
+</summary>
+            <id>https://kanikag.com/comics-some-like-it-hot.html</id>
+        </entry>
+
+        <entry>
+            <title>A Breath Of Fresh Art</title>
+            <link href="https://kanikag.com/comics-a-breath-of-fresh-art.html" rel="alternate" type="text/html" />
+            <updated>2021-03-10T12:00:00Z</updated>
+            <summary>Nina and Nana discuss the strange case of the sculptor who inhaled some of his work!
+</summary>
+            <id>https://kanikag.com/comics-a-breath-of-fresh-art.html</id>
+        </entry>
+
+        <entry>
+            <title>Slow And Steady</title>
+            <link href="https://kanikag.com/comics-slow-and-steady.html" rel="alternate" type="text/html" />
+            <updated>2021-02-24T12:00:00Z</updated>
+            <summary>Nina and Nana reveal intriguing facts about the summit of Everest, and discuss the horrific challenges of getting there. Is it possible without supplemental oxygen? Read on to find out.
+</summary>
+            <id>https://kanikag.com/comics-slow-and-steady.html</id>
+        </entry>
+
+        <entry>
+            <title>A Gut Feeling</title>
+            <link href="https://kanikag.com/comics-gut-feeling.html" rel="alternate" type="text/html" />
+            <updated>2021-02-02T12:00:00Z</updated>
+            <summary>Nina and Nana discuss startling new discoveries about the impact of gut microbes on mental health.
+</summary>
+            <id>https://kanikag.com/comics-gut-feeling.html</id>
+        </entry>
+
+        <entry>
+            <title>Doughnuts To Tackle Climate Change</title>
+            <link href="https://kanikag.com/comics-doughnuts-climate-change.html" rel="alternate" type="text/html" />
+            <updated>2021-01-28T12:00:00Z</updated>
+            <summary>Nina and Nana discuss the doughnut model of economics and how it can help in the fight against climate change.
+</summary>
+            <id>https://kanikag.com/comics-doughnuts-climate-change.html</id>
+        </entry>
+</feed>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Mom’s Best Friend</title>
+    <subtitle>For Learners</subtitle>
+    <author><name>Kanika G</name></author>
+    <link href="https://kanikag.com" />
+    <link href="https://kanikag.com/category/kids-books-for-learners.atom" rel="self" />
+    <id>https://kanikag.com/category/kids-books-for-learners.atom</id>
+    <updated>2025-11-13T15:22:33Z</updated>
+        <entry>
+            <title>Making Chocolate Cake</title>
+            <link href="https://kanikag.com/kids-books-for-learners-making-chocolate-cake.html" rel="alternate" type="text/html" />
+            <updated>2016-12-07T12:00:00Z</updated>
+            <summary>Who doesn't like chocolate cake? This is an easy to read rhyming recipe for chocolate cake perfect for early readers.
+</summary>
+            <id>https://kanikag.com/kids-books-for-learners-making-chocolate-cake.html</id>
+        </entry>
+
+        <entry>
+            <title>A Day At School</title>
+            <link href="https://kanikag.com/kids-books-for-learners-a-day-at-school.html" rel="alternate" type="text/html" />
+            <updated>2016-11-10T12:00:00Z</updated>
+            <summary>This is an easy to read, 500 word, short story, about Kim's day at school. It is suitable for kids, who can read simple sentences and are ready to start reading short stories on their own.
+</summary>
+            <id>https://kanikag.com/kids-books-for-learners-a-day-at-school.html</id>
+        </entry>
+
+        <entry>
+            <title>The Dog Named Bob</title>
+            <link href="https://kanikag.com/kids-books-for-learners-dog-named-bob.html" rel="alternate" type="text/html" />
+            <updated>2016-10-26T12:00:00Z</updated>
+            <summary>This is an easy to read poem about two kids and their dog named Bob. The poem has mainly 3 and 4 letter words and a few 5 letter words. The pictures provide context to help the child figure out the words. The rhyme and rhythm make it an entertaining read. You are welcome to print this out for personal use.
+</summary>
+            <id>https://kanikag.com/kids-books-for-learners-dog-named-bob.html</id>
+        </entry>
+
+        <entry>
+            <title>I Love Sam</title>
+            <link href="https://kanikag.com/kids-books-for-learners-i-love-sam.html" rel="alternate" type="text/html" />
+            <updated>2016-07-27T12:00:00Z</updated>
+            <summary>This is a simple book of mainly 3 and 4 letter words, about a girl's interactions with her doll, Sam. It contains a few sentences with many of the words repeated several times. The pictures provide context and help the child figure out the words. It is a perfect book for your child to start reading, with your help. You are welcome to print this out for personal use.
+</summary>
+            <id>https://kanikag.com/kids-books-for-learners-i-love-sam.html</id>
+        </entry>
+
+        <entry>
+            <title>In The Morning</title>
+            <link href="https://kanikag.com/kids-books-for-learners-in-the-morning.html" rel="alternate" type="text/html" />
+            <updated>2016-07-26T12:00:00Z</updated>
+            <summary>This is a simple book of mainly 3 and 4 letter words, about Mama's morning routine. It contains a few sentences with many of the words repeated several times. The pictures provide context and help the child figure out the words. It is a perfect book for your child to start reading, with your help. You are welcome to print this out for personal use.
+</summary>
+            <id>https://kanikag.com/kids-books-for-learners-in-the-morning.html</id>
+        </entry>
+
+        <entry>
+            <title>This Baby Wants Milk</title>
+            <link href="https://kanikag.com/kids-books-for-learners-this-baby-wants-milk.html" rel="alternate" type="text/html" />
+            <updated>2016-07-25T12:00:00Z</updated>
+            <summary>This is a simple book of mainly 3 and 4 letter words. It contains a few sentences, with many of the words repeated several times. The pictures provide context and help the child figure out the words. It is a perfect book for your child to start reading, with your help. You are welcome to print this out for personal use.
+</summary>
+            <id>https://kanikag.com/kids-books-for-learners-this-baby-wants-milk.html</id>
+        </entry>
+
+        <entry>
+            <title>This Cat Likes To Play</title>
+            <link href="https://kanikag.com/kids-books-for-learners-this-cat-likes-to-play.html" rel="alternate" type="text/html" />
+            <updated>2016-07-24T12:00:00Z</updated>
+            <summary>This is a simple book of mainly 3 and 4 letter words. It contains about a dozen sentences, with many of the words repeated several times. It is a perfect, first book, for your child, to read with your help. You are welcome to print this out for personal use.
+</summary>
+            <id>https://kanikag.com/kids-books-for-learners-this-cat-likes-to-play.html</id>
+        </entry>
+</feed>

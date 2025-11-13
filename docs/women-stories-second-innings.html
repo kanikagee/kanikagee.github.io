@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mom’s Best Friend - Second Innings</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="./res/favicon.png" />
+        <link rel="alternate" type="application/atom+xml" title="RSS feed for Mom&#x27;s Best Friend" href="./category/index.atom" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53439504-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+	    function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-53439504-2');
+        </script>
+        <style type="text/css">
+/* {{{ Reset
+ * http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ *  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* }}} */
+
+/* Fonts {{{ */
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url(./res/title-font.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* }}} */
+
+/* Global {{{ */
+/* Body */
+body {
+    background: #F5F4EF;
+    color: #000305;
+    font-size: 87.5%; /* Base font size: 14px */
+    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.429;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+/* Headings */
+h1 {font-size: 2em }
+h2 {font-size: 1.571em} /* 22px */
+h3 {font-size: 1.429em} /* 20px */
+h4 {font-size: 1.286em} /* 18px */
+h5 {font-size: 1.143em} /* 16px */
+h6 {font-size: 1em}     /* 14px */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: .8em;
+    font-family: 'Yanone Kaffeesatz', arial, serif;
+}
+
+h3, h4, h5, h6 { margin-top: .8em; }
+
+hr { border: 2px solid #EEEEEE; }
+
+/* Anchors */
+a {outline: 0;}
+a img {border: 0px; text-decoration: none;}
+a:link, a:visited {
+    color: #C74350;
+    padding: 0 1px;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover, a:active {
+    background-color: #C74350;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #333;
+}
+
+h1 a:hover {
+    background-color: inherit
+}
+
+/* Paragraphs */
+div.line-block, p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+strong, b {font-weight: bold;}
+em, i {font-style: italic;}
+
+/* Lists */
+ul {
+    list-style: outside disc;
+    margin: 0em 0 0 1.5em;
+}
+
+ol {
+    list-style: outside decimal;
+    margin: 0em 0 0 1.5em;
+}
+
+li { margin-top: 0.5em;
+     margin-bottom: 1em; }
+
+dl {margin: 0 0 1.5em 0;}
+dt {font-weight: bold;}
+dd {margin-left: 1.5em;}
+
+pre{background-color:  rgb(238, 238, 238); padding: 10px; margin: 10px; overflow: auto;}
+
+/* Quotes */
+blockquote {
+    margin: 20px;
+    font-style: italic;
+}
+cite {}
+
+q {}
+
+/* Tables */
+table {margin: .5em auto 1.5em auto; width: 98%;}
+
+/* Thead */
+thead th {padding: .5em .4em; text-align: left;}
+thead td {}
+
+/* Tbody */
+tbody td {padding: .5em .4em;}
+tbody th {}
+
+tbody .alt td {}
+tbody .alt th {}
+
+/* Tfoot */
+tfoot th {}
+tfoot td {}
+
+/* HTML5 tags */
+header, section, footer,
+aside, nav, article, figure {
+    display: block;
+}
+
+/* }}} */
+
+/* Layout  {{{ */
+.body {clear: both; margin: 0 auto;}
+#container { max-width: 800px; margin: 0 auto; }
+img.right, figure.right {float: right; margin: 0 0 2em 2em;}
+img.left, figure.left {float: left; margin: 0 2em 2em 0;}
+/* }}} */
+
+/* Header {{{ */
+/* Banner */
+
+#banner {
+    padding-top: 4px;
+}
+
+#banner h1 {
+    font-size: 3.571em; overflow: visible; white-space: nowrap; margin-bottom: 0
+}
+
+#banner .editorial-link {
+    font-family: 'Yanone Kaffeesatz', arial, serif;
+    font-size: 2.5em;
+}
+
+#banner h1 a:link, #banner h1 a:visited {
+    color: #000305;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+}
+#banner h1 a:hover, #banner h1 a:active {
+    background: none;
+    color: #C74350;
+    text-shadow: none;
+}
+
+#banner h1 strong {font-size: 0.36em; font-weight: normal;}
+
+/* Main Nav */
+#banner nav ul {
+    background: #000305;
+    font-size: 1.143em;
+    line-height: 30px;
+    margin: 0 auto 2em auto;
+    padding: 0;
+    text-align: center;
+    border-radius: 5px;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+#banner nav li {float: left; display: inline-block; margin: 0;}
+#banner nav li a { background: #000305; }
+
+#banner nav a:link, #banner nav a:visited {
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    padding: 5px 1em;
+    text-decoration: none;
+}
+#banner nav a:hover, #banner nav a:active,
+#banner nav .active a:link, #banner nav .active a:visited {
+    background: #C74451 !important;
+    color: #fff;
+    text-shadow: none !important;
+}
+#banner nav .up a:link, #banner nav .up a:visited {
+    background: #555;
+    color: #fff;
+    text-shadow: none !important;
+}
+
+
+/* }}} */
+
+/* Body {{{ */
+
+#content {
+    background: #fff;
+    margin-bottom: 2em;
+    margin-top: -1em;
+    overflow: hidden;
+    padding: 10px 20px;
+
+    border-radius: 10px;
+}
+
+.article-meta {
+    display: flex;
+    justify-content: space-between;
+}
+
+#share {
+    display: flex;
+}
+
+#share .fb-like {
+    margin-left: 0.5em;
+}
+
+#content .published {
+    font-style: italic;
+    color: gray
+}
+
+.summary .published {
+    margin-left: 1em;
+    padding-top: 1ex;
+}
+
+#content img.align-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+#content img.align-left {
+    display: block;
+    margin: 0.5em 1em;
+    margin-left: 0;
+    border-radius: 5px;
+    float: left;
+}
+
+#content img.align-right {
+    display: block;
+    margin: 0.5em 1em;
+    margin-right: 0;
+    border-radius: 5px;
+    float: right;
+}
+
+
+.entry-title {font-size: 3em; margin-bottom: 10px; margin-top: 0;}
+.entry-title a:link, .entry-title a:visited {text-decoration: none; color: #333;}
+.entry-title a:visited {background-color: #fff;}
+
+#content .full-article-nav {
+    display: flex;
+    border-top: solid 1px currentColor;
+    padding-top: 1em;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* }}} */
+
+/* Article list {{{ */
+ul.article-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+ul.article-list li {
+    clear: both;
+}
+
+article.summary header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+article.summary header h1 {
+    margin-bottom: 0;
+}
+
+article.summary a.img-link {
+    max-width: 35%;
+    display: block;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    padding: 0;
+    float: left;
+}
+
+article.summary hr { clear: both; }
+
+article.summary a.img-link:hover, article.summary a.img-link:active {
+    text-shadow: none;
+}
+
+article.summary a.img-link img {
+    max-width: 100%;
+    max-height: 96px;
+    border-radius: 5px;
+}
+
+article.summary a.img-link img:hover {
+    transform: scale(1.5);
+}
+
+article.summary div.read-more {
+    text-align: right;
+}
+
+nav.paginator {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* }}} */
+
+/* Footer {{{ */
+footer.page-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer.page-bottom .tag-cloud {
+    margin-right: 1em;
+}
+
+footer.page-bottom .contact {
+    margin-left: 1em;
+}
+
+footer.page-bottom .contact ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+footer.page-bottom .contact li {
+    white-space: nowrap;
+}
+
+footer.page-bottom .contact a:hover, a:active {
+    background-color: transparent;
+    color: currentColor;
+    text-shadow: none;
+}
+
+footer.page-bottom .contact li:hover span {
+    background-color: #C74350;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #333;
+}
+
+footer.page-bottom .contact img {
+    height: 2.5ex;
+    width: auto;
+    vertical-align: text-bottom;
+}
+
+
+/* }}} */
+
+        </style>
+    </head>
+    <body id="index" class="home">
+        <div id="fb-root"></div>
+        <div id="container">
+        <header id="banner" class="body">
+            <div style="display: flex; justify-content: space-between;">
+                <h1><a href="./index.html">Mom’s Best Friend</a></h1>
+                <div class="editorial-link"><a href="./editorial.html">Editing Services</a>&nbsp;</div>
+            </div>
+            <nav><ul>
+        <li class="up">
+            <a href="./category/women.html">⬆ Women</a>
+        </li>
+
+        <li class="">
+            <a href="./category/women-comics.html">Nina and Nana</a>
+        </li>
+
+        <li class="">
+            <a href="./category/women-health.html">Health</a>
+        </li>
+
+        <li class="">
+            <a href="./category/women-poetry.html">Poetry</a>
+        </li>
+
+        <li class="">
+            <a href="./category/women-relationships.html">Relationships</a>
+        </li>
+
+        <li class="">
+            <a href="./category/women-social.html">Social</a>
+        </li>
+
+        <li class="active">
+            <a href="./category/women-stories.html">Stories</a>
+        </li></ul></nav>
+        </header>
+
+        <section id="content" class="body">
+            
+<article>
+<header>
+<h1 class="entry-title">Second Innings</h1>
+<div class="article-meta">
+<div class="published">01 Jan 2021</div>
+<div id="share">
+    <div>
+        <a href="https://twitter.com/share" class="twitter-share-button"
+            data-show-count="false" data-related="kanikagee">Tweet</a>
+    </div>
+    <div class="fb-like" data-layout="button" data-action="like" data-size="small"
+        data-share="true"></div>
+    <script>
+    document.querySelector('#share .fb-like').dataset.href = window.location;
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_IN/sdk.js#xfbml=1&version=v2.10";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+</div>
+</header>
+<div class="entry-content"><img alt="cover" class="align-center" src="./images/articles-Women-Stories-Second-Innings-cover.jpg" style="width: 50%;" />
+<p>This short story is about a post-retirement romance. The best is yet to be. Read on to find out what adventure this couple embarks on, in the sunset years of their lives. Since the story has over 3000 words I have made it available in the following ebook formats for your convenience. You can either download it in one of the following formats, or read it right here.</p>
+<p><strong>Download in</strong>: <a class="reference external" download="second.epub" href="./downloads/articles-Women-Stories-Second-Innings-second.epub">EPUB</a>, <a class="reference external" download="second.azw3" href="./downloads/articles-Women-Stories-Second-Innings-second.azw3">Kindle</a>, <a class="reference external" download="second.pdf" href="./downloads/articles-Women-Stories-Second-Innings-second.pdf">PDF</a></p>
+<section id="a-new-beginning">
+<h2>A New Beginning</h2>
+<blockquote>
+<p>The sun sinks below</p>
+<p>the horizon, set aglow</p>
+<p>A vibrant riot of color</p>
+<p>dazzles the dome azure</p>
+<p>In a grand but final show</p>
+</blockquote>
+<p>As Anil sipped his morning tea, his eyes fell upon a framed photograph on the mantelpiece. It had been taken only two weeks ago at the joint celebration of his retirement and his youngest offspring’s first step towards independence. The occasion was of great symbolic significance to him. He viewed it as the passing of the torch of responsibility to the younger generation, so he could luxuriate for a decade of good health he may have to look forward to, if all went well.</p>
+<p>Then about a week ago, on the first day of his retirement, when Nalini had left to pursue a Ph. D in virology in the US, the house had become strangely empty and quiet. How much space could a petite one hundred pound girl possibly occupy, Anil was left to wonder. And now, barely a week into his life of leisure, he was already feeling restless.</p>
+<p>Over the last decade of rushing off to office, reviewing contracts, staying late for strategy meetings, pandering to clients, Anil had a vague idea that he was somehow missing out on family life, and as his retirement approached, he had resolved to make up for it.
+But his family no longer lived with him. His oldest son, Arun, worked for one of the software giants in Silicon Valley and had settled down in California. Arun’s daughter Amaya, Anil’s only existing grandchild, was five years old, and Anil saw her for a week every year when they all came to India for their annual vacation around Christmas. His younger son Pratik, was an investment banker in London. He hardly ever visited, and now Nalini too had left for NYU.</p>
+<p>The only family he had left was his wife, who was a year older than him, and consequently had already retired from her teaching job a year ago. He wondered if he should ask her how she had coped with retirement, when he noticed that she was lying on her stomach on the narrow <em>diwan</em>, with her head and bit of her torso raised, supported by her forearms, her legs bent at the knees swaying rhythmically, as if to some imaginary music. She was completely absorbed in a book, lost to the outside world.</p>
+<p>The sight evoked a powerful memory from four decades ago. <em>Had she changed at all</em>, he wondered smiling, as he reminisced their very first encounter. She had been in the very same position, lying on the lawn in front of the canteen, in their college campus. Her hair now entirely snow white, was then as dark as ebony, but the sparkle in her eyes had remained unchanged over the years.</p>
+<p>For a while, he watched her read, and remembered how he had helplessly fallen in love. Her expressive face was a faithful reproduction of whatever she read or watched. Right now, it was contorted, and her left fist was clenched. She turned the page with her right hand. Gradually, over the next few minutes, the muscles in her face relaxed, and her fist unclenched. A tiny smile began to creep in, and then her eyes lit up.
+Anil was torn between the intense desire to hug her, and to let her be, so he could watch the story play out. As he wrestled with his own emotions, he missed something. For now, there were happy tears streaming down her cheeks.</p>
+<p>“Hey you, scooch over,” he said, standing next to her head, and gesturing to the other end of the <em>diwan</em>. Without looking up from the book, she wiggled backward leaving just enough space for him to sit down. As soon as he plonked down on the <em>diwan</em>, in a smooth motion, she flipped over to her back and put her head on his lap, never taking her eyes off the page she was reading.</p>
+<p>Anil shook his head and smiled, as he stroked her short curly hair. He was glad she kept it short, now. For the first couple of decades of their relationship, her thick dark curls cascaded down her back right up to her hips, and enchanting as it was to look at, she wouldn’t let him run his fingers through it, for they often got caught in a stray knot causing her intense pain.</p>
+<p><em>She’s handled retirement remarkably well</em>, Anil mused. <em>How does she always stay so cheerful</em>, he wondered. “Paro, I wanted to a..”</p>
+<p>“Shush!” She blurted out and continued reading.</p>
+<p>“But ..”</p>
+<p>“Shush!”</p>
+<p>“Okay, okay, I’ll wait. What else have I to do anyway?” He grumbled in a barely audible whisper, and sulked as he craned his neck and stared out of the balcony to his left.</p>
+<p>Five minutes later, which seemed like eternity to him, she sat up and put her arm around his neck. He continued to sulk, refusing to look at her.</p>
+<p>“Oh, come on grumpy puss. I was at a very exciting part of the book. It’s done, and you have my full attention.”</p>
+<p>“Do I?’ He asked, finally looking at her. “Cause I don’t know what to do with myself. How did you deal with a whole year of retirement? It’s been just one week, and I’m already fed up!”</p>
+<p>“Oh, that’s easy. I was just wiling away time, reading and planning, waiting for you to retire.”</p>
+<p>“Planning? Planning what?” Anil was intrigued</p>
+<p>“What we can do next, of course.” Parul clarified.</p>
+<p>“Haha! Some things never change, do they? Do you remember that awful pink notebook?”</p>
+<p>“You mean, the one in which I jotted down our life plans forty years ago?” Parul giggled.</p>
+<p>“Yes, that one. According to that, weren’t you supposed to have won a Nobel prize by now?” Anil laughed.</p>
+<p>“I don’t think so. Let me check.” Parul wandered off to their bedroom, and returned in a jiffy clutching a shocking pink notebook.</p>
+<p>“You still have that?” Anil couldn’t believe his eyes.</p>
+<p>“Why wouldn’t I?” she asked, flipping the pages. “It says here, that I should be the author and illustrator of a successful children’s book series, and you should have just completed building earth’s very first lunar colony.”</p>
+<p>“A lunar colony? Really? I was an ambitious aspiring civil engineer.” His eyes lit up, but then he reminisced some more and his face fell. “Little did I know I’d do almost no actual building, planning or designing. I was so thrilled about being promoted to management, but that was the end of doing everything I loved.” He said, bitterness creeping into his voice.</p>
+<p>“Oh that’s nonsense. I saw how involved you got in your work. Perhaps you did not love it as much as building and designing, but you definitely enjoyed it. And as the boss, you still got to improve and fine tune designs.”</p>
+<p>“I guess you’re right.” Anil shrugged. He took the book from Parul. “What about you Paro? Did you do everything you wanted? What about these children’s books?”</p>
+<p>“I liked what I did. Teaching kids was far more rewarding than I could ever have anticipated. Their enthusiastic and eager minds open to bizarre, mind boggling possibilities and interpretations kept me on my toes and I learned so much when I revisited familiar stories and theories with the new perspectives they shared with me.”</p>
+<p>“No wonder you look so young. I mean those brats turned all your hair gray I’m sure …” Anil ducked to avoid a friendly punch, “… but you never lost the twinkle in your eye.”</p>
+<p>Parul smiled, and unable to resist any longer Anil pulled her into a hug. The two stayed that way. For sometime, the world and everything in it was forgotten. The two just reveled in the familiar and secure comfort of having each other to hold. Their eyes closed and they breathed as one.
+“I could stay like this forever, Anil.” Parul whispered.
+“No, you couldn’t.” Anil laughed, letting go of her. “Your the fidgetiest senior citizen I know. That’s why you couldn’t quietly enjoy the moment.”
+Parul shrugged. “Whatever. Can we do it again?”</p>
+<p>“Sure, why not?” Anil embraced her gently, beaming with joy.</p>
+<p>They stayed in each other’s arms a while longer, before Parul spoke, “Whatever we do next, can we do it together?”</p>
+<p>“Of course. In the bedroom, or on the dining table, Honey?” Anil winked.</p>
+<p>“I don’t mean that!” Parul huffed.</p>
+<p>“Why not?” He said tugging her hand, and leading her to the bedroom with a mischievous grin.</p>
+<p>“What’s gotten into you today Anil?” Parul asked, confused, albeit pleased.</p>
+<p>“Whatever it is, I’m keeping it.” Anil whispered, kissing her neck.</p>
+<p>Parul forgot whatever it was she had wanted to say, as Anil unbuttoned her <em>kurta</em> sending shivers down her spine. Slowly his fingers moved down her cleavage causing goosebumps. Driven by passion, she held his head in her hands, bit his lower lip and moaned.
+He growled pushing her back on to the bed, but she laughed, taunting him to play rough.</p>
+</section>
+<section id="the-dilemma">
+<h2>The Dilemma</h2>
+<p>“Well, we know that still works.” Anil said as they lay together, twenty minutes later, sweaty and content.</p>
+<p>“Yeah. That was awesome. It’s been a while hasn’t it? Why did we ever stop?”</p>
+<p>“I don’t know. I’ve just been busy with wrapping up at the office. Seriously Paro, how have you been dealing with retirement?”</p>
+<p>“I just treated it as a long break, reading, trying out some new recipes, watching a few good movies and making the most of the last days of Nalini living here.”</p>
+<p>“And then there were two…” Anil smiled.</p>
+<p>“It’s the end of an era, you know. We spend so much time and energy on the kids, but they are barely with us for twenty odd years of our lives. We had a few more because Nalini was, was well an accident, and she stayed here until she finished her MBBS. But really, it’s just the two of us. We are partners for life, aren’t we, spending sixty odd years together, if we are lucky.” She looked at him with so much tenderness, that his heart melted, and he pulled her into a hug.</p>
+<p>“Retirement was making me so restless Paro, I was thinking I should start some new venture, but now I don’t want to.” Anil decided.
+“Why not?” Parul asked, bewildered. “As much fun as this was, we can’t spend all our time doing it.” Her eyes twinkled. “We’re not twenty anymore, you know.”</p>
+<p>“Oh I think we’re still pretty horny. But seriously, it’s because I know how I am. If I start something, I’ll get lost in it, and we won’t spend any time together. We have precious little left, and I don’t want to spend another moment apart.”
+“Anil, you know you’ll only make yourself miserable that way, and me too by extension. You can’t spend the next ten years alternately watching sunsets and having sex. It’s not practical.” Parul chortled.</p>
+<p>“So, what then? We go back to having separate lives?” Anil brooded.</p>
+<p>“No. I don’t want that either.” Parul shook her head and drew a deep breath.</p>
+<p>“Well you can’t have your cake and eat it too, now can you?” Anil quipped.</p>
+<p>“Sometimes, if you’re really lucky, you can.” Parul calmly, asserted. “Where there’s a will, there’s a way.”</p>
+<p>“When did we start talking in cliches?” Anil frowned.</p>
+<p>“Seems like fun.” Parul laughed and then added, “Couldn’t we do something together? I mean we’ve both not quite achieved our dreams, but we have enough saved up for comfortable lives. Perhaps, now is the time to invest in our dreams, but we should do it together.”</p>
+<p>“That would be perfect, but how? I mean our dreams are in such different fields. East is east, and west is west, and never the twain shall meet.”</p>
+<p>“See, I told you it’s fun to talk in cliches.” Parul raised her eyebrows and smiled. “Besides, the globe is spherical. Who says east can’t meet west? In fact, it must. Let’s think about it. I’m sure we can come up with something.”</p>
+<p>The two gazed into a distance lost in thought.</p>
+</section>
+<section id="the-birth-of-an-idea">
+<h2>The Birth of an Idea</h2>
+<p>Anil and Parul enjoyed a most pleasurable week as they went to the beach, watched a couple of plays, attended a music concert, played carom and Scrabble and did crosswords. One afternoon, while they sat together on the swing facing the balcony, sipping their tea, Anil asked, ” Paro have you thought about what we can do next?”</p>
+<p>“Yes I have. Anil, you said you missed designing and planning structures. Does it really matter what these structures are used for?” Parul asked.</p>
+<p>“Whatever do you mean?”</p>
+<p>“I mean, how would you feel about creating model cities, factories, castles, etc instead of real buildings and bridges?” Parul asked.
+“I suppose that would be fine. It would still require the same sort of work. After all it’s not like I want to do the actual construction. I just provide the models and work with contractors on the implementation on real sites. Although real sites pose an additional interesting challenge, the first part is fun enough. But what would these models be used for? I don’t want these to be just a hobby. I want to do something constructive.” Anil squinted at Parul, wondering where she was heading.</p>
+<p>“I am coming to that. As you know, I have always wanted to write children’s books, but they are all over the place these days, and if I did write them hardly anyone would notice them. Besides, I have worked with kids all my life, and I know what makes their eyes light up and sets their hearts pumping. If you could build the worlds I create in my stories, then the children could interact with the worlds and enjoy the books in a whole new way. It would be a great way to entice reluctant readers, by stimulating their imagination.” Parul blurted out, as if she had rehearsed the words a few times.</p>
+<p>“You want to sell these? They would be too expensive for one story. Also, I could not mass produce them.” Anil did not want to disappoint her, but he had to be honest. They had always been honest with each other, and that’s why their relationship had worked so well. He was about to console her, but to his surprise, she did not seem disappointed at all.</p>
+<p>“We could just do a couple and take them to orphanages to tell stories. We can also contact a few NGOs to set up story telling events for underprivileged children.” She proposed barely meeting his eyes. She paused to steel herself, before continuing, “We wouldn’t make any money, but it would be enjoyable and rewarding. May be, if they worked out well, we could sell a few to schools. Anil we’ve both worked hard all our lives, and we’re financially secure. Let’s have some fun together. What do you say?” Parul fidgeted with her fingers, as she waited for a response.</p>
+<p>“I say, brilliant!”</p>
+<p>“Really? You mean it.” Parul’s eyes shone with delight, as she breathed a sigh of relief.</p>
+<p>“Yes. It allows us to pursue our dreams together, and we can work at our own comfortable pace. Talk about having our cake and eating it too. Paro, you’re a genius. We can do a test case too.”</p>
+<p>“Test case? What do you mean?” Parul was intrigued.</p>
+<p>“I mean Amaya will be coming to visit us in a couple of months for Christmas. Let’s make one for her as a Christmas gift, and see what she thinks of it. Perhaps, she could give us some useful feedback from a child’s perspective, that could help us improve the story as well as the model.”</p>
+<p>“That’s perfect. I know, I’ll write the first story in a children’s park. You can make a working model with swings, slides, a merry-go-round, monkey bars, a sand pit, or something like that?”</p>
+<p>“I could do better. I can even put in a little stream, a bridge, a duck pond, an obstacle course, a working fountain and trampoline.”</p>
+<p>“Wow! I can do a lot with that in my story. Would it be possible to size it, so a kid could make a Lego doll use the set up?”</p>
+<p>“Absolutely! This is going to be fun. I am going to call one of my contacts in construction to find out where I can get the stuff I need.”
+Parul pounced onto Anil and hugged him. Locked in embrace, the two contemplated the possibilities of their new venture.</p>
+</section>
+<section id="let-s-do-it">
+<h2>Let's Do It!</h2>
+<p>Over the next few days Anil called a couple of contractors he had often worked with. Amused by his project, they offered him his pick of old power tools, bits of wood, bamboo, metal and half used tins of polish, paints and industrial strength glue from their workshops.</p>
+<p>Parul in the mean time looked through some old notes searching for an idea for a story. She also sorted through all the craft supplies she had hoarded over her years of teaching.</p>
+<p><em>A month later …</em></p>
+<p>“That was the NGO I’ve been talking to.” Parul called out hanging up the phone. “They loved the video I sent them, of our model so far and offered to recommend us to three orphanages and two schools. But the process will take some time”</p>
+<p>“That’s not a problem. We need some time too. This is the one we are making for Amaya.” Anil said, pointing to nearly finished model of the park whose slide he had been tweaking a moment ago. “We need her help to iron out the kinks. It’s going to be a few months before we are ready with another couple of models.”</p>
+<p>“This is going quite well isn’t it?” Parul asked, examining the Styrofoam horse she had made for the merry-go round. Parul had discovered that in addition to writing, she enjoyed crafts too. During her years of teaching, she had resented it, because she had to make loads of boring decorations for sports day and annual day festivals and numerous other school celebrations, but as a result of years of practice, she was quite good at it. Now, she found employing that skill to help create her own fantasy worlds was immensely satisfying.</p>
+<p>Anil was great at making models that functioned smoothly and efficiently, but giving them beautiful souls was her job. The merry-go-round was the perfect example of the synergistic implementation of their complimentary skill sets. Anil made the machine with wood and bamboo sticks. It rotated smoothly when one cranked the little handle. But it was all bare and brown. Parul had painted it in lively colors and attached horses, unicorns and motorcycles to the hanging bamboo rods.</p>
+<p>“Wow, I can’t believe how pretty it looks, Paro. This is really amazing! Amaya is going to be so thrilled. It’s a little girl’s dream come true.”</p>
+<p>“Mine too. I always wanted something like this as a kid.” Parul sighed looking Anil. “This has been the best month ever. I had so much fun writing the story.”</p>
+<p>“I hope I did not cramp your style with all the practical demands.” Anil’s lips twitched.</p>
+<p>“No. The constraints helped trigger new ideas. I can’t believe how well you made the fountain. The clear plastic covering you put ensures the water does not spoil the rest of the stuff, and I love how you made it recycle the water.” Parul walked around the model admiring it.
+“But your idea for using the see-saw to pump it was pure genius. I bet that’s the piece Amaya will use the most, and the dolls you made to put on the see saw are so cute.” Anil pinched Parul’s cheeks and she giggled.</p>
+<p>“We did well, didn’t we?” Parul asked raising her hand for a high five.</p>
+<p>Anil clapped her hand and then picked her up and twirled.</p>
+<p>“Aww Anil.” Parul blushed, kissing him. “Who knew growing old could be so much fun?”</p>
+<p>“I think Byron did,” Anil replied, quoting his favorite lines of poetry.</p>
+<blockquote>
+<p>Grow old along with me!</p>
+<p>The best is yet to be,</p>
+<p>The last of life,</p>
+<p>for which the first was made.</p>
+<p>by Robert Browning</p>
+</blockquote>
+<p>“Let’s play with this for a while. We need to be the beta testers, don’t you think, Anil?” Parul asked.</p>
+<p>“Oh yes! How else could we ensure high quality products?” Anil winked, and the two began playing with the model.</p>
+<p>“We have plenty of time to touch it up, before we give it to Amaya.” Parul rationalized.</p>
+<p>Anil lay down with his head on Parul’s lap, as he fiddled with bits of the model. “Tell me the story, Darling.”</p>
+</section>
+<section id="footnote">
+<h2>Footnote</h2>
+<p>The cover image for this story was created using public domain photos form the following links</p>
+<blockquote>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.pexels.com/photo/beach-blue-city-clouds-417194/">pexels</a></p></li>
+<li><p><a class="reference external" href="https://unsplash.com/photos/-XlBjdtRqK8">unsplash</a></p></li>
+</ul>
+</blockquote>
+</section>
+</div>
+</article>
+<p>Tags: <a href="./tag/hope.html" title="Posts tagged with: hope">hope</a>, <a href="./tag/short-story.html" title="Posts tagged with: short story">short story</a>, <a href="./tag/romance.html" title="Posts tagged with: romance">romance</a>, <a href="./tag/women.html" title="Posts tagged with: women">women</a>, <a href="./tag/relationships.html" title="Posts tagged with: relationships">relationships</a>, <a href="./tag/family.html" title="Posts tagged with: family">family</a>, <a href="./tag/love.html" title="Posts tagged with: love">love</a></p>
+<nav class="full-article-nav">
+<div><a href="./women-stories-the-only-suspect.html"             title="The Only Suspect">⬅ Previous</a></div><div>In: <a href="./category/women.html">Women</a>/<a href="./category/women-stories.html">Stories</a></div><div><a href="./women-stories-karan-gulati.html"             title="Who&#x27;s Afraid Of Karan Gulati?">Next ➡</a></div>
+</nav>
+
+<hr>
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+    this.page.url = "https://kanikag.com/women-stories-second-innings.html";
+    this.page.identifier = "women-stories-second-innings";
+};
+(function() {
+var d = document, s = d.createElement('script');
+s.src = 'https://kanikag.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+        </section>
+
+        <footer id="extras" class="body">
+            
+<footer class="page-bottom">
+<div class="tag-cloud">
+    <h2>all tags</h2>
+    <nav>
+<a title="Posts tagged with: " href="./tag/.html"></a>,
+
+<a title="Posts tagged with: abuse" href="./tag/abuse.html">abuse</a>,
+
+<a title="Posts tagged with: action" href="./tag/action.html">action</a>,
+
+<a title="Posts tagged with: activities" href="./tag/activities.html">activities</a>,
+
+<a title="Posts tagged with: activity" href="./tag/activity.html">activity</a>,
+
+<a title="Posts tagged with: addiction" href="./tag/addiction.html">addiction</a>,
+
+<a title="Posts tagged with: adventure" href="./tag/adventure.html">adventure</a>,
+
+<a title="Posts tagged with: ageing" href="./tag/ageing.html">ageing</a>,
+
+<a title="Posts tagged with: aliens" href="./tag/aliens.html">aliens</a>,
+
+<a title="Posts tagged with: anger" href="./tag/anger.html">anger</a>,
+
+<a title="Posts tagged with: animals" href="./tag/animals.html">animals</a>,
+
+<a title="Posts tagged with: archaeology" href="./tag/archaeology.html">archaeology</a>,
+
+<a title="Posts tagged with: archeology" href="./tag/archeology.html">archeology</a>,
+
+<a title="Posts tagged with: art" href="./tag/art.html">art</a>,
+
+<a title="Posts tagged with: astronomy" href="./tag/astronomy.html">astronomy</a>,
+
+<a title="Posts tagged with: AtoZ Challenge" href="./tag/atoz-challenge.html">AtoZ Challenge</a>,
+
+<a title="Posts tagged with: baby" href="./tag/baby.html">baby</a>,
+
+<a title="Posts tagged with: beauty" href="./tag/beauty.html">beauty</a>,
+
+<a title="Posts tagged with: behavior" href="./tag/behavior.html">behavior</a>,
+
+<a title="Posts tagged with: bias" href="./tag/bias.html">bias</a>,
+
+<a title="Posts tagged with: biography" href="./tag/biography.html">biography</a>,
+
+<a title="Posts tagged with: biology" href="./tag/biology.html">biology</a>,
+
+<a title="Posts tagged with: birthday" href="./tag/birthday.html">birthday</a>,
+
+<a title="Posts tagged with: birthdays" href="./tag/birthdays.html">birthdays</a>,
+
+<a title="Posts tagged with: bonding" href="./tag/bonding.html">bonding</a>,
+
+<a title="Posts tagged with: book" href="./tag/book.html">book</a>,
+
+<a title="Posts tagged with: books" href="./tag/books.html">books</a>,
+
+<a title="Posts tagged with: botany" href="./tag/botany.html">botany</a>,
+
+<a title="Posts tagged with: braces" href="./tag/braces.html">braces</a>,
+
+<a title="Posts tagged with: breakfast" href="./tag/breakfast.html">breakfast</a>,
+
+<a title="Posts tagged with: breast exam" href="./tag/breast-exam.html">breast exam</a>,
+
+<a title="Posts tagged with: bullying" href="./tag/bullying.html">bullying</a>,
+
+<a title="Posts tagged with: cake" href="./tag/cake.html">cake</a>,
+
+<a title="Posts tagged with: celebrate" href="./tag/celebrate.html">celebrate</a>,
+
+<a title="Posts tagged with: celebration" href="./tag/celebration.html">celebration</a>,
+
+<a title="Posts tagged with: celebrations" href="./tag/celebrations.html">celebrations</a>,
+
+<a title="Posts tagged with: chapter book" href="./tag/chapter-book.html">chapter book</a>,
+
+<a title="Posts tagged with: chemistry" href="./tag/chemistry.html">chemistry</a>,
+
+<a title="Posts tagged with: children" href="./tag/children.html">children</a>,
+
+<a title="Posts tagged with: childrens book" href="./tag/childrens-book.html">childrens book</a>,
+
+<a title="Posts tagged with: chocolate" href="./tag/chocolate.html">chocolate</a>,
+
+<a title="Posts tagged with: choices" href="./tag/choices.html">choices</a>,
+
+<a title="Posts tagged with: Christmas" href="./tag/christmas.html">Christmas</a>,
+
+<a title="Posts tagged with: climate" href="./tag/climate.html">climate</a>,
+
+<a title="Posts tagged with: climate change" href="./tag/climate-change.html">climate change</a>,
+
+<a title="Posts tagged with: comic" href="./tag/comic.html">comic</a>,
+
+<a title="Posts tagged with: community" href="./tag/community.html">community</a>,
+
+<a title="Posts tagged with: confidence" href="./tag/confidence.html">confidence</a>,
+
+<a title="Posts tagged with: conflict" href="./tag/conflict.html">conflict</a>,
+
+<a title="Posts tagged with: contemporary" href="./tag/contemporary.html">contemporary</a>,
+
+<a title="Posts tagged with: contraception" href="./tag/contraception.html">contraception</a>,
+
+<a title="Posts tagged with: cooking" href="./tag/cooking.html">cooking</a>,
+
+<a title="Posts tagged with: corruption" href="./tag/corruption.html">corruption</a>,
+
+<a title="Posts tagged with: costume" href="./tag/costume.html">costume</a>,
+
+<a title="Posts tagged with: couples" href="./tag/couples.html">couples</a>,
+
+<a title="Posts tagged with: craft" href="./tag/craft.html">craft</a>,
+
+<a title="Posts tagged with: creativity" href="./tag/creativity.html">creativity</a>,
+
+<a title="Posts tagged with: crime" href="./tag/crime.html">crime</a>,
+
+<a title="Posts tagged with: crisis" href="./tag/crisis.html">crisis</a>,
+
+<a title="Posts tagged with: cuisine" href="./tag/cuisine.html">cuisine</a>,
+
+<a title="Posts tagged with: culture" href="./tag/culture.html">culture</a>,
+
+<a title="Posts tagged with: curiosity" href="./tag/curiosity.html">curiosity</a>,
+
+<a title="Posts tagged with: curosity" href="./tag/curosity.html">curosity</a>,
+
+<a title="Posts tagged with: customs" href="./tag/customs.html">customs</a>,
+
+<a title="Posts tagged with: democracy" href="./tag/democracy.html">democracy</a>,
+
+<a title="Posts tagged with: dessert" href="./tag/dessert.html">dessert</a>,
+
+<a title="Posts tagged with: detective" href="./tag/detective.html">detective</a>,
+
+<a title="Posts tagged with: developent" href="./tag/developent.html">developent</a>,
+
+<a title="Posts tagged with: diet" href="./tag/diet.html">diet</a>,
+
+<a title="Posts tagged with: dilemma" href="./tag/dilemma.html">dilemma</a>,
+
+<a title="Posts tagged with: discipline" href="./tag/discipline.html">discipline</a>,
+
+<a title="Posts tagged with: discovery" href="./tag/discovery.html">discovery</a>,
+
+<a title="Posts tagged with: discrimination" href="./tag/discrimination.html">discrimination</a>,
+
+<a title="Posts tagged with: disease" href="./tag/disease.html">disease</a>,
+
+<a title="Posts tagged with: diversity" href="./tag/diversity.html">diversity</a>,
+
+<a title="Posts tagged with: domestic abuse" href="./tag/domestic-abuse.html">domestic abuse</a>,
+
+<a title="Posts tagged with: domestic violence" href="./tag/domestic-violence.html">domestic violence</a>,
+
+<a title="Posts tagged with: drama" href="./tag/drama.html">drama</a>,
+
+<a title="Posts tagged with: dystopian" href="./tag/dystopian.html">dystopian</a>,
+
+<a title="Posts tagged with: ebook" href="./tag/ebook.html">ebook</a>,
+
+<a title="Posts tagged with: ecology" href="./tag/ecology.html">ecology</a>,
+
+<a title="Posts tagged with: education" href="./tag/education.html">education</a>,
+
+<a title="Posts tagged with: emotion" href="./tag/emotion.html">emotion</a>,
+
+<a title="Posts tagged with: emotions" href="./tag/emotions.html">emotions</a>,
+
+<a title="Posts tagged with: empathy" href="./tag/empathy.html">empathy</a>,
+
+<a title="Posts tagged with: enterprise" href="./tag/enterprise.html">enterprise</a>,
+
+<a title="Posts tagged with: entertainment" href="./tag/entertainment.html">entertainment</a>,
+
+<a title="Posts tagged with: environment" href="./tag/environment.html">environment</a>,
+
+<a title="Posts tagged with: eonomics" href="./tag/eonomics.html">eonomics</a>,
+
+<a title="Posts tagged with: epic" href="./tag/epic.html">epic</a>,
+
+<a title="Posts tagged with: ethics" href="./tag/ethics.html">ethics</a>,
+
+<a title="Posts tagged with: evolution" href="./tag/evolution.html">evolution</a>,
+
+<a title="Posts tagged with: experiments" href="./tag/experiments.html">experiments</a>,
+
+<a title="Posts tagged with: explore" href="./tag/explore.html">explore</a>,
+
+<a title="Posts tagged with: fairy tales" href="./tag/fairy-tales.html">fairy tales</a>,
+
+<a title="Posts tagged with: family" href="./tag/family.html">family</a>,
+
+<a title="Posts tagged with: family friends" href="./tag/family-friends.html">family friends</a>,
+
+<a title="Posts tagged with: fantasy" href="./tag/fantasy.html">fantasy</a>,
+
+<a title="Posts tagged with: fear" href="./tag/fear.html">fear</a>,
+
+<a title="Posts tagged with: fears" href="./tag/fears.html">fears</a>,
+
+<a title="Posts tagged with: feminism" href="./tag/feminism.html">feminism</a>,
+
+<a title="Posts tagged with: festival" href="./tag/festival.html">festival</a>,
+
+<a title="Posts tagged with: festivals" href="./tag/festivals.html">festivals</a>,
+
+<a title="Posts tagged with: fiction" href="./tag/fiction.html">fiction</a>,
+
+<a title="Posts tagged with: flash fiction" href="./tag/flash-fiction.html">flash fiction</a>,
+
+<a title="Posts tagged with: flashfiction" href="./tag/flashfiction.html">flashfiction</a>,
+
+<a title="Posts tagged with: food" href="./tag/food.html">food</a>,
+
+<a title="Posts tagged with: freedom" href="./tag/freedom.html">freedom</a>,
+
+<a title="Posts tagged with: friends" href="./tag/friends.html">friends</a>,
+
+<a title="Posts tagged with: friendship" href="./tag/friendship.html">friendship</a>,
+
+<a title="Posts tagged with: fun" href="./tag/fun.html">fun</a>,
+
+<a title="Posts tagged with: fun fact" href="./tag/fun-fact.html">fun fact</a>,
+
+<a title="Posts tagged with: fun facts" href="./tag/fun-facts.html">fun facts</a>,
+
+<a title="Posts tagged with: funfact" href="./tag/funfact.html">funfact</a>,
+
+<a title="Posts tagged with: funfacts" href="./tag/funfacts.html">funfacts</a>,
+
+<a title="Posts tagged with: game" href="./tag/game.html">game</a>,
+
+<a title="Posts tagged with: games" href="./tag/games.html">games</a>,
+
+<a title="Posts tagged with: gender bias" href="./tag/gender-bias.html">gender bias</a>,
+
+<a title="Posts tagged with: genetics" href="./tag/genetics.html">genetics</a>,
+
+<a title="Posts tagged with: geography" href="./tag/geography.html">geography</a>,
+
+<a title="Posts tagged with: gift" href="./tag/gift.html">gift</a>,
+
+<a title="Posts tagged with: girls" href="./tag/girls.html">girls</a>,
+
+<a title="Posts tagged with: grief" href="./tag/grief.html">grief</a>,
+
+<a title="Posts tagged with: growing up" href="./tag/growing-up.html">growing up</a>,
+
+<a title="Posts tagged with: guest post" href="./tag/guest-post.html">guest post</a>,
+
+<a title="Posts tagged with: health" href="./tag/health.html">health</a>,
+
+<a title="Posts tagged with: historical" href="./tag/historical.html">historical</a>,
+
+<a title="Posts tagged with: history" href="./tag/history.html">history</a>,
+
+<a title="Posts tagged with: hope" href="./tag/hope.html">hope</a>,
+
+<a title="Posts tagged with: horror" href="./tag/horror.html">horror</a>,
+
+<a title="Posts tagged with: humanity" href="./tag/humanity.html">humanity</a>,
+
+<a title="Posts tagged with: humor" href="./tag/humor.html">humor</a>,
+
+<a title="Posts tagged with: humour" href="./tag/humour.html">humour</a>,
+
+<a title="Posts tagged with: hygiene" href="./tag/hygiene.html">hygiene</a>,
+
+<a title="Posts tagged with: ideas" href="./tag/ideas.html">ideas</a>,
+
+<a title="Posts tagged with: illness" href="./tag/illness.html">illness</a>,
+
+<a title="Posts tagged with: imagination" href="./tag/imagination.html">imagination</a>,
+
+<a title="Posts tagged with: independence" href="./tag/independence.html">independence</a>,
+
+<a title="Posts tagged with: India" href="./tag/india.html">India</a>,
+
+<a title="Posts tagged with: infection" href="./tag/infection.html">infection</a>,
+
+<a title="Posts tagged with: injury" href="./tag/injury.html">injury</a>,
+
+<a title="Posts tagged with: insects" href="./tag/insects.html">insects</a>,
+
+<a title="Posts tagged with: internet" href="./tag/internet.html">internet</a>,
+
+<a title="Posts tagged with: introspection" href="./tag/introspection.html">introspection</a>,
+
+<a title="Posts tagged with: joy" href="./tag/joy.html">joy</a>,
+
+<a title="Posts tagged with: kids" href="./tag/kids.html">kids</a>,
+
+<a title="Posts tagged with: kids special" href="./tag/kids-special.html">kids special</a>,
+
+<a title="Posts tagged with: language" href="./tag/language.html">language</a>,
+
+<a title="Posts tagged with: laughs" href="./tag/laughs.html">laughs</a>,
+
+<a title="Posts tagged with: laws" href="./tag/laws.html">laws</a>,
+
+<a title="Posts tagged with: learn" href="./tag/learn.html">learn</a>,
+
+<a title="Posts tagged with: learn to read" href="./tag/learn-to-read.html">learn to read</a>,
+
+<a title="Posts tagged with: learning" href="./tag/learning.html">learning</a>,
+
+<a title="Posts tagged with: life" href="./tag/life.html">life</a>,
+
+<a title="Posts tagged with: lifestyle" href="./tag/lifestyle.html">lifestyle</a>,
+
+<a title="Posts tagged with: literary" href="./tag/literary.html">literary</a>,
+
+<a title="Posts tagged with: literary fiction" href="./tag/literary-fiction.html">literary fiction</a>,
+
+<a title="Posts tagged with: literature" href="./tag/literature.html">literature</a>,
+
+<a title="Posts tagged with: love" href="./tag/love.html">love</a>,
+
+<a title="Posts tagged with: lunch" href="./tag/lunch.html">lunch</a>,
+
+<a title="Posts tagged with: magic" href="./tag/magic.html">magic</a>,
+
+<a title="Posts tagged with: mammogram" href="./tag/mammogram.html">mammogram</a>,
+
+<a title="Posts tagged with: math" href="./tag/math.html">math</a>,
+
+<a title="Posts tagged with: mathematics" href="./tag/mathematics.html">mathematics</a>,
+
+<a title="Posts tagged with: medicine" href="./tag/medicine.html">medicine</a>,
+
+<a title="Posts tagged with: milestones" href="./tag/milestones.html">milestones</a>,
+
+<a title="Posts tagged with: monsoon" href="./tag/monsoon.html">monsoon</a>,
+
+<a title="Posts tagged with: movie" href="./tag/movie.html">movie</a>,
+
+<a title="Posts tagged with: movies" href="./tag/movies.html">movies</a>,
+
+<a title="Posts tagged with: murder" href="./tag/murder.html">murder</a>,
+
+<a title="Posts tagged with: music" href="./tag/music.html">music</a>,
+
+<a title="Posts tagged with: mystery" href="./tag/mystery.html">mystery</a>,
+
+<a title="Posts tagged with: mythology" href="./tag/mythology.html">mythology</a>,
+
+<a title="Posts tagged with: nature" href="./tag/nature.html">nature</a>,
+
+<a title="Posts tagged with: news" href="./tag/news.html">news</a>,
+
+<a title="Posts tagged with: Nina and Nana" href="./tag/nina-and-nana.html">Nina and Nana</a>,
+
+<a title="Posts tagged with: nonfiction" href="./tag/nonfiction.html">nonfiction</a>,
+
+<a title="Posts tagged with: novel" href="./tag/novel.html">novel</a>,
+
+<a title="Posts tagged with: novella" href="./tag/novella.html">novella</a>,
+
+<a title="Posts tagged with: nutrition" href="./tag/nutrition.html">nutrition</a>,
+
+<a title="Posts tagged with: outdoor" href="./tag/outdoor.html">outdoor</a>,
+
+<a title="Posts tagged with: Pap smear" href="./tag/pap-smear.html">Pap smear</a>,
+
+<a title="Posts tagged with: paranormal" href="./tag/paranormal.html">paranormal</a>,
+
+<a title="Posts tagged with: parenting" href="./tag/parenting.html">parenting</a>,
+
+<a title="Posts tagged with: partnership" href="./tag/partnership.html">partnership</a>,
+
+<a title="Posts tagged with: party" href="./tag/party.html">party</a>,
+
+<a title="Posts tagged with: patriarchy" href="./tag/patriarchy.html">patriarchy</a>,
+
+<a title="Posts tagged with: pelvic pain" href="./tag/pelvic-pain.html">pelvic pain</a>,
+
+<a title="Posts tagged with: philosophy" href="./tag/philosophy.html">philosophy</a>,
+
+<a title="Posts tagged with: photoprompt" href="./tag/photoprompt.html">photoprompt</a>,
+
+<a title="Posts tagged with: physics" href="./tag/physics.html">physics</a>,
+
+<a title="Posts tagged with: picture book" href="./tag/picture-book.html">picture book</a>,
+
+<a title="Posts tagged with: plants" href="./tag/plants.html">plants</a>,
+
+<a title="Posts tagged with: poem" href="./tag/poem.html">poem</a>,
+
+<a title="Posts tagged with: poetry" href="./tag/poetry.html">poetry</a>,
+
+<a title="Posts tagged with: politics" href="./tag/politics.html">politics</a>,
+
+<a title="Posts tagged with: pop culture" href="./tag/pop-culture.html">pop culture</a>,
+
+<a title="Posts tagged with: pregnancy" href="./tag/pregnancy.html">pregnancy</a>,
+
+<a title="Posts tagged with: prejudice" href="./tag/prejudice.html">prejudice</a>,
+
+<a title="Posts tagged with: prejudices" href="./tag/prejudices.html">prejudices</a>,
+
+<a title="Posts tagged with: privacy" href="./tag/privacy.html">privacy</a>,
+
+<a title="Posts tagged with: psychology" href="./tag/psychology.html">psychology</a>,
+
+<a title="Posts tagged with: puberty" href="./tag/puberty.html">puberty</a>,
+
+<a title="Posts tagged with: puzzles" href="./tag/puzzles.html">puzzles</a>,
+
+<a title="Posts tagged with: radiation" href="./tag/radiation.html">radiation</a>,
+
+<a title="Posts tagged with: reading" href="./tag/reading.html">reading</a>,
+
+<a title="Posts tagged with: recipe" href="./tag/recipe.html">recipe</a>,
+
+<a title="Posts tagged with: recipes" href="./tag/recipes.html">recipes</a>,
+
+<a title="Posts tagged with: relationship" href="./tag/relationship.html">relationship</a>,
+
+<a title="Posts tagged with: relationships" href="./tag/relationships.html">relationships</a>,
+
+<a title="Posts tagged with: research" href="./tag/research.html">research</a>,
+
+<a title="Posts tagged with: responsibility" href="./tag/responsibility.html">responsibility</a>,
+
+<a title="Posts tagged with: review" href="./tag/review.html">review</a>,
+
+<a title="Posts tagged with: risk" href="./tag/risk.html">risk</a>,
+
+<a title="Posts tagged with: romance" href="./tag/romance.html">romance</a>,
+
+<a title="Posts tagged with: safety" href="./tag/safety.html">safety</a>,
+
+<a title="Posts tagged with: satire" href="./tag/satire.html">satire</a>,
+
+<a title="Posts tagged with: school" href="./tag/school.html">school</a>,
+
+<a title="Posts tagged with: schools" href="./tag/schools.html">schools</a>,
+
+<a title="Posts tagged with: sci-fi" href="./tag/sci-fi.html">sci-fi</a>,
+
+<a title="Posts tagged with: science" href="./tag/science.html">science</a>,
+
+<a title="Posts tagged with: science fiction" href="./tag/science-fiction.html">science fiction</a>,
+
+<a title="Posts tagged with: scifi" href="./tag/scifi.html">scifi</a>,
+
+<a title="Posts tagged with: second child" href="./tag/second-child.html">second child</a>,
+
+<a title="Posts tagged with: sex" href="./tag/sex.html">sex</a>,
+
+<a title="Posts tagged with: short stories" href="./tag/short-stories.html">short stories</a>,
+
+<a title="Posts tagged with: short story" href="./tag/short-story.html">short story</a>,
+
+<a title="Posts tagged with: shortstory" href="./tag/shortstory.html">shortstory</a>,
+
+<a title="Posts tagged with: sibling" href="./tag/sibling.html">sibling</a>,
+
+<a title="Posts tagged with: siblings" href="./tag/siblings.html">siblings</a>,
+
+<a title="Posts tagged with: snack" href="./tag/snack.html">snack</a>,
+
+<a title="Posts tagged with: social" href="./tag/social.html">social</a>,
+
+<a title="Posts tagged with: social media" href="./tag/social-media.html">social media</a>,
+
+<a title="Posts tagged with: software" href="./tag/software.html">software</a>,
+
+<a title="Posts tagged with: solar system" href="./tag/solar-system.html">solar system</a>,
+
+<a title="Posts tagged with: songs" href="./tag/songs.html">songs</a>,
+
+<a title="Posts tagged with: space" href="./tag/space.html">space</a>,
+
+<a title="Posts tagged with: sports" href="./tag/sports.html">sports</a>,
+
+<a title="Posts tagged with: stories" href="./tag/stories.html">stories</a>,
+
+<a title="Posts tagged with: story" href="./tag/story.html">story</a>,
+
+<a title="Posts tagged with: summer" href="./tag/summer.html">summer</a>,
+
+<a title="Posts tagged with: superstition" href="./tag/superstition.html">superstition</a>,
+
+<a title="Posts tagged with: surprise" href="./tag/surprise.html">surprise</a>,
+
+<a title="Posts tagged with: suspense" href="./tag/suspense.html">suspense</a>,
+
+<a title="Posts tagged with: team" href="./tag/team.html">team</a>,
+
+<a title="Posts tagged with: team work" href="./tag/team-work.html">team work</a>,
+
+<a title="Posts tagged with: teamwork" href="./tag/teamwork.html">teamwork</a>,
+
+<a title="Posts tagged with: technology" href="./tag/technology.html">technology</a>,
+
+<a title="Posts tagged with: teen" href="./tag/teen.html">teen</a>,
+
+<a title="Posts tagged with: teens" href="./tag/teens.html">teens</a>,
+
+<a title="Posts tagged with: teeth" href="./tag/teeth.html">teeth</a>,
+
+<a title="Posts tagged with: thriller" href="./tag/thriller.html">thriller</a>,
+
+<a title="Posts tagged with: time travel" href="./tag/time-travel.html">time travel</a>,
+
+<a title="Posts tagged with: toddlers" href="./tag/toddlers.html">toddlers</a>,
+
+<a title="Posts tagged with: toy" href="./tag/toy.html">toy</a>,
+
+<a title="Posts tagged with: toys" href="./tag/toys.html">toys</a>,
+
+<a title="Posts tagged with: tradition" href="./tag/tradition.html">tradition</a>,
+
+<a title="Posts tagged with: traditions" href="./tag/traditions.html">traditions</a>,
+
+<a title="Posts tagged with: travel" href="./tag/travel.html">travel</a>,
+
+<a title="Posts tagged with: TV" href="./tag/tv.html">TV</a>,
+
+<a title="Posts tagged with: TV shows" href="./tag/tv-shows.html">TV shows</a>,
+
+<a title="Posts tagged with: vacation" href="./tag/vacation.html">vacation</a>,
+
+<a title="Posts tagged with: values" href="./tag/values.html">values</a>,
+
+<a title="Posts tagged with: war" href="./tag/war.html">war</a>,
+
+<a title="Posts tagged with: weight" href="./tag/weight.html">weight</a>,
+
+<a title="Posts tagged with: women" href="./tag/women.html">women</a>,
+
+<a title="Posts tagged with: young adult" href="./tag/young-adult.html">young adult</a></nav>
+</div>
+<div class="contact">
+    <h2>contact</h2>
+    <ul>
+    <li><a href="https://www.facebook.com/kanikag.books" target="_blank"><img src="./res/facebook-logo.svg">
+            <span>Facebook</span></a></li> <li><a href="https://twitter.com/KanikaGee" target="_blank"><img src="./res/twitter-logo.svg">
+            <span>Twitter</span></a></li> <li><a href="mailto:gee.kanika@gmail.com" target="_blank"><img src="./res/email-logo.svg">
+            <span>E-mail</span></a></li>
+    </ul>
+</div>
+</footer>
+        </footer>
+        </div>
+    </body>
+</html>

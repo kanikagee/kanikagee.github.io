@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mom’s Best Friend - The Blue Clue</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="./res/favicon.png" />
+        <link rel="alternate" type="application/atom+xml" title="RSS feed for Mom&#x27;s Best Friend" href="./category/index.atom" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53439504-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+	    function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-53439504-2');
+        </script>
+        <style type="text/css">
+/* {{{ Reset
+ * http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ *  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* }}} */
+
+/* Fonts {{{ */
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url(./res/title-font.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* }}} */
+
+/* Global {{{ */
+/* Body */
+body {
+    background: #F5F4EF;
+    color: #000305;
+    font-size: 87.5%; /* Base font size: 14px */
+    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.429;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+/* Headings */
+h1 {font-size: 2em }
+h2 {font-size: 1.571em} /* 22px */
+h3 {font-size: 1.429em} /* 20px */
+h4 {font-size: 1.286em} /* 18px */
+h5 {font-size: 1.143em} /* 16px */
+h6 {font-size: 1em}     /* 14px */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: .8em;
+    font-family: 'Yanone Kaffeesatz', arial, serif;
+}
+
+h3, h4, h5, h6 { margin-top: .8em; }
+
+hr { border: 2px solid #EEEEEE; }
+
+/* Anchors */
+a {outline: 0;}
+a img {border: 0px; text-decoration: none;}
+a:link, a:visited {
+    color: #C74350;
+    padding: 0 1px;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover, a:active {
+    background-color: #C74350;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #333;
+}
+
+h1 a:hover {
+    background-color: inherit
+}
+
+/* Paragraphs */
+div.line-block, p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+strong, b {font-weight: bold;}
+em, i {font-style: italic;}
+
+/* Lists */
+ul {
+    list-style: outside disc;
+    margin: 0em 0 0 1.5em;
+}
+
+ol {
+    list-style: outside decimal;
+    margin: 0em 0 0 1.5em;
+}
+
+li { margin-top: 0.5em;
+     margin-bottom: 1em; }
+
+dl {margin: 0 0 1.5em 0;}
+dt {font-weight: bold;}
+dd {margin-left: 1.5em;}
+
+pre{background-color:  rgb(238, 238, 238); padding: 10px; margin: 10px; overflow: auto;}
+
+/* Quotes */
+blockquote {
+    margin: 20px;
+    font-style: italic;
+}
+cite {}
+
+q {}
+
+/* Tables */
+table {margin: .5em auto 1.5em auto; width: 98%;}
+
+/* Thead */
+thead th {padding: .5em .4em; text-align: left;}
+thead td {}
+
+/* Tbody */
+tbody td {padding: .5em .4em;}
+tbody th {}
+
+tbody .alt td {}
+tbody .alt th {}
+
+/* Tfoot */
+tfoot th {}
+tfoot td {}
+
+/* HTML5 tags */
+header, section, footer,
+aside, nav, article, figure {
+    display: block;
+}
+
+/* }}} */
+
+/* Layout  {{{ */
+.body {clear: both; margin: 0 auto;}
+#container { max-width: 800px; margin: 0 auto; }
+img.right, figure.right {float: right; margin: 0 0 2em 2em;}
+img.left, figure.left {float: left; margin: 0 2em 2em 0;}
+/* }}} */
+
+/* Header {{{ */
+/* Banner */
+
+#banner {
+    padding-top: 4px;
+}
+
+#banner h1 {
+    font-size: 3.571em; overflow: visible; white-space: nowrap; margin-bottom: 0
+}
+
+#banner .editorial-link {
+    font-family: 'Yanone Kaffeesatz', arial, serif;
+    font-size: 2.5em;
+}
+
+#banner h1 a:link, #banner h1 a:visited {
+    color: #000305;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+}
+#banner h1 a:hover, #banner h1 a:active {
+    background: none;
+    color: #C74350;
+    text-shadow: none;
+}
+
+#banner h1 strong {font-size: 0.36em; font-weight: normal;}
+
+/* Main Nav */
+#banner nav ul {
+    background: #000305;
+    font-size: 1.143em;
+    line-height: 30px;
+    margin: 0 auto 2em auto;
+    padding: 0;
+    text-align: center;
+    border-radius: 5px;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+#banner nav li {float: left; display: inline-block; margin: 0;}
+#banner nav li a { background: #000305; }
+
+#banner nav a:link, #banner nav a:visited {
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    padding: 5px 1em;
+    text-decoration: none;
+}
+#banner nav a:hover, #banner nav a:active,
+#banner nav .active a:link, #banner nav .active a:visited {
+    background: #C74451 !important;
+    color: #fff;
+    text-shadow: none !important;
+}
+#banner nav .up a:link, #banner nav .up a:visited {
+    background: #555;
+    color: #fff;
+    text-shadow: none !important;
+}
+
+
+/* }}} */
+
+/* Body {{{ */
+
+#content {
+    background: #fff;
+    margin-bottom: 2em;
+    margin-top: -1em;
+    overflow: hidden;
+    padding: 10px 20px;
+
+    border-radius: 10px;
+}
+
+.article-meta {
+    display: flex;
+    justify-content: space-between;
+}
+
+#share {
+    display: flex;
+}
+
+#share .fb-like {
+    margin-left: 0.5em;
+}
+
+#content .published {
+    font-style: italic;
+    color: gray
+}
+
+.summary .published {
+    margin-left: 1em;
+    padding-top: 1ex;
+}
+
+#content img.align-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+#content img.align-left {
+    display: block;
+    margin: 0.5em 1em;
+    margin-left: 0;
+    border-radius: 5px;
+    float: left;
+}
+
+#content img.align-right {
+    display: block;
+    margin: 0.5em 1em;
+    margin-right: 0;
+    border-radius: 5px;
+    float: right;
+}
+
+
+.entry-title {font-size: 3em; margin-bottom: 10px; margin-top: 0;}
+.entry-title a:link, .entry-title a:visited {text-decoration: none; color: #333;}
+.entry-title a:visited {background-color: #fff;}
+
+#content .full-article-nav {
+    display: flex;
+    border-top: solid 1px currentColor;
+    padding-top: 1em;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* }}} */
+
+/* Article list {{{ */
+ul.article-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+ul.article-list li {
+    clear: both;
+}
+
+article.summary header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+article.summary header h1 {
+    margin-bottom: 0;
+}
+
+article.summary a.img-link {
+    max-width: 35%;
+    display: block;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    padding: 0;
+    float: left;
+}
+
+article.summary hr { clear: both; }
+
+article.summary a.img-link:hover, article.summary a.img-link:active {
+    text-shadow: none;
+}
+
+article.summary a.img-link img {
+    max-width: 100%;
+    max-height: 96px;
+    border-radius: 5px;
+}
+
+article.summary a.img-link img:hover {
+    transform: scale(1.5);
+}
+
+article.summary div.read-more {
+    text-align: right;
+}
+
+nav.paginator {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* }}} */
+
+/* Footer {{{ */
+footer.page-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer.page-bottom .tag-cloud {
+    margin-right: 1em;
+}
+
+footer.page-bottom .contact {
+    margin-left: 1em;
+}
+
+footer.page-bottom .contact ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+footer.page-bottom .contact li {
+    white-space: nowrap;
+}
+
+footer.page-bottom .contact a:hover, a:active {
+    background-color: transparent;
+    color: currentColor;
+    text-shadow: none;
+}
+
+footer.page-bottom .contact li:hover span {
+    background-color: #C74350;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #333;
+}
+
+footer.page-bottom .contact img {
+    height: 2.5ex;
+    width: auto;
+    vertical-align: text-bottom;
+}
+
+
+/* }}} */
+
+        </style>
+    </head>
+    <body id="index" class="home">
+        <div id="fb-root"></div>
+        <div id="container">
+        <header id="banner" class="body">
+            <div style="display: flex; justify-content: space-between;">
+                <h1><a href="./index.html">Mom’s Best Friend</a></h1>
+                <div class="editorial-link"><a href="./editorial.html">Editing Services</a>&nbsp;</div>
+            </div>
+            <nav><ul>
+        <li class="up">
+            <a href="./category/women.html">⬆ Women</a>
+        </li>
+
+        <li class="">
+            <a href="./category/women-comics.html">Nina and Nana</a>
+        </li>
+
+        <li class="">
+            <a href="./category/women-health.html">Health</a>
+        </li>
+
+        <li class="">
+            <a href="./category/women-poetry.html">Poetry</a>
+        </li>
+
+        <li class="">
+            <a href="./category/women-relationships.html">Relationships</a>
+        </li>
+
+        <li class="">
+            <a href="./category/women-social.html">Social</a>
+        </li>
+
+        <li class="active">
+            <a href="./category/women-stories.html">Stories</a>
+        </li></ul></nav>
+        </header>
+
+        <section id="content" class="body">
+            
+<article>
+<header>
+<h1 class="entry-title">The Blue Clue</h1>
+<div class="article-meta">
+<div class="published">27 Jan 2024</div>
+<div id="share">
+    <div>
+        <a href="https://twitter.com/share" class="twitter-share-button"
+            data-show-count="false" data-related="kanikagee">Tweet</a>
+    </div>
+    <div class="fb-like" data-layout="button" data-action="like" data-size="small"
+        data-share="true"></div>
+    <script>
+    document.querySelector('#share .fb-like').dataset.href = window.location;
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_IN/sdk.js#xfbml=1&version=v2.10";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+</div>
+</header>
+<div class="entry-content"><img alt="cover" class="align-center" src="./images/articles-Women-Stories-The-Blue-Clue-cover.jpg" style="width: 80%;" />
+<br><section id="summary">
+<h2>Summary</h2>
+<p>The dead body of a man is discovered in the swimming pool of a posh, gated, suburban Mumbai housing society.  The preliminary investigation reveals that several residents were furious at the victim, who was a member of the society managing committee.</p>
+<p>Inspector Tara is baffled by the conflict ridden relationships between people of diverse backgrounds, interests and values. Will she ever be able to understand these bizarre people? It seems she must, to be able to solve the mystery. Read on to find out what really happened …</p>
+</section>
+<section id="authors">
+<h2>Authors</h2>
+<p>I wrote this story in collaboration with a 11-year-old girl, <a class="reference external" href="https://kids-bouquet.home.blog/">Kinara Goyal</a>.</p>
+</section>
+<section id="download-links">
+<h2>Download Links</h2>
+<p><strong>Download Free</strong>:</p>
+<blockquote>
+<ul class="simple">
+<li><p><a class="reference external" download="blue.epub" href="./downloads/articles-Women-Stories-The-Blue-Clue-blue.epub">EPUB</a></p></li>
+<li><p><a class="reference external" download="blue.azw3" href="./downloads/articles-Women-Stories-The-Blue-Clue-blue.azw3">Kindle</a></p></li>
+<li><p><a class="reference external" download="blue.pdf" href="./downloads/articles-Women-Stories-The-Blue-Clue-blue.pdf">PDF</a></p></li>
+</ul>
+</blockquote>
+<br><p><strong>Purchase</strong>:<a class="reference external" href="https://www.smashwords.com/books/view/1513060">smashwords</a>, <a class="reference external" href="https://www.amazon.in/dp/B0CTF2D1HK/">amazon India</a>,  <a class="reference external" href="https://www.amazon.com/dp/B0CTF2D1HK/">amazon USA</a></p>
+<br><p><strong>Or read here</strong></p>
+<br></section>
+<section id="the-blue-clue-1">
+<h2>The Blue Clue</h2>
+<p>The atmosphere was charged with excitement. About a hundred residents had gathered on the field at the podium level of the housing society to watch the much anticipated world cup final cricket match between India and Australia. The society managing committee was airing it on a large outdoor screen. Both teams were in top form throughout the tournament, promising a thrilling contest for the coveted trophy.</p>
+<p>The Indian team had finished batting. While the runs amassed by the home team were by no means enough to elate their fans, India had achieved a respectable total and had a fighting chance. This made the second innings all the more tense and exciting.</p>
+<p>A few overs into the second innings, the crowd drew a collective sharp breath as the ball soared high into the air only to fall slightly short of the fielder at deep square leg. People cursed and shouted in anger and disappointment. There was so much noise that no one noticed the screams at first.</p>
+<p>Eventually as the crowd began to settle down, a piercing scream made its way from the other side of the society clubhouse. The repeated frightened wails became louder as the crowd grew silent.</p>
+<p>A few people rushed around the clubhouse building. A little girl was sitting by the poolside screeching her lungs out. One outstretched arm pointed at an unpleasant scene at the bottom of the pool, while the other shielded her eyes from it.</p>
+<p>Ronak and Sachin noticed a body at the bottom of the pool. They wasted no time before diving in, while some others went to find a resident doctor. “It’s Mohit Naik!” Sachin shouted, causing several people to gasp, as Ronak helped Sachin place Mohit on the pool side. Sachin shook him violently, desperate for him to show some signs of life.</p>
+<p>Whispers of <em>the blue lights guy</em>, accompanied by raised eyebrows and shocked expressions ran through the crowd that had now abandoned the cricket match and assembled near the pool to find out what all the commotion was about.</p>
+<p>The crowd parted to make way for Dr. Fernandes, as he rushed towards Mohit. While Fernandes administered CPR on Mohit, the little girl’s mother tried to comfort her. The girl, finally stopped screaming. “Sasha, do you know what happened?” her mother asked, but Sasha could only blubber and sob. Finally, she mustered the strength to say, “Uncle was attacked. A man drowned him. I saw the man.”</p>
+<p>“What?” exclaimed everyone who heard her.</p>
+<p>The story spread quickly through the crowd. While Sasha’s mother tried to calm her and get more information out of her, Sachin and Ronak darted off to search the grounds.</p>
+<p>It wasn’t long before they apprehended Vinay Das soaking wet, skulking away through the less lit parts of the grounds. They brought him to Mohit’s body.</p>
+<p>Sasha pointed an accusing finger at Vinay. “He did it! He drowned him,” Sasha squealed.</p>
+<p>Several people glared at Vinay. “I didn’t drown him. I swear I didn’t.” Vinay pleaded, frightened by the accusing way people were looking at him.</p>
+<p>Bathed in the sinister blue pool lights, the sopping wet Vinay couldn’t look more guilty if he tried.</p>
+<p>“He’s dead. I’m sorry, but there is nothing I can do,” Dr. Fernandes announced, sweating profusely from a desperate attempt at CPR.</p>
+<p>“He was my best friend,” Sachin declared, before punching Vinay Das.</p>
+<p>“Stop, Sachin, stop,” Ronak shouted pulling Sachin away. “Don’t do this. We need to call the police.”</p>
+<p>Minutes later, the society was riddled with police who cordoned off the crime scene. The cricket match was turned off, and the crowd thinned. But some people stayed back trying to get a better look at what had happened.</p>
+<p>A policewoman, after talking to a few people, made her way towards Sasha. “Hi, I’m Tara,” she said, pulling up a chair and sitting down in front of Sasha. “Your name is Sasha, right?”</p>
+<p>Sasha nodded, clearly nervous. Then she turned around and buried her face in in her mother’s skirt. “I'm Malika, Sasha’s mother.” Malika explained.</p>
+<p>“Don’t worry, Sasha.” Tara reassured. “You are not in any trouble at all. I just need your help to figure out what happened. Can you answer a few questions?”</p>
+<p>Sasha peeked back out. She looked at her mother who gave her a thumbs up. Reassured, Sasha turned to face Tara and slowly nodded.</p>
+<p>Tara asked, “What were you doing near the pool?”</p>
+<p>“I don’t know much about cricket,” Sasha replied. “Mama and Papa were engrossed in the match, so I got bored and started wandering around. I noticed the swings were empty and started walking towards them. I was almost there, when  some pretty lights behind the clubhouse caught my attention. Then somebody screamed for help from somewhere near the pool, so I ran over to see what was going on.”</p>
+<p>“What did you see when you got there?” Tara smiled at Sasha, as she took notes.</p>
+<p>“When I reached, I saw Vinay Uncle getting out of the pool and running. He was not in his swim suit, but wearing normal clothes. I was confused and wondered what he was doing there. So I peered into the pool, and then-then I saw Mohit Uncle…” Sasha looked at her feet.</p>
+<p>“It’s okay Sasha. You can take your time, but can you tell me why you think Vinay uncle killed him? Did you see Vinay uncle pushing him, or holding him underwater?”</p>
+<p>“No, I did not see anything like that, but I heard a cry for help …” She hesitated.</p>
+<p>“Is that all?” Tara asked noticing Sasha’s reluctance.</p>
+<p>“Well,” Sasha began, taking a deep breath, “Last night, Mama and Papa were talking about Vinay Uncle and Mohit Uncle fighting about the blue lights in the pool on the society group. They hate each other.”</p>
+<p>Sasha was puzzled to see her mother frowning at her.</p>
+<p>Tara looked at Malika and raised an eyebrow, “Ma’am, what is she talking about?”</p>
+<p>“Oh, it’s a silly argument.” Malika sounded embarrassed. “Everyone was going hammer and tongs on Mohit. You see, he had these new lights installed.” Malika said, pointing towards the pool. “Vinay posted some nasty messages on the group. He was angry because the glare of the blue lights would penetrate the curtains in his mother’s room, disrupting her sleep. His mother is old and has a weak heart.”</p>
+<p>Sachin was walking by with Dr. Fernandes. “Mohit showed me some angry emails he got from Vinay,” he piped in. “Vinay was outraged about Mohit wasting everyone’s money. He accused Mohit of making stupid unilateral decisions. Vinay has always been quite aggressive. I wouldn’t be surprised if he attacked Mohit.”</p>
+<p>Tara nodded in acknowledgment.</p>
+<p>“Sachin. That’s not quite fair,” Malika objected. “He has been under a great deal of stress since those lights were installed.”</p>
+<p>“Yes,” Dr. Fernandes nodded. “His mother recently had a triple bypass surgery. She is also undergoing weekly dialysis treatments at home. Her health is in a precarious state. She really needs her rest and sleep. I had asked that she go to bed by 9:00 every night, but the pool lights penetrating her window don’t go off till 10:30 making it impossible for her to sleep.”</p>
+<p>“Oh please. He could just move her to a different room, or black out the windows,” Sachin scoffed.</p>
+<p>“No Sachin,” Dr Fernandes chided. “All the medical equipment his mother needs was already set up. It was no easy task to move her in her fragile state. The stress would overwhelm her. The lights were going through the curtains and blacking out windows is quite a job. She needed peace and quiet to recover.”</p>
+<p>“My goodness, all the treatment and equipment must be really expensive, right?” Malika asked.</p>
+<p>“Yes, that’s true.” Dr. Fernandes sighed.</p>
+<p>“No wonder Vinay was angry about the cost of the lights.” Malika observed.</p>
+<p>“But doesn’t the whole society pay for these enhancements? How much can it really cost him, personally?” Tara was puzzled.</p>
+<p>Malika sighed, “The annual common area maintenance (CAM) bill for each apartment in this society is over a lakh and a half. It must have been difficult for Vinay while he was also trying to manage his sick mother. Most of us have bank loans to pay off too. It must have really irked him that the lights not only cost a fortune, but also made his mother’s situation worse. Frankly, Vinay wasn’t the only one angry about the lights. They’re a real eyesore as you can see, and a lot of people made vitriolic comments about them.”</p>
+<p>“I remember Mohit was excited, because the lights matched the color of the Indian cricket team uniforms.  He actually thought people would be thrilled about how we were showing our support for our <em>Men In Blue</em>.” Sachin added defensively.</p>
+<p>“Wait, back up.” Tara interrupted. “Other people were angry about the lights too?” she asked.</p>
+<p>Sachin shrugged.</p>
+<p>“I will need to see these messages.” Tara demanded. “I know people get carried away by their emotions and say a lot of things they don’t mean on WhatsApp groups. But some of the threats may be serious. The psychiatrist we consult, will have to comb through the messages to figure out if any of them were genuine threats.”</p>
+<p>“I will get them to you,” Sachin promised.</p>
+<p>“I don’t understand why he didn’t test them out first. I can’t imagine anyone liking those lights.” Malika complained. “Mohit should have been more careful.  I remember someone posted that the lights don’t even light up the pool properly.”</p>
+<p>“Yes, Mama,” Sasha, who had been listening intently, chimed in. “Yesterday evening, my friend Arya hurt her knee against the ledge in the pool because she couldn’t see properly. It’s dark a little distance away from the ledge, but suddenly gets blindingly bright. She couldn’t play with me after her swim, because her knee was hurting so badly.”</p>
+<p>“Yikes!” Dr. Fernandes exclaimed. “Is she okay?”</p>
+<p>“She has a bruise, and it was painful last night, but she is much better now,” Sasha replied.</p>
+<p>Tara looked at Sasha, Malika, Sachin and Dr. Fernandes. “Thank you so much for your help with this case. Now, I need to find Mr. Das.” Tara turned and left.</p>
+<p>While Malika escorted Sasha home, Sachin and Dr. Fernandes went to help Ronak and a few others wrap up the event. All the excitement had vanished. The equipment had already been packed up, but the chairs, snack tables, and iceboxes, all had to dealt with. Subdued and morose, the committee members mechanically performed the tasks they were responsible for. The match was completely forgotten.</p>
+<p>Tara approached Vinay who was sitting down a little away from the crowd. She pulled up a chair and sat down next to him.  “Mr. Das, I need to ask you some questions,” she said.</p>
+<p>Vinay nodded, looking at his feet. Tara gave him a moment to collect himself before asking, “What were you doing near the scene of the crime?”</p>
+<p>“I was out on my usual evening walk along the perimeter of the podium. I started just outside the C wing entrance, walked past the noisy field, and when I reached near the pool, I thought I saw something in it. At first I thought it was garbage, and was angry. We pay so much CAM for the upkeep of this society, but some people are very selfish are uncivilized. I peered in to get a better look, and that’s when I saw him.  Mohit was lying at the bottom of the pool. Instinctively, I jumped in to help him.”</p>
+<p>“Okay. Sasha says that you were running away from the pool. Could you explain?” Tara prodded.</p>
+<p>“Once I was in, he seemed completely lifeless. I remembered my anger towards him and regretted it. Then suddenly, I realized that if anyone saw me there, they’d think I had killed Mohit. You know, because of the stuff I posted on the society group. I was scared about being discovered there, so I ran away, but, I didn’t, I swear I didn’t kill him.” Vinay looked at Tara in the eye.</p>
+<p>Malini saw Vinay and exploded. “Vinay, how could you kill my husband? Mohit took your concerns seriously. He was so upset that your mother couldn’t sleep! But he was scared to spend anymore of the society’s money after all the vicious reactions. He was trying to find another solution!”</p>
+<p>“Malini, I didn’t kill him. I would never do such a thing, I swear!’’ Vinay pleaded, but Malini’s mouth curved in disgust as she glared at him, her eyes flashing with rage. Vinay cringed, unable to meet her wrathful gaze.</p>
+<p>“If you didn’t do it, then how did Mohit drown? Did you see anything?” Tara asked.</p>
+<p>Vinay looked directly at Tara. “I don’t know. I swear I was only trying to help him. I would never hurt anyone. I really wanted to save him. I even called for help, before I panicked about everyone suspecting me.”</p>
+<p>Tara’s eyes lit up, as she figured something out.</p>
+<p>“Inspector, you can’t believe everything he says,” Malini snarled. “You haven’t seen the nasty stuff he wrote to my husband. Criminals are good at pleading their innocence.”</p>
+<p>“Mrs. Naik, I understand you’re upset, but be rest assured, I have extensive experience with criminals. I will do my best to figure out what happened to your husband. I regret to inform you that your husband’s body is being taken to the nearest government hospital, where it will be examined by a medical examiner (ME), but it’s essential so we can figure out what happened. Also, please sit down. I need to ask you a few quick questions.”</p>
+<p>Malini felt exhausted by her outburst. She slumped down on a poolside chair. “Yes, Inspector. Go ahead.” She sighed.</p>
+<p>“Inspector, if you don’t need me, I’d like to go home. I need to change my clothes.” Vinay pointed at his dripping t-shirt.</p>
+<p>Tara nodded, “Of course, but I might need to talk to you later.”</p>
+<p>As Vinay left, Tara turned back to Malini. “When did you last see your husband? Why wasn’t he watching the match with you?”</p>
+<p>“My husband is on …” Malini gulped. “I mean - was on the sports and entertainment committee. He helped organize this event. Ronak Shah had arranged for a light show...”</p>
+<p>“Is this Ronak Shah the person who jumped into the pool with Sachin?” Tara interrupted.</p>
+<p>“Yes. Ronak received a message about his passport being delivered and had to go home to sign for it. So, he asked Mohit to help the light technician set up. Mohit got up and left soon after the first wicket fell, and that’s the last I saw of him.” Tears streamed down Malini's cheeks. She paused, struggling to choke back her sobs.</p>
+<p>Tara gently patted her shoulders as she waited for her to resume. Wiping away her tears with the back of her hand, Malini continued, “And to think I was angry with him for leaving.” She grimaced.</p>
+<p>“What do you mean?” Tara asked.</p>
+<p>“It had been a while since we had spent time together. He promised to watch the cricket match with me.” Malini smiled. “It was a precious moment, well, at least until Ronak interrupted.”</p>
+<p>“Then what happened?”</p>
+<p>“I waited for him to come back, but he didn’t. Then Ronak told me he had a headache and had gone home to take a nap. I was annoyed with Mohit for deserting me again, so I didn’t even go to check on him. I can’t believe he’s gone, and I wasn’t there with him when he needed me. I failed him. I should have checked on him. If I had, he might still be alive,” she blubbered overcome by a fresh wave of tears.</p>
+<p>Malika came by and squeezed Malini’s shoulder. She had returned soon after putting Sasha to bed. “Inspector, do you need anything else from her right now?” she asked.</p>
+<p>“Not right now,” Tara mumbled.</p>
+<p>“Come on. Let’s get you home,” Malika said, leading Malini by her arm. “You need to get some rest.”</p>
+<p>“I need to speak with Mr Ronak Shah,” Tara announced.</p>
+<p>Ronak sat down in front of her. “Yes? How can I help? Mohit and I were such good friends and … and I feel responsible for his death.”</p>
+<p>Tara raised an eyebrow. “What do you mean?” she asked sharply.</p>
+<p>“Well, you see, the committee had planned this surprise for the residents during the drinks break of the of the second innings. People were to come to the pool area to have snacks and drinks while watching a light show. I was supposed to help the technician set up and do a test run at the start of the second innings.”</p>
+<p>“So were you near the pool then?” Tara asked.</p>
+<p>“No! No. I wish I had been though. Then maybe, Mohit would still be alive. At the end of the first innings, I got an SMS notification informing me that my passport was out for delivery. So I asked Mohit to fill in for me and check on the lights. Later, Mohit called to reassure me that everything was fine.”</p>
+<p>“I was relieved and told him to save me a seat, so we could watch the match together. But he said that he had a sudden splitting headache and needed a nap, so he would go straight home. He also said that, since drinks and snacks were his department, he would check on them on his way home.”</p>
+<p>“I guess that’s what he was doing when Vinay k-killed him.” Ronak sniffed.</p>
+<p>“What makes you so sure that Vinay killed him?” Tara was intrigued.</p>
+<p>“Vinay viciously attacked Mohit on the society group for the lights. We found him skulking away soaking wet. I know you have to be thorough, but it’s obvious, isn’t it?”</p>
+<p>Tara shrugged. “So when did you return to watch the cricket match?”</p>
+<p>“Just a few minutes after I spoke to Mohit, my passport arrived. I put it away in my safe and dashed downstairs. Malini called out to me. She was saving a seat for Mohit and was wondering what was taking him so long. I told her that Mohit had a sudden headache and had gone home to take a nap. I assumed he was keen to get to bed and had forgotten to inform her. I took Mohit’s seat, and we started watching the match together.”</p>
+<p>Tara slowly nodded, pursing her lips together. “Thank you. I need one last thing from you. Could you point me towards the light technician? I need to ask him a few questions.”</p>
+<p>Ronak nodded and pointed her towards him.</p>
+<p>Tara walked up to the technician. “Hi, I need to ask you a few questions about the death that took place in the swimming pool.”</p>
+<p>The light technician nodded. “I’m Sunil.”</p>
+<p>“Sunil, do you remember talking to Mr. Mohit Naik?” Tara asked.</p>
+<p>“Yes. Mohitji showed me where I could set up my equipment.” He pointed to an area outside the clubhouse near the pool. “They have a high voltage plug point there. The light animation was to be projected on that section of the building wall.” Sunil pointed to a flat column of the building wall that did not have any windows. It was situated across the pool from the clubhouse.</p>
+<p>“So how long did Mr. Naik stay?”</p>
+<p>“I am not sure. Fifteen minutes, probably. At first, the snack table was getting in the way of the projection, so I left the animation playing, and Mohitji and I moved the table till it wasn’t in the way anymore. But Mohitji thought the animation would have a better range of visibility if we could project it a little higher. I assured him that I could easily do that. Then he made a phone call.”</p>
+<p>“What happened next?”</p>
+<p>“I went to adjust the angle of the projector, when I realized the special toolkit I needed for the task was missing.”</p>
+<p>“You didn’t talk to Mr. Naik after he talked on the phone?” Tara asked.</p>
+<p>“No, I was worried about my kit. It comes with the projector and cannot be easily replaced. I hoped it had just fallen out of my bag, so I retraced my steps back to where I was originally waiting on the field where the match was being shown. Luckily, I found my kit right where I had placed my bag at the corner of the field, but just then Australia lost a wicket. I got caught up in the match for a few minutes, before returning.” Sunil explained.</p>
+<p>“Few minutes?” Tara raised an eyebrow. “Could you be more specific?”</p>
+<p>“Okay! Fine, it was more like twenty minutes. I came back with the crowd when I heard screams coming from the pool area. That’s when I realized I had forgotten to pause the animation.” Sunil recalled.</p>
+<p>“Okay,” Tara nodded. “That’s all I needed to know. Thank you for your help.”</p>
+<p>Tara got up and went to find Sachin. She spotted him skipping stones into the pool. “Excuse me. I need to see those messages that you were talking about earlier.”</p>
+<p>“Mohit was a good man, Inspector. He was enthusiastic and took on a lot of projects to improve our lifestyle. I admit he made a mistake with the lights, but after all the work he has put into this society over the last couple of years, he did not deserve the filthy viscous messages from these ungrateful people. Shakespeare said it right. The evil that men do…”</p>
+<p>“I know,” Tara nodded. “In my line of work, I often see the worst of human nature. But I have also learned that things are not always as they seem. Don’t be so quick to blame Vinay Das. You may say something in anger, that you may later regret. I am sure some of the people who wrote those messages about Mohit are repenting right now. Harsh words haunt the ones who utter them far more than the ones they are intended for.”</p>
+<p>“Not always. Mohit was deeply upset by those messages. He felt he lad let everyone down. He was a sensitive person and their words really stung him. I know he brooded about them. Actually, when Ronak said Mohit had a headache and wanted to take a nap, I wondered if he was just keen to avoid everyone. His headache would have to be pretty severe for him to skip watching the world cup final. He loved such society celebrations.”</p>
+<p>“I need to see these messages,” Tara repeated.</p>
+<p>“Yes, of course.” Sachin nodded, taking out his phone. “I have taken screenshots of some of the messages. I’ll send them to you. But I need to leave right now,” he added, reading a message on his phone. “My wife and I would like to check on Malini. I can’t imagine what she is going through.” He tapped on the touch screen of his phone a few times. “There, I have sent you the messages, but I need to go now.”</p>
+<p>As Tara skimmed through the messages, some jumped out at her.</p>
+<p>Who did you even consult about this decision, you power hungry megalomaniac?</p>
+<blockquote>
+<p>Our CAM bills are through the roof, and you think you can burn with our hard earned money. The society looks so ugly now, I bet property value and rental rates will fall. Then I will sue you.</p>
+<p>Ugh, I can’t even bear to walk by the pool anymore. The glare is so strong. Did you know blue lights can cause cancer? You’re killing us all.</p>
+<p>These and several other vitriolic personal attacks on Mohit from various group members including Vinay caught Tara’s eye. Reading them, set Tara thinking in a new direction. Could it have been suicide, she wondered.</p>
+</blockquote>
+<p>Sachin had mentioned that Mohit was deeply upset, but could it have been worse? Was he possibly depressed? Maybe, there were other problems in his life too.</p>
+<p>After all, Mohit was almost six feet tall, fit and muscular. It wouldn’t have been easy for anyone to drown him. Let alone Vinay, with his thin arms and a visible paunch. Though, from experience Tara knew, that fueled by adrenaline and anger, people could sometimes muster an astonishing degree of physical strength.</p>
+<p><em>Or, perhaps, someone dumped his body into the pool after poisoning him</em>, Tara mused. <em>That would point to in a whole new pool of suspects.</em> Tara’s lips twitched. She decided to wait for the ME’s report before forming a theory. In the meantime, she decided to try and obtain Mohit’s medical records.</p>
+<p>Tara dropped by Mohit’s apartment. A distraught Malini seemed to be staring into space. Malika was holding her hand, while Sachin was making some calls. Another woman, Sachin’s wife, Tara assumed, placed a cup of hot tea on the table. “Here Honey, drink some of this,” she said, giving Malini a hug.</p>
+<p>Tara felt awful intruding on their grief. “I need Mohit’s medical records,” she announced, awkwardly.</p>
+<p>Malini sighed and was about to get up, but Sachin stopped her. “Where are they kept, Malini? Tell me, and I’ll take care of it.”</p>
+<p>Malini nodded. “Bottom left desk drawer. It’s unlocked,” she mumbled.</p>
+<p>Sachin went into one of the rooms and minutes later arrived with a file. He handed it to Tara. “Is there anything else you need, Inspector?” he asked.</p>
+<p>“Yes, can you tell me who his regular physician, or perhaps family doctor is?”</p>
+<p>“Dr. Fernandes. You met him downstairs. He lives two floors below in apartment number 1201 of this building. He has treated Mohit ever since he was a kid, so he will be able to give you any information you need. But I beg you, please leave Malini alone, right now. She is in a very fragile state.”</p>
+<p>“Of course,” Tara nodded. “Thank you. I am sorry for your loss.” She sighed and left.</p>
+<p>She looked at her watch. It was late. There was nothing more for her to do right then. The ME’s report wouldn’t arrive before 11:00 the next morning.</p>
+<p>§§§</p>
+<p>Tara held her breath as she opened the ME’s report. It could easily hold the answer to the case.</p>
+<p>She sighed when she read the conclusion: <em>Death by drowning, but lack of bruises or defensive wounds indicate the victim was not murdered.</em></p>
+<p>Since Mohit hadn’t left a note, Tara would have to investigate what prompted his suicide. Talking to all his friends and relatives would be a messy affair. But she steeled herself for the task at hand.</p>
+<p>At the society entrance she saw a poster inviting anyone interested to attend a wake in memory of Mohit at his apartment at noon. <em>A wake</em>, she thought. <em>Perfect. People will be talking about him anyway. I can just listen without asking uncomfortable questions, and maybe I’ll learn something useful. Tara looked at her watch. If she rushed, she could make it there in time.</em></p>
+<p><strong>§§§</strong></p>
+<p>“Inspector, how nice of you to come,” Sachin ushered Tara to an empty seat.</p>
+<p>Ronak was up front talking. Malini was seated on the front row next to Malika.</p>
+<p>“We have all been rattled by Mohit’s unexpected death. While the police figure out what happened, his funeral is sadly delayed. We are conducting this wake so we can all reminisce his life, and find closure.”</p>
+<p>“I’ll begin by saying, I have known Mohit ever since I moved into this society four years ago. What struck me most, was the child like enthusiasm with which he did everything. He found enjoyment in the littlest of things. But most of all, he loved the people of this society. Almost everyone here knew him, because he was always busying himself organizing events. Even the kids here loved him because of the summer camp he started last year. I have never known a more excitable and fun loving person than him.”</p>
+<p>“Who wants to go next?”</p>
+<p>Malini rose and made her way to the front. Malika walked with her. Malini said, “I can’t believe Mohit is gone. Just this morning I learned that he had planned a surprise anniversary celebration for us in France next week,” Malini waved the tickets she was clutching. She blew her nose before continuing, “He was such a good husband – and such a good man. But lately, his work on the society committee was consuming him. He knew he had made a terrible mistake with the blue lights, and he really wanted to make it up to everyone. That’s why he organized the world cup party. He was busy at the office all day, so he would work late into the night on the society related stuff.  In fact, he stayed up all of the night before last to finalize all the details of yesterday’s event. He was always there for me when I needed him, but I wasn’t...” Malini tried to choke back her tears, but they wouldn’t stop. “Wasn’t …” she tried to resume speaking, but words failed her. She buried her face in her hands and Malika escorted her back to her seat.</p>
+<p>Sachin walked up to the front. “Mohit and I were friends since childhood. I’ve never known a more loyal and trustworthy person. He certainly didn’t deserve the rude messages he received for putting up the blue lights. Everyone makes mistakes. I think, in spite of his mistakes, we all know the dedication, time and effort he put into our society.”</p>
+<p>“The thing I liked about him most, was, well that Mohit always used to think big. Even when we were kids, I remember how he would undertake super fancy projects. Sometimes they were disasters and sometimes they turned out to be more awesome than any of us could have imagined, but he always put his heart into them. Right until the end, he worked hard and played hard. I can’t imagine my life without him. I know heaven is supposed to be perfect, but I bet he is making it a better place. Love you buddy.” Sachin’s voice began to break, so he hurried back to his chair.</p>
+<p>Tara stared blankly. <em>Why would Mohit commit suicide, if he had such a happy and productive life? If he was planning an anniversary in France, why would he kill himself? Something didn’t add up. Was there some secret he was hiding? Some deep dark secret none of these people knew about?</em></p>
+<p>Tara continued to listen, but no such revelations surfaced.  Tara noted that practically everyone had the same idea about Mohit’s life - he was energetic, joyous, hardworking and fun-loving. Nobody even mentioned a recent change in attitude. Malini was upset that he was distracted, but it was because he was trying to do something good for the society after the blue lights fiasco. So, he was handling it fine. Then what happened? How did he die? It made no sense.</p>
+<p>Tara scanned the room and felt like something was amiss. She checked off the faces against the names she had learned the previous evening,  and it didn’t take her long to realize that Dr. Fernandes was conspicuous in his absence. Hadn’t Sachin said that Dr. Fernandes had known him since he was a child. Shouldn’t he be here at his wake then?  Something was definitely wrong.</p>
+<p>Tara excused herself and slipped out of Mohit’s apartment. Recalling the address Sachin had given her, she dashed down the stairs to apartment 1201. The door was ajar. She heard a bang. Cautiously, she walked in, keeping her hand on her hip holster. As she peered around the entrance passage wall, she noticed that Dr. Fernandes was at his desk, looking distraught.</p>
+<p>“I don’t understand it,” he mumbled banging his fist against the desk, as tears splashed onto the papers in front of him. “How could this be?”</p>
+<p>“How could what be?” Tara demanded, calmly.</p>
+<p>Dr. Fernandes was startled. “Inspector,” he gasped quickly shutting a folder in front of him.</p>
+<p>“What do you have there?” Tara asked, sternly.</p>
+<p>“No… no… nothing,” Dr. Fernandes stammered, as Tara gave him a piercing look. “Patient file. Confidential, you understand?” he rambled.</p>
+<p>“Really?” She asked, looking him in the eye, and then before he could react, she snatched the file from his desk.</p>
+<p>“Please Inspector,” he blubbered, as she goggled at the contents of he file.</p>
+<p>“This is the ME report for Mohit Naik! How did you get it?” she demanded, her eyes flashing dangerously.</p>
+<p>“He was my patient. I have known him since he was a little boy. I had to know what had happened. The ME, Sujata, was my student. She had interned with me when I worked at a teaching hospital. I coaxed her to let me have a copy of the report. She faxed it over as a special favor to me.”</p>
+<p>Tara gritted her teeth. “That was most unprofessional of her. I will have to report her. She will lose her credentials.”</p>
+<p>“Please, don’t do that. She was really reluctant, but I begged her. She did it for me, an old and beloved teacher.”</p>
+<p>“And why did you need this report so badly?”</p>
+<p>“I had to know what happened. Mohit and Vinay were both my patients. I couldn’t believe Vinay could have killed anyone. But what alternative did that leave?”</p>
+<p>“Suicide …” Tara whispered.</p>
+<p>“I refuse to believe that. It’s impossible.”</p>
+<p>“Is it?” Tara held up the ME report.</p>
+<p>“I know, I know, but it doesn’t make any sense.”</p>
+<p>“On that, we agree. I was just at his wake, and from everything I have heard about him, it seems crazy. But he clearly wasn’t murdered, so what else is there?”</p>
+<p>“Accident?” Dr. Fernandes looked hopefully at Tara.</p>
+<p>“In a four foot deep pool?” Tara snorted. “No way. Even if he fell in, he could just stand up and walk out.”</p>
+<p>Dr Fernandes frowned. “Well, it’s possible.” Mechanically he began listing the causes. “Dizziness, tiredness, nausea, fainting, epilepsy…” Dr. Fernandes stopped abruptly and stared.</p>
+<p>“Doctor, are you okay?” Tara asked, but got no response. So she shook him gently.</p>
+<p>“Yes, I am.” Dr. Fernandes recovered. “But I think I figured it out. Seizures can cause drowning.”</p>
+<p>“But why would he suddenly have a seizure, Doctor? It seems like you’re reaching. Isn’t a suicide far more likely of the two?”</p>
+<p>“No, wait! Hear me out.” Dr. Fernandes requested. “You have his medical file, right?”</p>
+<p>Tara nodded. “Give it to me,” Dr. Fernandes demanded, “And I’ll explain.”</p>
+<p>“Okay.” Tara raised an eyebrow. She opened her backpack and handed him the report.</p>
+<p>Dr. Fernandes started flipping through the pages. “Where are you?” he murmured.</p>
+<p>“There!” He pointed triumphantly. “Mohit had an epileptic fit when he was a kid. The medicine has some minor side effects, so long term treatment isn’t advisable until after the second attack. The attacks can be years apart. I guess he got the second one by the poolside. You see, the flashing lights, the stress of the previous few days, the noise, lack of sleep,” Dr. Fernandes looked questioningly at Tara, who nodded remembering what Malini had said.</p>
+<p>“These circumstances significantly increase the probability of an attack. So it makes sense.”</p>
+<p>“Okay.” Tara nodded slowly.  “But I will need to check your theory with the ME.”</p>
+<p>“Of course, I understand.” Dr. Fernandes handed the report back to her. “But, I feel quite…” His phone started buzzing with several consecutive messages. “Please, just one second …” He stopped to check his messages.</p>
+<p>Tara waited patiently as he scrolled through a few messages.</p>
+<p>“I feel quite confident that my analysis is correct,” Dr. Fernandes continued. “I don’t mean to be rude, but I need to go down, right now. There’s been an incident in the meeting room on the podium level. Bela was punched, and has a bloody nose.”</p>
+<p>“Punched? Why? Was there an altercation?” Tara joined Dr. Fernandes on his way down. As police, she felt obligated to take charge of the situation.</p>
+<p>When Tara got there, two women seemed to be wrestling each other while some others, were trying to pull them apart. One of them had bloody scratch marks on her face, while the other, presumably Bela, was bleeding from her nose.</p>
+<p>Dr. Fernandes pointed to the woman with the scratch marks. “That’s Suman. She and Bela are always having a go at each other.”</p>
+<p><em>What a circus</em>, Tara thought, as her fingers twitched on the trigger of her gun. If only she could fire a warning shot to silence these fools. But that would cost her a lot of painful paperwork, so she restrained herself. Just as she was about to step into the middle of the fight, the residents managed to pull the two angry wrestlers apart. Tara goggled at them.</p>
+<p>“Oh, don’t worry.” Dr Fernandes shook his head. “This is nothing serious. It happens practically every meeting.” He rolled his eyes.</p>
+<p>Tara raised her eyebrows. “You must be new here,” Dr. Fernandes whispered.</p>
+<p>“Why do you think that?” Tara was intrigued.</p>
+<p>“Because, otherwise you wouldn’t be surprised. They often get the local police involved in their petty fights. Some of them register cases and lawyer up too.” He couldn’t help smiling at Tara’s horrified expression.</p>
+<p>“My maid doesn’t reach on time because the service lift is too slow. You have a live-in maid, so you have very conveniently framed these rules. Why does your driver get to use the regular lift, ha? Tell us Bela Madam, tell us.” Suman demanded, her face red with rage.</p>
+<p>“Sumanji, my driver does not get special treatment. All the drivers are allowed to use the regular lift and before you call me sexist, I have already explained to you several times that this is feasible because there are far fewer drivers coming to our society than maids. It’s numbers, plain and simple, but probably too complicated for your donkey brain.” Bela laughed harshly.</p>
+<p>Tara rolled her eyes and snorted. As Dr. Fernandes went to fetch the first aid kit from the supply closet, Tara followed him. “I think I have seen enough. You’re probably right about Mohit. I’ll confirm with the ME and get back to you.”</p>
+<p>Relieved to be out of the madhouse society, Tara sighed. These people were insane. She deserved a pay raise at her new posting. She looked at the trio of fifty storey high concrete buildings stretching into the sky. People from all parts of the country came to the metropolis. Conflict was inevitable, she concluded.</p>
+<p>But there was something else she realized. The society was a microcosm of the city itself with its dense yet diverse population. She could learn a lot from this posting. No one had actually done any serious harm. Their shenanigans and regular open confrontations were probably what kept them sane in this crowded and fast paced city.</p>
+<p>Tara went to the ME’s office. “Hi, Sujata. Is it possible that Mohit Naik’s death was an accident?”</p>
+<p>“Yes, that’s what I think after reviewing his medical records, that you faxed over last night. He showed no signs of depression, but he did have epilepsy. I also recalled you mentioning that he told his friend he had a headache. Clearly the lights were getting to him. Dr. Fernandes told you, didn’t he? I’m sorry I faxed him a copy of my report. Please don’t tell anyone. I’ll be in big trouble.” Sujata pleaded.</p>
+<p>“No, I won’t. But don’t ever let it happen again.” Tara warned.</p>
+<p>That evening as Tara typed up the case report, she couldn’t resist using the title, <em>Much Ado About the Blue Clue</em>.</p>
+</section>
+<section id="footnote">
+<h2>Footnote</h2>
+<p>The cover image for this story was created using public domain photos from the following links</p>
+<blockquote>
+<ul class="simple">
+<li><p><a class="reference external" href="https://unsplash.com/photos/silhouette-of-man-illustration-2LowviVHZ-E">https://unsplash.com/photos/silhouette-of-man-illustration-2LowviVHZ-E</a></p></li>
+<li><p><a class="reference external" href="https://openclipart.org/detail/289072/city-block-skyline">https://openclipart.org/detail/289072/city-block-skyline</a></p></li>
+</ul>
+</blockquote>
+</section>
+</div>
+</article>
+<p>Tags: <a href="./tag/short-story.html" title="Posts tagged with: short story">short story</a>, <a href="./tag/community.html" title="Posts tagged with: community">community</a>, <a href="./tag/murder.html" title="Posts tagged with: murder">murder</a>, <a href="./tag/family.html" title="Posts tagged with: family">family</a>, <a href="./tag/mystery.html" title="Posts tagged with: mystery">mystery</a>, <a href="./tag/drama.html" title="Posts tagged with: drama">drama</a></p>
+<nav class="full-article-nav">
+<div><a href="./women-stories-blood-brothers.html"             title="Blood Brothers">⬅ Previous</a></div><div>In: <a href="./category/women.html">Women</a>/<a href="./category/women-stories.html">Stories</a></div><div><a href="./women-stories-distasteful-discovery.html"             title="A Distasteful Discovery">Next ➡</a></div>
+</nav>
+
+<hr>
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+    this.page.url = "https://kanikag.com/women-stories-the-blue-clue.html";
+    this.page.identifier = "women-stories-the-blue-clue";
+};
+(function() {
+var d = document, s = d.createElement('script');
+s.src = 'https://kanikag.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+        </section>
+
+        <footer id="extras" class="body">
+            
+<footer class="page-bottom">
+<div class="tag-cloud">
+    <h2>all tags</h2>
+    <nav>
+<a title="Posts tagged with: " href="./tag/.html"></a>,
+
+<a title="Posts tagged with: abuse" href="./tag/abuse.html">abuse</a>,
+
+<a title="Posts tagged with: action" href="./tag/action.html">action</a>,
+
+<a title="Posts tagged with: activities" href="./tag/activities.html">activities</a>,
+
+<a title="Posts tagged with: activity" href="./tag/activity.html">activity</a>,
+
+<a title="Posts tagged with: addiction" href="./tag/addiction.html">addiction</a>,
+
+<a title="Posts tagged with: adventure" href="./tag/adventure.html">adventure</a>,
+
+<a title="Posts tagged with: ageing" href="./tag/ageing.html">ageing</a>,
+
+<a title="Posts tagged with: aliens" href="./tag/aliens.html">aliens</a>,
+
+<a title="Posts tagged with: anger" href="./tag/anger.html">anger</a>,
+
+<a title="Posts tagged with: animals" href="./tag/animals.html">animals</a>,
+
+<a title="Posts tagged with: archaeology" href="./tag/archaeology.html">archaeology</a>,
+
+<a title="Posts tagged with: archeology" href="./tag/archeology.html">archeology</a>,
+
+<a title="Posts tagged with: art" href="./tag/art.html">art</a>,
+
+<a title="Posts tagged with: astronomy" href="./tag/astronomy.html">astronomy</a>,
+
+<a title="Posts tagged with: AtoZ Challenge" href="./tag/atoz-challenge.html">AtoZ Challenge</a>,
+
+<a title="Posts tagged with: baby" href="./tag/baby.html">baby</a>,
+
+<a title="Posts tagged with: beauty" href="./tag/beauty.html">beauty</a>,
+
+<a title="Posts tagged with: behavior" href="./tag/behavior.html">behavior</a>,
+
+<a title="Posts tagged with: bias" href="./tag/bias.html">bias</a>,
+
+<a title="Posts tagged with: biography" href="./tag/biography.html">biography</a>,
+
+<a title="Posts tagged with: biology" href="./tag/biology.html">biology</a>,
+
+<a title="Posts tagged with: birthday" href="./tag/birthday.html">birthday</a>,
+
+<a title="Posts tagged with: birthdays" href="./tag/birthdays.html">birthdays</a>,
+
+<a title="Posts tagged with: bonding" href="./tag/bonding.html">bonding</a>,
+
+<a title="Posts tagged with: book" href="./tag/book.html">book</a>,
+
+<a title="Posts tagged with: books" href="./tag/books.html">books</a>,
+
+<a title="Posts tagged with: botany" href="./tag/botany.html">botany</a>,
+
+<a title="Posts tagged with: braces" href="./tag/braces.html">braces</a>,
+
+<a title="Posts tagged with: breakfast" href="./tag/breakfast.html">breakfast</a>,
+
+<a title="Posts tagged with: breast exam" href="./tag/breast-exam.html">breast exam</a>,
+
+<a title="Posts tagged with: bullying" href="./tag/bullying.html">bullying</a>,
+
+<a title="Posts tagged with: cake" href="./tag/cake.html">cake</a>,
+
+<a title="Posts tagged with: celebrate" href="./tag/celebrate.html">celebrate</a>,
+
+<a title="Posts tagged with: celebration" href="./tag/celebration.html">celebration</a>,
+
+<a title="Posts tagged with: celebrations" href="./tag/celebrations.html">celebrations</a>,
+
+<a title="Posts tagged with: chapter book" href="./tag/chapter-book.html">chapter book</a>,
+
+<a title="Posts tagged with: chemistry" href="./tag/chemistry.html">chemistry</a>,
+
+<a title="Posts tagged with: children" href="./tag/children.html">children</a>,
+
+<a title="Posts tagged with: childrens book" href="./tag/childrens-book.html">childrens book</a>,
+
+<a title="Posts tagged with: chocolate" href="./tag/chocolate.html">chocolate</a>,
+
+<a title="Posts tagged with: choices" href="./tag/choices.html">choices</a>,
+
+<a title="Posts tagged with: Christmas" href="./tag/christmas.html">Christmas</a>,
+
+<a title="Posts tagged with: climate" href="./tag/climate.html">climate</a>,
+
+<a title="Posts tagged with: climate change" href="./tag/climate-change.html">climate change</a>,
+
+<a title="Posts tagged with: comic" href="./tag/comic.html">comic</a>,
+
+<a title="Posts tagged with: community" href="./tag/community.html">community</a>,
+
+<a title="Posts tagged with: confidence" href="./tag/confidence.html">confidence</a>,
+
+<a title="Posts tagged with: conflict" href="./tag/conflict.html">conflict</a>,
+
+<a title="Posts tagged with: contemporary" href="./tag/contemporary.html">contemporary</a>,
+
+<a title="Posts tagged with: contraception" href="./tag/contraception.html">contraception</a>,
+
+<a title="Posts tagged with: cooking" href="./tag/cooking.html">cooking</a>,
+
+<a title="Posts tagged with: corruption" href="./tag/corruption.html">corruption</a>,
+
+<a title="Posts tagged with: costume" href="./tag/costume.html">costume</a>,
+
+<a title="Posts tagged with: couples" href="./tag/couples.html">couples</a>,
+
+<a title="Posts tagged with: craft" href="./tag/craft.html">craft</a>,
+
+<a title="Posts tagged with: creativity" href="./tag/creativity.html">creativity</a>,
+
+<a title="Posts tagged with: crime" href="./tag/crime.html">crime</a>,
+
+<a title="Posts tagged with: crisis" href="./tag/crisis.html">crisis</a>,
+
+<a title="Posts tagged with: cuisine" href="./tag/cuisine.html">cuisine</a>,
+
+<a title="Posts tagged with: culture" href="./tag/culture.html">culture</a>,
+
+<a title="Posts tagged with: curiosity" href="./tag/curiosity.html">curiosity</a>,
+
+<a title="Posts tagged with: curosity" href="./tag/curosity.html">curosity</a>,
+
+<a title="Posts tagged with: customs" href="./tag/customs.html">customs</a>,
+
+<a title="Posts tagged with: democracy" href="./tag/democracy.html">democracy</a>,
+
+<a title="Posts tagged with: dessert" href="./tag/dessert.html">dessert</a>,
+
+<a title="Posts tagged with: detective" href="./tag/detective.html">detective</a>,
+
+<a title="Posts tagged with: developent" href="./tag/developent.html">developent</a>,
+
+<a title="Posts tagged with: diet" href="./tag/diet.html">diet</a>,
+
+<a title="Posts tagged with: dilemma" href="./tag/dilemma.html">dilemma</a>,
+
+<a title="Posts tagged with: discipline" href="./tag/discipline.html">discipline</a>,
+
+<a title="Posts tagged with: discovery" href="./tag/discovery.html">discovery</a>,
+
+<a title="Posts tagged with: discrimination" href="./tag/discrimination.html">discrimination</a>,
+
+<a title="Posts tagged with: disease" href="./tag/disease.html">disease</a>,
+
+<a title="Posts tagged with: diversity" href="./tag/diversity.html">diversity</a>,
+
+<a title="Posts tagged with: domestic abuse" href="./tag/domestic-abuse.html">domestic abuse</a>,
+
+<a title="Posts tagged with: domestic violence" href="./tag/domestic-violence.html">domestic violence</a>,
+
+<a title="Posts tagged with: drama" href="./tag/drama.html">drama</a>,
+
+<a title="Posts tagged with: dystopian" href="./tag/dystopian.html">dystopian</a>,
+
+<a title="Posts tagged with: ebook" href="./tag/ebook.html">ebook</a>,
+
+<a title="Posts tagged with: ecology" href="./tag/ecology.html">ecology</a>,
+
+<a title="Posts tagged with: education" href="./tag/education.html">education</a>,
+
+<a title="Posts tagged with: emotion" href="./tag/emotion.html">emotion</a>,
+
+<a title="Posts tagged with: emotions" href="./tag/emotions.html">emotions</a>,
+
+<a title="Posts tagged with: empathy" href="./tag/empathy.html">empathy</a>,
+
+<a title="Posts tagged with: enterprise" href="./tag/enterprise.html">enterprise</a>,
+
+<a title="Posts tagged with: entertainment" href="./tag/entertainment.html">entertainment</a>,
+
+<a title="Posts tagged with: environment" href="./tag/environment.html">environment</a>,
+
+<a title="Posts tagged with: eonomics" href="./tag/eonomics.html">eonomics</a>,
+
+<a title="Posts tagged with: epic" href="./tag/epic.html">epic</a>,
+
+<a title="Posts tagged with: ethics" href="./tag/ethics.html">ethics</a>,
+
+<a title="Posts tagged with: evolution" href="./tag/evolution.html">evolution</a>,
+
+<a title="Posts tagged with: experiments" href="./tag/experiments.html">experiments</a>,
+
+<a title="Posts tagged with: explore" href="./tag/explore.html">explore</a>,
+
+<a title="Posts tagged with: fairy tales" href="./tag/fairy-tales.html">fairy tales</a>,
+
+<a title="Posts tagged with: family" href="./tag/family.html">family</a>,
+
+<a title="Posts tagged with: family friends" href="./tag/family-friends.html">family friends</a>,
+
+<a title="Posts tagged with: fantasy" href="./tag/fantasy.html">fantasy</a>,
+
+<a title="Posts tagged with: fear" href="./tag/fear.html">fear</a>,
+
+<a title="Posts tagged with: fears" href="./tag/fears.html">fears</a>,
+
+<a title="Posts tagged with: feminism" href="./tag/feminism.html">feminism</a>,
+
+<a title="Posts tagged with: festival" href="./tag/festival.html">festival</a>,
+
+<a title="Posts tagged with: festivals" href="./tag/festivals.html">festivals</a>,
+
+<a title="Posts tagged with: fiction" href="./tag/fiction.html">fiction</a>,
+
+<a title="Posts tagged with: flash fiction" href="./tag/flash-fiction.html">flash fiction</a>,
+
+<a title="Posts tagged with: flashfiction" href="./tag/flashfiction.html">flashfiction</a>,
+
+<a title="Posts tagged with: food" href="./tag/food.html">food</a>,
+
+<a title="Posts tagged with: freedom" href="./tag/freedom.html">freedom</a>,
+
+<a title="Posts tagged with: friends" href="./tag/friends.html">friends</a>,
+
+<a title="Posts tagged with: friendship" href="./tag/friendship.html">friendship</a>,
+
+<a title="Posts tagged with: fun" href="./tag/fun.html">fun</a>,
+
+<a title="Posts tagged with: fun fact" href="./tag/fun-fact.html">fun fact</a>,
+
+<a title="Posts tagged with: fun facts" href="./tag/fun-facts.html">fun facts</a>,
+
+<a title="Posts tagged with: funfact" href="./tag/funfact.html">funfact</a>,
+
+<a title="Posts tagged with: funfacts" href="./tag/funfacts.html">funfacts</a>,
+
+<a title="Posts tagged with: game" href="./tag/game.html">game</a>,
+
+<a title="Posts tagged with: games" href="./tag/games.html">games</a>,
+
+<a title="Posts tagged with: gender bias" href="./tag/gender-bias.html">gender bias</a>,
+
+<a title="Posts tagged with: genetics" href="./tag/genetics.html">genetics</a>,
+
+<a title="Posts tagged with: geography" href="./tag/geography.html">geography</a>,
+
+<a title="Posts tagged with: gift" href="./tag/gift.html">gift</a>,
+
+<a title="Posts tagged with: girls" href="./tag/girls.html">girls</a>,
+
+<a title="Posts tagged with: grief" href="./tag/grief.html">grief</a>,
+
+<a title="Posts tagged with: growing up" href="./tag/growing-up.html">growing up</a>,
+
+<a title="Posts tagged with: guest post" href="./tag/guest-post.html">guest post</a>,
+
+<a title="Posts tagged with: health" href="./tag/health.html">health</a>,
+
+<a title="Posts tagged with: historical" href="./tag/historical.html">historical</a>,
+
+<a title="Posts tagged with: history" href="./tag/history.html">history</a>,
+
+<a title="Posts tagged with: hope" href="./tag/hope.html">hope</a>,
+
+<a title="Posts tagged with: horror" href="./tag/horror.html">horror</a>,
+
+<a title="Posts tagged with: humanity" href="./tag/humanity.html">humanity</a>,
+
+<a title="Posts tagged with: humor" href="./tag/humor.html">humor</a>,
+
+<a title="Posts tagged with: humour" href="./tag/humour.html">humour</a>,
+
+<a title="Posts tagged with: hygiene" href="./tag/hygiene.html">hygiene</a>,
+
+<a title="Posts tagged with: ideas" href="./tag/ideas.html">ideas</a>,
+
+<a title="Posts tagged with: illness" href="./tag/illness.html">illness</a>,
+
+<a title="Posts tagged with: imagination" href="./tag/imagination.html">imagination</a>,
+
+<a title="Posts tagged with: independence" href="./tag/independence.html">independence</a>,
+
+<a title="Posts tagged with: India" href="./tag/india.html">India</a>,
+
+<a title="Posts tagged with: infection" href="./tag/infection.html">infection</a>,
+
+<a title="Posts tagged with: injury" href="./tag/injury.html">injury</a>,
+
+<a title="Posts tagged with: insects" href="./tag/insects.html">insects</a>,
+
+<a title="Posts tagged with: internet" href="./tag/internet.html">internet</a>,
+
+<a title="Posts tagged with: introspection" href="./tag/introspection.html">introspection</a>,
+
+<a title="Posts tagged with: joy" href="./tag/joy.html">joy</a>,
+
+<a title="Posts tagged with: kids" href="./tag/kids.html">kids</a>,
+
+<a title="Posts tagged with: kids special" href="./tag/kids-special.html">kids special</a>,
+
+<a title="Posts tagged with: language" href="./tag/language.html">language</a>,
+
+<a title="Posts tagged with: laughs" href="./tag/laughs.html">laughs</a>,
+
+<a title="Posts tagged with: laws" href="./tag/laws.html">laws</a>,
+
+<a title="Posts tagged with: learn" href="./tag/learn.html">learn</a>,
+
+<a title="Posts tagged with: learn to read" href="./tag/learn-to-read.html">learn to read</a>,
+
+<a title="Posts tagged with: learning" href="./tag/learning.html">learning</a>,
+
+<a title="Posts tagged with: life" href="./tag/life.html">life</a>,
+
+<a title="Posts tagged with: lifestyle" href="./tag/lifestyle.html">lifestyle</a>,
+
+<a title="Posts tagged with: literary" href="./tag/literary.html">literary</a>,
+
+<a title="Posts tagged with: literary fiction" href="./tag/literary-fiction.html">literary fiction</a>,
+
+<a title="Posts tagged with: literature" href="./tag/literature.html">literature</a>,
+
+<a title="Posts tagged with: love" href="./tag/love.html">love</a>,
+
+<a title="Posts tagged with: lunch" href="./tag/lunch.html">lunch</a>,
+
+<a title="Posts tagged with: magic" href="./tag/magic.html">magic</a>,
+
+<a title="Posts tagged with: mammogram" href="./tag/mammogram.html">mammogram</a>,
+
+<a title="Posts tagged with: math" href="./tag/math.html">math</a>,
+
+<a title="Posts tagged with: mathematics" href="./tag/mathematics.html">mathematics</a>,
+
+<a title="Posts tagged with: medicine" href="./tag/medicine.html">medicine</a>,
+
+<a title="Posts tagged with: milestones" href="./tag/milestones.html">milestones</a>,
+
+<a title="Posts tagged with: monsoon" href="./tag/monsoon.html">monsoon</a>,
+
+<a title="Posts tagged with: movie" href="./tag/movie.html">movie</a>,
+
+<a title="Posts tagged with: movies" href="./tag/movies.html">movies</a>,
+
+<a title="Posts tagged with: murder" href="./tag/murder.html">murder</a>,
+
+<a title="Posts tagged with: music" href="./tag/music.html">music</a>,
+
+<a title="Posts tagged with: mystery" href="./tag/mystery.html">mystery</a>,
+
+<a title="Posts tagged with: mythology" href="./tag/mythology.html">mythology</a>,
+
+<a title="Posts tagged with: nature" href="./tag/nature.html">nature</a>,
+
+<a title="Posts tagged with: news" href="./tag/news.html">news</a>,
+
+<a title="Posts tagged with: Nina and Nana" href="./tag/nina-and-nana.html">Nina and Nana</a>,
+
+<a title="Posts tagged with: nonfiction" href="./tag/nonfiction.html">nonfiction</a>,
+
+<a title="Posts tagged with: novel" href="./tag/novel.html">novel</a>,
+
+<a title="Posts tagged with: novella" href="./tag/novella.html">novella</a>,
+
+<a title="Posts tagged with: nutrition" href="./tag/nutrition.html">nutrition</a>,
+
+<a title="Posts tagged with: outdoor" href="./tag/outdoor.html">outdoor</a>,
+
+<a title="Posts tagged with: Pap smear" href="./tag/pap-smear.html">Pap smear</a>,
+
+<a title="Posts tagged with: paranormal" href="./tag/paranormal.html">paranormal</a>,
+
+<a title="Posts tagged with: parenting" href="./tag/parenting.html">parenting</a>,
+
+<a title="Posts tagged with: partnership" href="./tag/partnership.html">partnership</a>,
+
+<a title="Posts tagged with: party" href="./tag/party.html">party</a>,
+
+<a title="Posts tagged with: patriarchy" href="./tag/patriarchy.html">patriarchy</a>,
+
+<a title="Posts tagged with: pelvic pain" href="./tag/pelvic-pain.html">pelvic pain</a>,
+
+<a title="Posts tagged with: philosophy" href="./tag/philosophy.html">philosophy</a>,
+
+<a title="Posts tagged with: photoprompt" href="./tag/photoprompt.html">photoprompt</a>,
+
+<a title="Posts tagged with: physics" href="./tag/physics.html">physics</a>,
+
+<a title="Posts tagged with: picture book" href="./tag/picture-book.html">picture book</a>,
+
+<a title="Posts tagged with: plants" href="./tag/plants.html">plants</a>,
+
+<a title="Posts tagged with: poem" href="./tag/poem.html">poem</a>,
+
+<a title="Posts tagged with: poetry" href="./tag/poetry.html">poetry</a>,
+
+<a title="Posts tagged with: politics" href="./tag/politics.html">politics</a>,
+
+<a title="Posts tagged with: pop culture" href="./tag/pop-culture.html">pop culture</a>,
+
+<a title="Posts tagged with: pregnancy" href="./tag/pregnancy.html">pregnancy</a>,
+
+<a title="Posts tagged with: prejudice" href="./tag/prejudice.html">prejudice</a>,
+
+<a title="Posts tagged with: prejudices" href="./tag/prejudices.html">prejudices</a>,
+
+<a title="Posts tagged with: privacy" href="./tag/privacy.html">privacy</a>,
+
+<a title="Posts tagged with: psychology" href="./tag/psychology.html">psychology</a>,
+
+<a title="Posts tagged with: puberty" href="./tag/puberty.html">puberty</a>,
+
+<a title="Posts tagged with: puzzles" href="./tag/puzzles.html">puzzles</a>,
+
+<a title="Posts tagged with: radiation" href="./tag/radiation.html">radiation</a>,
+
+<a title="Posts tagged with: reading" href="./tag/reading.html">reading</a>,
+
+<a title="Posts tagged with: recipe" href="./tag/recipe.html">recipe</a>,
+
+<a title="Posts tagged with: recipes" href="./tag/recipes.html">recipes</a>,
+
+<a title="Posts tagged with: relationship" href="./tag/relationship.html">relationship</a>,
+
+<a title="Posts tagged with: relationships" href="./tag/relationships.html">relationships</a>,
+
+<a title="Posts tagged with: research" href="./tag/research.html">research</a>,
+
+<a title="Posts tagged with: responsibility" href="./tag/responsibility.html">responsibility</a>,
+
+<a title="Posts tagged with: review" href="./tag/review.html">review</a>,
+
+<a title="Posts tagged with: risk" href="./tag/risk.html">risk</a>,
+
+<a title="Posts tagged with: romance" href="./tag/romance.html">romance</a>,
+
+<a title="Posts tagged with: safety" href="./tag/safety.html">safety</a>,
+
+<a title="Posts tagged with: satire" href="./tag/satire.html">satire</a>,
+
+<a title="Posts tagged with: school" href="./tag/school.html">school</a>,
+
+<a title="Posts tagged with: schools" href="./tag/schools.html">schools</a>,
+
+<a title="Posts tagged with: sci-fi" href="./tag/sci-fi.html">sci-fi</a>,
+
+<a title="Posts tagged with: science" href="./tag/science.html">science</a>,
+
+<a title="Posts tagged with: science fiction" href="./tag/science-fiction.html">science fiction</a>,
+
+<a title="Posts tagged with: scifi" href="./tag/scifi.html">scifi</a>,
+
+<a title="Posts tagged with: second child" href="./tag/second-child.html">second child</a>,
+
+<a title="Posts tagged with: sex" href="./tag/sex.html">sex</a>,
+
+<a title="Posts tagged with: short stories" href="./tag/short-stories.html">short stories</a>,
+
+<a title="Posts tagged with: short story" href="./tag/short-story.html">short story</a>,
+
+<a title="Posts tagged with: shortstory" href="./tag/shortstory.html">shortstory</a>,
+
+<a title="Posts tagged with: sibling" href="./tag/sibling.html">sibling</a>,
+
+<a title="Posts tagged with: siblings" href="./tag/siblings.html">siblings</a>,
+
+<a title="Posts tagged with: snack" href="./tag/snack.html">snack</a>,
+
+<a title="Posts tagged with: social" href="./tag/social.html">social</a>,
+
+<a title="Posts tagged with: social media" href="./tag/social-media.html">social media</a>,
+
+<a title="Posts tagged with: software" href="./tag/software.html">software</a>,
+
+<a title="Posts tagged with: solar system" href="./tag/solar-system.html">solar system</a>,
+
+<a title="Posts tagged with: songs" href="./tag/songs.html">songs</a>,
+
+<a title="Posts tagged with: space" href="./tag/space.html">space</a>,
+
+<a title="Posts tagged with: sports" href="./tag/sports.html">sports</a>,
+
+<a title="Posts tagged with: stories" href="./tag/stories.html">stories</a>,
+
+<a title="Posts tagged with: story" href="./tag/story.html">story</a>,
+
+<a title="Posts tagged with: summer" href="./tag/summer.html">summer</a>,
+
+<a title="Posts tagged with: superstition" href="./tag/superstition.html">superstition</a>,
+
+<a title="Posts tagged with: surprise" href="./tag/surprise.html">surprise</a>,
+
+<a title="Posts tagged with: suspense" href="./tag/suspense.html">suspense</a>,
+
+<a title="Posts tagged with: team" href="./tag/team.html">team</a>,
+
+<a title="Posts tagged with: team work" href="./tag/team-work.html">team work</a>,
+
+<a title="Posts tagged with: teamwork" href="./tag/teamwork.html">teamwork</a>,
+
+<a title="Posts tagged with: technology" href="./tag/technology.html">technology</a>,
+
+<a title="Posts tagged with: teen" href="./tag/teen.html">teen</a>,
+
+<a title="Posts tagged with: teens" href="./tag/teens.html">teens</a>,
+
+<a title="Posts tagged with: teeth" href="./tag/teeth.html">teeth</a>,
+
+<a title="Posts tagged with: thriller" href="./tag/thriller.html">thriller</a>,
+
+<a title="Posts tagged with: time travel" href="./tag/time-travel.html">time travel</a>,
+
+<a title="Posts tagged with: toddlers" href="./tag/toddlers.html">toddlers</a>,
+
+<a title="Posts tagged with: toy" href="./tag/toy.html">toy</a>,
+
+<a title="Posts tagged with: toys" href="./tag/toys.html">toys</a>,
+
+<a title="Posts tagged with: tradition" href="./tag/tradition.html">tradition</a>,
+
+<a title="Posts tagged with: traditions" href="./tag/traditions.html">traditions</a>,
+
+<a title="Posts tagged with: travel" href="./tag/travel.html">travel</a>,
+
+<a title="Posts tagged with: TV" href="./tag/tv.html">TV</a>,
+
+<a title="Posts tagged with: TV shows" href="./tag/tv-shows.html">TV shows</a>,
+
+<a title="Posts tagged with: vacation" href="./tag/vacation.html">vacation</a>,
+
+<a title="Posts tagged with: values" href="./tag/values.html">values</a>,
+
+<a title="Posts tagged with: war" href="./tag/war.html">war</a>,
+
+<a title="Posts tagged with: weight" href="./tag/weight.html">weight</a>,
+
+<a title="Posts tagged with: women" href="./tag/women.html">women</a>,
+
+<a title="Posts tagged with: young adult" href="./tag/young-adult.html">young adult</a></nav>
+</div>
+<div class="contact">
+    <h2>contact</h2>
+    <ul>
+    <li><a href="https://www.facebook.com/kanikag.books" target="_blank"><img src="./res/facebook-logo.svg">
+            <span>Facebook</span></a></li> <li><a href="https://twitter.com/KanikaGee" target="_blank"><img src="./res/twitter-logo.svg">
+            <span>Twitter</span></a></li> <li><a href="mailto:gee.kanika@gmail.com" target="_blank"><img src="./res/email-logo.svg">
+            <span>E-mail</span></a></li>
+    </ul>
+</div>
+</footer>
+        </footer>
+        </div>
+    </body>
+</html>

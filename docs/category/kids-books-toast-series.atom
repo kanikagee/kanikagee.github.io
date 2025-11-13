@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Mom’s Best Friend</title>
+    <subtitle>Toast Series</subtitle>
+    <author><name>Kanika G</name></author>
+    <link href="https://kanikag.com" />
+    <link href="https://kanikag.com/category/kids-books-toast-series.atom" rel="self" />
+    <id>https://kanikag.com/category/kids-books-toast-series.atom</id>
+    <updated>2025-11-13T15:22:33Z</updated>
+        <entry>
+            <title>Honey, I Love You</title>
+            <link href="https://kanikag.com/kids-books-toast-series-honey-i-love-you.html" rel="alternate" type="text/html" />
+            <updated>2015-08-19T12:00:00Z</updated>
+            <summary>This is the third book in the series called The Misadventures Of Little Toast. These are picture books about the misadventures of a little baby girl. Baby is jealous of Papa's name. Read to find out why.
+</summary>
+            <id>https://kanikag.com/kids-books-toast-series-honey-i-love-you.html</id>
+        </entry>
+
+        <entry>
+            <title>Buttered Toast Is Good!</title>
+            <link href="https://kanikag.com/kids-books-toast-series-buttered-toast-is-good.html" rel="alternate" type="text/html" />
+            <updated>2015-05-28T12:00:00Z</updated>
+            <summary>This is the second book in the series called The Misadventures Of Little Toast. These are picture books about the misadventures of a little baby girl. Baby's interpretation of what will make Mama happy is sure to drive Mama crazy!
+</summary>
+            <id>https://kanikag.com/kids-books-toast-series-buttered-toast-is-good.html</id>
+        </entry>
+
+        <entry>
+            <title>What's My Name?</title>
+            <link href="https://kanikag.com/kids-books-toast-series-whats-my-name.html" rel="alternate" type="text/html" />
+            <updated>2015-05-24T12:00:00Z</updated>
+            <summary>This is the first book in the series called The Misadventures Of Little Toast. These are picture books about the misadventures of a little baby girl. Baby is too young to talk. But she is trying to figure out her name from everything she hears her parents say.
+</summary>
+            <id>https://kanikag.com/kids-books-toast-series-whats-my-name.html</id>
+        </entry>
+</feed>

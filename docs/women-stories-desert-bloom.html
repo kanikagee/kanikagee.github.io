@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mom’s Best Friend - Desert Bloom</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="./res/favicon.png" />
+        <link rel="alternate" type="application/atom+xml" title="RSS feed for Mom&#x27;s Best Friend" href="./category/index.atom" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53439504-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+	    function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-53439504-2');
+        </script>
+        <style type="text/css">
+/* {{{ Reset
+ * http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ *  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* }}} */
+
+/* Fonts {{{ */
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url(./res/title-font.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* }}} */
+
+/* Global {{{ */
+/* Body */
+body {
+    background: #F5F4EF;
+    color: #000305;
+    font-size: 87.5%; /* Base font size: 14px */
+    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.429;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+/* Headings */
+h1 {font-size: 2em }
+h2 {font-size: 1.571em} /* 22px */
+h3 {font-size: 1.429em} /* 20px */
+h4 {font-size: 1.286em} /* 18px */
+h5 {font-size: 1.143em} /* 16px */
+h6 {font-size: 1em}     /* 14px */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: .8em;
+    font-family: 'Yanone Kaffeesatz', arial, serif;
+}
+
+h3, h4, h5, h6 { margin-top: .8em; }
+
+hr { border: 2px solid #EEEEEE; }
+
+/* Anchors */
+a {outline: 0;}
+a img {border: 0px; text-decoration: none;}
+a:link, a:visited {
+    color: #C74350;
+    padding: 0 1px;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover, a:active {
+    background-color: #C74350;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #333;
+}
+
+h1 a:hover {
+    background-color: inherit
+}
+
+/* Paragraphs */
+div.line-block, p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+strong, b {font-weight: bold;}
+em, i {font-style: italic;}
+
+/* Lists */
+ul {
+    list-style: outside disc;
+    margin: 0em 0 0 1.5em;
+}
+
+ol {
+    list-style: outside decimal;
+    margin: 0em 0 0 1.5em;
+}
+
+li { margin-top: 0.5em;
+     margin-bottom: 1em; }
+
+dl {margin: 0 0 1.5em 0;}
+dt {font-weight: bold;}
+dd {margin-left: 1.5em;}
+
+pre{background-color:  rgb(238, 238, 238); padding: 10px; margin: 10px; overflow: auto;}
+
+/* Quotes */
+blockquote {
+    margin: 20px;
+    font-style: italic;
+}
+cite {}
+
+q {}
+
+/* Tables */
+table {margin: .5em auto 1.5em auto; width: 98%;}
+
+/* Thead */
+thead th {padding: .5em .4em; text-align: left;}
+thead td {}
+
+/* Tbody */
+tbody td {padding: .5em .4em;}
+tbody th {}
+
+tbody .alt td {}
+tbody .alt th {}
+
+/* Tfoot */
+tfoot th {}
+tfoot td {}
+
+/* HTML5 tags */
+header, section, footer,
+aside, nav, article, figure {
+    display: block;
+}
+
+/* }}} */
+
+/* Layout  {{{ */
+.body {clear: both; margin: 0 auto;}
+#container { max-width: 800px; margin: 0 auto; }
+img.right, figure.right {float: right; margin: 0 0 2em 2em;}
+img.left, figure.left {float: left; margin: 0 2em 2em 0;}
+/* }}} */
+
+/* Header {{{ */
+/* Banner */
+
+#banner {
+    padding-top: 4px;
+}
+
+#banner h1 {
+    font-size: 3.571em; overflow: visible; white-space: nowrap; margin-bottom: 0
+}
+
+#banner .editorial-link {
+    font-family: 'Yanone Kaffeesatz', arial, serif;
+    font-size: 2.5em;
+}
+
+#banner h1 a:link, #banner h1 a:visited {
+    color: #000305;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+}
+#banner h1 a:hover, #banner h1 a:active {
+    background: none;
+    color: #C74350;
+    text-shadow: none;
+}
+
+#banner h1 strong {font-size: 0.36em; font-weight: normal;}
+
+/* Main Nav */
+#banner nav ul {
+    background: #000305;
+    font-size: 1.143em;
+    line-height: 30px;
+    margin: 0 auto 2em auto;
+    padding: 0;
+    text-align: center;
+    border-radius: 5px;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+#banner nav li {float: left; display: inline-block; margin: 0;}
+#banner nav li a { background: #000305; }
+
+#banner nav a:link, #banner nav a:visited {
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    padding: 5px 1em;
+    text-decoration: none;
+}
+#banner nav a:hover, #banner nav a:active,
+#banner nav .active a:link, #banner nav .active a:visited {
+    background: #C74451 !important;
+    color: #fff;
+    text-shadow: none !important;
+}
+#banner nav .up a:link, #banner nav .up a:visited {
+    background: #555;
+    color: #fff;
+    text-shadow: none !important;
+}
+
+
+/* }}} */
+
+/* Body {{{ */
+
+#content {
+    background: #fff;
+    margin-bottom: 2em;
+    margin-top: -1em;
+    overflow: hidden;
+    padding: 10px 20px;
+
+    border-radius: 10px;
+}
+
+.article-meta {
+    display: flex;
+    justify-content: space-between;
+}
+
+#share {
+    display: flex;
+}
+
+#share .fb-like {
+    margin-left: 0.5em;
+}
+
+#content .published {
+    font-style: italic;
+    color: gray
+}
+
+.summary .published {
+    margin-left: 1em;
+    padding-top: 1ex;
+}
+
+#content img.align-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+#content img.align-left {
+    display: block;
+    margin: 0.5em 1em;
+    margin-left: 0;
+    border-radius: 5px;
+    float: left;
+}
+
+#content img.align-right {
+    display: block;
+    margin: 0.5em 1em;
+    margin-right: 0;
+    border-radius: 5px;
+    float: right;
+}
+
+
+.entry-title {font-size: 3em; margin-bottom: 10px; margin-top: 0;}
+.entry-title a:link, .entry-title a:visited {text-decoration: none; color: #333;}
+.entry-title a:visited {background-color: #fff;}
+
+#content .full-article-nav {
+    display: flex;
+    border-top: solid 1px currentColor;
+    padding-top: 1em;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* }}} */
+
+/* Article list {{{ */
+ul.article-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+ul.article-list li {
+    clear: both;
+}
+
+article.summary header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+article.summary header h1 {
+    margin-bottom: 0;
+}
+
+article.summary a.img-link {
+    max-width: 35%;
+    display: block;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    padding: 0;
+    float: left;
+}
+
+article.summary hr { clear: both; }
+
+article.summary a.img-link:hover, article.summary a.img-link:active {
+    text-shadow: none;
+}
+
+article.summary a.img-link img {
+    max-width: 100%;
+    max-height: 96px;
+    border-radius: 5px;
+}
+
+article.summary a.img-link img:hover {
+    transform: scale(1.5);
+}
+
+article.summary div.read-more {
+    text-align: right;
+}
+
+nav.paginator {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* }}} */
+
+/* Footer {{{ */
+footer.page-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer.page-bottom .tag-cloud {
+    margin-right: 1em;
+}
+
+footer.page-bottom .contact {
+    margin-left: 1em;
+}
+
+footer.page-bottom .contact ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+footer.page-bottom .contact li {
+    white-space: nowrap;
+}
+
+footer.page-bottom .contact a:hover, a:active {
+    background-color: transparent;
+    color: currentColor;
+    text-shadow: none;
+}
+
+footer.page-bottom .contact li:hover span {
+    background-color: #C74350;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #333;
+}
+
+footer.page-bottom .contact img {
+    height: 2.5ex;
+    width: auto;
+    vertical-align: text-bottom;
+}
+
+
+/* }}} */
+
+        </style>
+    </head>
+    <body id="index" class="home">
+        <div id="fb-root"></div>
+        <div id="container">
+        <header id="banner" class="body">
+            <div style="display: flex; justify-content: space-between;">
+                <h1><a href="./index.html">Mom’s Best Friend</a></h1>
+                <div class="editorial-link"><a href="./editorial.html">Editing Services</a>&nbsp;</div>
+            </div>
+            <nav><ul>
+        <li class="up">
+            <a href="./category/women.html">⬆ Women</a>
+        </li>
+
+        <li class="">
+            <a href="./category/women-comics.html">Nina and Nana</a>
+        </li>
+
+        <li class="">
+            <a href="./category/women-health.html">Health</a>
+        </li>
+
+        <li class="">
+            <a href="./category/women-poetry.html">Poetry</a>
+        </li>
+
+        <li class="">
+            <a href="./category/women-relationships.html">Relationships</a>
+        </li>
+
+        <li class="">
+            <a href="./category/women-social.html">Social</a>
+        </li>
+
+        <li class="active">
+            <a href="./category/women-stories.html">Stories</a>
+        </li></ul></nav>
+        </header>
+
+        <section id="content" class="body">
+            
+<article>
+<header>
+<h1 class="entry-title">Desert Bloom</h1>
+<div class="article-meta">
+<div class="published">24 Sep 2025</div>
+<div id="share">
+    <div>
+        <a href="https://twitter.com/share" class="twitter-share-button"
+            data-show-count="false" data-related="kanikagee">Tweet</a>
+    </div>
+    <div class="fb-like" data-layout="button" data-action="like" data-size="small"
+        data-share="true"></div>
+    <script>
+    document.querySelector('#share .fb-like').dataset.href = window.location;
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_IN/sdk.js#xfbml=1&version=v2.10";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+</div>
+</header>
+<div class="entry-content"><img alt="cover" class="align-center" src="./images/articles-Women-Stories-Desert-Bloom-cover.png" style="width: 50%;" />
+<p><em>Cover image created using Copilot</em></p>
+<p>On the planet of Naboded, at a faculty residence in the University of Yolinda, a heated argument was going on between two married academics.</p>
+<p>“No Lina. This time your curiosity is taking you too far. That place is off limits. Good heavens, it’s cursed!” Navo exploded.</p>
+<p>“That’s just superstition. You’re a scientist. How can you say that? Have you no shame?” Lina was furious. Yes, there were obvious dangers, she knew that. But as an archaeologist, her job and passion drove her to investigate.</p>
+<p>“Superstition!” Navo sputtered in disbelief. “It’s not superstition. There’s evidence backing historical records dating back seven centuries. What more do you need to know?”</p>
+<p>“Descriptions of what happened is not enough. They are all, after the fact. I need to know the how and why.” Lina shook her head. Why could people, even scientists like Navo, not see that it was important to understand the crisis, not just hide from it. She took a deep breath to calm herself. “Besides there are only six instances recorded, and if any of the records are reliable, a once in a lifetime opportunity is going to present itself in about a year. How can I give up this chance? I have to prepare for it. I have to be there,” she pleaded.</p>
+<p>“You need to know why the god forsaken place kills all its inhabitants every hundred years? Isn’t it enough that it does?” Navo fumed.</p>
+<p>“No. We have no idea why or how the people of Nohikora oasis die en mass. There’s no evidence of any pathogen, or conflict, or violence or anything for that matter.  Every report shows that one day they are all just found dead. After the phenomenon repeated itself six times in recorded history, we decided to simply avoid Nohikora without understanding it.”</p>
+<p>“Seems like the sane thing to do, if you ask me.” Navo rolled his eyes.</p>
+<p>“Nohikora is the most fertile oasis in this large dessert. Why are we just giving it up?”</p>
+<p>“Lina, I can’t believe what you’re saying. Lives matter more than resources. It’s just some land.”</p>
+<p>“Yes, but whatever causes the deaths, may spread to other oases. If we don’t understand what’s happening, we won’t be able to prevent it from spreading. Will we just surrender all the oases, one by one, without even knowing why? Maybe, its a problem we can fix. I must investigate.” Lina was adamant.</p>
+<p>“You’re insane. You’ll die!” Navo shouted in desperation.</p>
+<p>“No. I won’t. I’ll leave at the first sight of danger.” Lina retorted, but Navo shook his head skeptically.</p>
+<p>“I must, to make sure all my research is safe.” Lina argued, and Navo nodded. “Besides,” Lina continued, “we are technologically far more advanced than we were a hundred years ago. I can make video recordings and document the developments, so we can examine the processes or events leading up to the mass deaths. We will carry gas masks and other protective gear to use at the first sign of a gas leak from a fault line or anything weird like that. We’ll be safe.”</p>
+<p>“We! Who is we?”</p>
+<p>“I have assembled a team of volunteers who think it’s important to decipher this particular mystery. We have managed to obtain permission from the government.”</p>
+<p>“Lina, I love you, and I am scared. Is there nothing I can say to dissuade you?”</p>
+<p>Lina stubbornly shook her head. Navo sighed. “Will you keep in touch, at least?”</p>
+<p>“Yes, Ledo and Coso have offered to be messengers. Along with research updates, they will each carry messages to the site and back once a week on their sandbikes. So you should hear from me around every three or four days. Those things can go really fast on the sand. It’ll take them only a day to get there and another to get back. They’ll be regular, because we will be relying on them to recharge the batteries of our equipment. Okay?”</p>
+<p>“Do I have a choice?” Navo sulked.</p>
+<p>“No,” Lina shook her head. “But its a long project, so I’ll be back for a couple of days every month to see you.” She put her arms round his neck and looked into his eyes. “Please don’t be angry. This is important to me.”</p>
+<p>Navo nodded in resignation.</p>
+<section id="nine-months-later">
+<h2>Nine months later</h2>
+<p>“Navo, the dig site is amazing.” Lina was back on one of her breaks.  Dumping her knapsack on the floor, she rushed over to the dining table and raised her hand to open the serving dishes and uncover the source of the appetizing aroma.</p>
+<p>Navo pulled her away. “Lina, you’re home now, back in civilization. At least, wash up before attacking the food,” he chided.</p>
+<p>“Sorry, but I have been living on camp rations.” Lina pouted. She dashed off to their bedroom, freshened up, and returned smelling like a peach.</p>
+<p>“Goodness you tidy up fast.” Navo laughed. “And you’re as fresh as a daisy. How do you do it?”</p>
+<p>“A lady never tells.” Lina winked, picked up a plate and attacked the food. “Mmm, steaming mutton stew with millet porridge. My favorites,” she said, sniffing the items she had ladled onto her plate.</p>
+<p>Navo joined her at the table. “So you were telling about the dig,” he reminded her.</p>
+<p>“Oh yeah! Its always slow hard work when we start, but now we’ve made so much progress.  In the layers of the dig, you can see that the town was built up over a period of hundred years and then destroyed in days and the process repeats. Even so, because the town gets resettled from outside each time, the technological progress is the same as it is for the rest of us, as can be seen from relics and artifacts. So the thin layer of discontinuity every century is eerie.” Lina shoved a large spoonful of porridge in her mouth. “Ouch … hot, hot,” she complained.</p>
+<p>“Steaming porridge is hot.” Navo shrugged and handed her a glass of cool water. “Do you have any clue as to what causes the deaths?”</p>
+<p>“Not yet. Rega’s team surveyed the whole area for cracks and craters in the land, but found nothing unusual. They’re back here now. Sippy’s team has been testing the various layers of soil for toxins and chemicals that might become active or release a gas under certain climate conditions. But nothing strange or unusual has shown up so far. The only interesting thing Sippy found, is that the nutrients in the soil deplete a lot faster than in most places, and the soil becomes almost devoid of nutrients in a hundred years. But then because of all the deaths, the soil becomes very fertile again.” This time Lina approached her food more gingerly.</p>
+<p>“Yeww. That’s grizzly,” Navo wrinkled his nose. “Not exactly dinner table conversation.” He scowled.</p>
+<p>Lina shrugged. “Yeah, but it does explain why the land is so fertile when a new batch of settlers start farming. I suppose I was silly to think that this oasis was particularly fertile. The depletion in nutrients may simply be a result of the excessive farming that is done there, except …” Lina hesitated.</p>
+<p>“Except what?” Navo demanded.</p>
+<p>Lina pressed her lips together. “Well, Sippy’s team found that for the past three cycles of civilization, the depletion of nutrients was actually far less in the farmland and more in other open spaces. Also, the same rapid depletion in nutrients has been happening for the last hundred years, even though there was no farming.”</p>
+<p>“That certainly is strange,” Navo frowned, “but is it worrisome?”</p>
+<p>“I’m not sure. You remember, when we were starting the dig, I told you we had to clear out a network of roots about six inches below the surface?”</p>
+<p>“Oh, right! You mentioned a root system, very strong and intertwined. You thought some weed must have grown in the fertile soil and then died.” Navo recalled.</p>
+<p>“Well, we found the same thing at two other spots we dug up more recently, but this time the root system was only two or three inches below the surface, so even though they are just roots, they seem to be growing. I think I was wrong in assuming they were dead.”</p>
+<p>“Okay, but why is that surprising? I mean this plant form has probably spread because of the lack of competition from agriculture, right? And maybe, like grass, it was what grew in the open spaces when the area was inhabited. That would explain your nutrition depletion from the soil too, wouldn’t it?”</p>
+<p>“Yes it would.” Lina drummed her fingers on the table. “I don’t know why, but something feels odd about it.”</p>
+<p>“You think it’s dangerous?” Navo frowned. “Lina, you promised …”</p>
+<p>“No, not dangerous,” Lina assured him. “It’s just that I don’t understand a few things about it.”</p>
+<p>“And nothing drives you crazier than not understanding something, right?” Navo rolled his eyes.</p>
+<p>“Well, yeah!” Lina’s eyes flashed. “I mean what’s the point of being an academic, if we’re not driven by puzzles and curiosities?”</p>
+<p>“For some of us, it’s just a job. A pleasant one, but just that.” Navo sighed.</p>
+<p>“Well, not for me!” Lina quipped.</p>
+<p>“I know, Darling. I know. So tell me, what about these plants irk you so much?”</p>
+<p>“Well, for one, they’re never mentioned in any of the historical records. Why would a plant put out an endless root system and never bloom, or bear fruit or anything at all?”</p>
+<p>“Maybe, its not a normal plant then. Maybe it’s an underground network like some fungus, just leeching nutrients from the soil.”</p>
+<p>“Perhaps, but its not mentioned in any of the historical records of this place, and no one has reported anything like it in any of the other oases. Believe me, I have been searching the records for such a plant. I’ve sent messages along with samples of root tissue to all the botanists and mycologists I know. No one has seen or heard of anything like it.”</p>
+<p>“So this life form is unique to Nohikora?” Nova was alarmed.</p>
+<p>“Seems so,” Lina shrugged.</p>
+<p>“Well that can’t be a coincidence, can it?” Navo paled. “It must be dangerous. I mean, it feeds on dead humans. It is evil.”</p>
+<p>“Navo, don’t be ridiculous. All plants feed on dead and decaying organisms including humans. It’s normal, not evil.” Lina scoffed.</p>
+</section>
+<section id="another-two-months-later">
+<h2>Another two months later</h2>
+<p>Navo accepted the latest of Lina’s letters, that Ledo had just handed him, with a sigh of relief. As the end of the year approached, he became increasingly anxious, and every letter that arrived from the site brought him some measure of temporary relief. “At least, Lina is till alive,” he whispered to himself each time.</p>
+<p>Fumbling, he opened the letter. Lina sounded ebullient.</p>
+<blockquote>
+<p>My Darling Navo,</p>
+<p>How are you? I miss you and your cooking. Perhaps, your cooking, more than you. I am so sick of the camping rations.</p>
+<p>But my year is almost up, so I will be home soon, my love. I’m no closer to solving the mystery of the deaths, but with all the monitoring equipment in place, I am sure that mystery will be solved when the time is right.</p>
+<p>In the mean time, I am close to solving the mystery of the root system. The latest dig shows that the roots are very close to the surface and almost pushing through it. I wonder what will happen once they do. I have got a camera focused on a patch where they are likely to emerge. Pava’s botany team from the Lesetta oasis is here with me. We are all so curious to see what will happen. Pava promised to credit me on her paper.</p>
+<p>And don’t worry. I am being safe. We have the hazmat suits ready to wear at the the first sign of danger. I have cameras and measuring instruments set up to cover a radius of a mile around the central camp . We’ve set up alarm systems, and the team is working in two shifts, so some of us are always awake and alert. We’re ready for whatever is coming.</p>
+<p>I’m so excited. Soon, I will have solved two major mysteries. Then, once I’m home, I’ll take a month off from work, and we can go on a vacation to the nice boring lake side resort in the Parisada Oasis that you love so much. I promise.</p>
+<p>Love and kisses,</p>
+<p>Lina</p>
+</blockquote>
+</section>
+<section id="another-two-weeks-later">
+<h2>Another two weeks later</h2>
+<p>Navo was pacing up and down his front yard, as he had been doing every few hours for the past couple of days. It had been a two weeks since he had last heard from Lina. He couldn’t shake the feeling that something terrible had happened to her.</p>
+<p>When Ledo hadn’t returned a week ago with a message from Lina as expected, Navo had sent word to Professor Meko at the university. Meko was in charge of the research team that was analyzing the data arriving from the Nohikora oasis.</p>
+<p>Meko had waited another couple of days, but when there was still no sign of Ledo, he had put together a rescue team including a doctor, two soldiers, and a chemist.  They had loaded batteries shovels, bags, cases, protective suits, gas-masks, weapons, medicines, food and potable water into a van and set out with Coso for the dig sites.</p>
+<p>Navo looked at his watch. It was noon, and three whole days since Meko had left with the rescue team. Then Navo heard the roar of an engine approaching from a distance.</p>
+<p>He stopped in his tracks and craned his neck to scan the road, just as a sandbike spraying dust turned the corner and approached his home. A van followed a minute later. They were back! He couldn’t believe it. He rushed over to open the gate. Coso was already there. He had parked his sandbike a few feet away.</p>
+<p>“”Where’s Lina? Did she figure out the mystery?” Navo asked, his voice trembling with excitement.</p>
+<p>Coso’s grim expression frightened Navo. “Where is Lina?” he demanded.</p>
+<p>Coso sighed. “It’s too difficult to explain,” he mumbled, pointing at Meko, who had just alighted the van.</p>
+<p>Meko and the others surrounded Navo. “Lina made a huge discovery.” Meko ventured. “We would not have solved the mystery of Nohikora, if it were not for her bravery and persistence.”</p>
+<p>“Why are you talking of her like that?” Tears gushed down Navo’s cheeks. “Why are you speaking of her in the past tense?” Navo sobbed.</p>
+<p>“There is something we must show you.” Meko and Coso gently led Navo back to his house, and the others followed.</p>
+<p>It was pure torture to watch, but Navo couldn’t peel himself away. He had to feel what she must have felt, yet he had no idea what she had felt. He just kept watching three days worth of footage, hoping to understand something.</p>
+</section>
+<section id="the-footage">
+<h2>The footage</h2>
+<p>It was a clear bright sunny morning. Lina smiled as she turned the camera on herself. “Even you can’t bring me down, today,” she declared, waving the standard issue camping breakfast bar she was eating at the camera. Her voice was cheerful. “Today, I’m going to learn the secret of the everywhere roots,” she chirped. She bubbled with excitement as she stepped out of her tent. The sight that greeted her, made her ecstatic. She pointed the camera at an endless carpet of purple blooms. “I knew they had to bloom. It’s so beautiful,” she gushed. Then she pointed the camera back at herself, as she walked among the gorgeous purple flowers. “Have you ever seen anything so beautiful, Navo?” she teased. After a minute or so, she placed the camera on the tripod and sat down amidst the blooms.</p>
+<p>She had stopped talking, but she smiled radiantly as she looked into the distance. Navo looked at another part of the screen filming a patch of purple carpeted land at a distance. There too he saw people walking out of their tents and sitting down among the flowers just like Lina. Meko was watching with him. “That’s Pava and her two graduate students,” he remarked.  “They all look just as blissful as Lina.” Meko sighed. It turned out that all the cameras showed similar footage.</p>
+<p>Everyone on the team had sat down among the flowers and never moved, not to eat, not to drink water, nothing. Meko left after a couple of hours, but Navo could not tear himself away.</p>
+<p>A day passed by and Ledo appeared on the camera. He seemed to be shaking Lina by her shoulder for a moment, but she did not respond, and a minute later, he too sat down next to her smiling blissfully.</p>
+<p>Minutes and hours went by, but the people remained frozen. Their skin wrinkled as they were parched with thirst, yet they simply sat there smiling, seemingly oblivious to hunger, thirst and fear of death.</p>
+<p>It was a terrifying sight. They sat there slowly dying, yet smiling. The eerie footage went on for three days, during which the blooms too slowly withered. They were a wrinkled and rotting when the camera battery ran out. The show was long over, but the smiling skeletal faces kept staring until the footage turned dark.</p>
+<p>Meko had insisted that Coso remain to look after Navo. For the entire three days, Navo had refused to move, as if he too was under the influence of the flowers. He refused to eat or drink. He just stared at his beloved, as she wasted away in silence. Coso had to put Navo on intravenous glucose and saline just to keep him alive.</p>
+<p>When the footage ended, Navo wept soundlessly for hours. Then he collapsed on the couch. He refused to speak.</p>
+</section>
+<section id="the-promise-of">
+<h2>The promise of …</h2>
+<p>Coso contacted Meko. “Navo needs to know all the details.” Coso insisted. “Only then can he begin to recover.”</p>
+<p>So the next day, Meko arrived at Navo’s house with some notebooks. “You know, she named it. She had a feeling it was going to be a beautiful flower. So she named it Desert Bloom.” Meko showed Navo a page of Lina’s notes, where she had sketched the root system. There were drawings of flowers too. “I guess she was trying to picture her desert Bloom.” Meko smiled.</p>
+<p>Navo grabbed the notes hungrily, and eagerly ran his fingers over the sketches, showing signs of life, for the first time since Meko had given him the footage.</p>
+<p>“What did you learn?” Navo asked, his voice hoarse from not being used for several days.</p>
+<p>“The Desert Bloom, as she named it, sprays some kind of chemical, which when inhaled puts people into to a blissful stupor, and they waste away, unable to move. It has been doing so, for longer than recorded history, as far as we can tell from her research.” Meko replied.</p>
+<p>“Then, just before they wither away, the flowers spread their spores, which thrive on the soil made fertile by thousands of decaying bodies.” Novo deduced.</p>
+<p>“Exactly. That’s why they have no leaves. All their nutrients come from the fertile soil. But the fertility is nearly depleted in a century, and then the cycle repeats. It is the life cycle of the plant. Fortunately, it hasn’t spread, because the desert that surrounds it for a hundred kilometeres in every direction, is too hostile for it to survive.”</p>
+<p>“Every time we re-setteled Nohikora, we provided the thousands of bodies it needed to thrive for another life cycle. So abandoning it was the only way to fight it?” Navo was agitated. “Our superstition was right. The wisdom of our elders was right. We should have listened.” He lamented.</p>
+<p>“By the time we reached, they were all dead, even Ledo. The danger had clearly passed when we arrived. We knew that from the historical records of traders, who had visited Nohikora soon after each of these tragedies. We reviewed enough of Lina’s and Pava’s footage to figure out what had happened, and then we packed up all the records, notes and equipment and drove straight to you.” Meko blurted out the distasteful information, eager to get it over with.</p>
+<p>“She did figure it out, didn’t she?” Navo asked with tears in his eyes. “She solved the mystery?”</p>
+<p>“Yes, I think it’s the last thing she figured out.” Meko lied, kindly. “And thanks to her research, we know exactly what happens there, and now we can write up a report and map out a plan for future generations to recover the land safely,” he added, honestly.</p>
+<p>“Then she must have died happy, because that was all she wanted.” Navo consoled himself.</p>
+<p>When Meko left, Navo made himself some mutton stew and millet porridge and sat at the dining table pretending that Lina would be home soon. For all her smarts, and creativity, Lina could never have imagined that such cunning could lie hidden in such beauty. Blessed with child like curiosity, she was naive, that way. It made her both immensely lovable and incredibly stubborn.</p>
+<p>She put too much faith in knowledge and science, he fumed. Faith, he laughed at the thought. The very word had always made Lina cringe. She had always wanted proof. He was a scientist himself, but he knew that science had a long way to go before it uncovered all the mysteries of their world. The scientists always oversell their reach, he chafed. Knowledge was limited, and it was faith in science, that kept scientists going. Lina was a saint, who had dedicated her life to the pursuit of knowledge, and it brought her unadulterated joy. He wished he could be as devoted as she was, but he was a cynic, not a saint at the alter of science.</p>
+<p>He recalled Lina’s last letter. She had promised to take a month off. He burst out laughing. A month off from work would drive Lina insane. But she had promised him a trip to the lake side resort in the Parisada oasis, and Lina had always kept her promises. So Navo packed a suitcase, applied for a week off, and left to fulfill his beloved wife’s last promise.</p>
+</section>
+</div>
+</article>
+<p>Tags: <a href="./tag/science.html" title="Posts tagged with: science">science</a>, <a href="./tag/shortstory.html" title="Posts tagged with: shortstory">shortstory</a>, <a href="./tag/drama.html" title="Posts tagged with: drama">drama</a>, <a href="./tag/story.html" title="Posts tagged with: story">story</a>, <a href="./tag/mystery.html" title="Posts tagged with: mystery">mystery</a>, <a href="./tag/love.html" title="Posts tagged with: love">love</a>, <a href="./tag/scifi.html" title="Posts tagged with: scifi">scifi</a>, <a href="./tag/fantasy.html" title="Posts tagged with: fantasy">fantasy</a></p>
+<nav class="full-article-nav">
+<div> </div><div>In: <a href="./category/women.html">Women</a>/<a href="./category/women-stories.html">Stories</a></div><div><a href="./women-stories-tick.html"             title="Tick... Tick... Tick...">Next ➡</a></div>
+</nav>
+
+<hr>
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+    this.page.url = "https://kanikag.com/women-stories-desert-bloom.html";
+    this.page.identifier = "women-stories-desert-bloom";
+};
+(function() {
+var d = document, s = d.createElement('script');
+s.src = 'https://kanikag.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+        </section>
+
+        <footer id="extras" class="body">
+            
+<footer class="page-bottom">
+<div class="tag-cloud">
+    <h2>all tags</h2>
+    <nav>
+<a title="Posts tagged with: " href="./tag/.html"></a>,
+
+<a title="Posts tagged with: abuse" href="./tag/abuse.html">abuse</a>,
+
+<a title="Posts tagged with: action" href="./tag/action.html">action</a>,
+
+<a title="Posts tagged with: activities" href="./tag/activities.html">activities</a>,
+
+<a title="Posts tagged with: activity" href="./tag/activity.html">activity</a>,
+
+<a title="Posts tagged with: addiction" href="./tag/addiction.html">addiction</a>,
+
+<a title="Posts tagged with: adventure" href="./tag/adventure.html">adventure</a>,
+
+<a title="Posts tagged with: ageing" href="./tag/ageing.html">ageing</a>,
+
+<a title="Posts tagged with: aliens" href="./tag/aliens.html">aliens</a>,
+
+<a title="Posts tagged with: anger" href="./tag/anger.html">anger</a>,
+
+<a title="Posts tagged with: animals" href="./tag/animals.html">animals</a>,
+
+<a title="Posts tagged with: archaeology" href="./tag/archaeology.html">archaeology</a>,
+
+<a title="Posts tagged with: archeology" href="./tag/archeology.html">archeology</a>,
+
+<a title="Posts tagged with: art" href="./tag/art.html">art</a>,
+
+<a title="Posts tagged with: astronomy" href="./tag/astronomy.html">astronomy</a>,
+
+<a title="Posts tagged with: AtoZ Challenge" href="./tag/atoz-challenge.html">AtoZ Challenge</a>,
+
+<a title="Posts tagged with: baby" href="./tag/baby.html">baby</a>,
+
+<a title="Posts tagged with: beauty" href="./tag/beauty.html">beauty</a>,
+
+<a title="Posts tagged with: behavior" href="./tag/behavior.html">behavior</a>,
+
+<a title="Posts tagged with: bias" href="./tag/bias.html">bias</a>,
+
+<a title="Posts tagged with: biography" href="./tag/biography.html">biography</a>,
+
+<a title="Posts tagged with: biology" href="./tag/biology.html">biology</a>,
+
+<a title="Posts tagged with: birthday" href="./tag/birthday.html">birthday</a>,
+
+<a title="Posts tagged with: birthdays" href="./tag/birthdays.html">birthdays</a>,
+
+<a title="Posts tagged with: bonding" href="./tag/bonding.html">bonding</a>,
+
+<a title="Posts tagged with: book" href="./tag/book.html">book</a>,
+
+<a title="Posts tagged with: books" href="./tag/books.html">books</a>,
+
+<a title="Posts tagged with: botany" href="./tag/botany.html">botany</a>,
+
+<a title="Posts tagged with: braces" href="./tag/braces.html">braces</a>,
+
+<a title="Posts tagged with: breakfast" href="./tag/breakfast.html">breakfast</a>,
+
+<a title="Posts tagged with: breast exam" href="./tag/breast-exam.html">breast exam</a>,
+
+<a title="Posts tagged with: bullying" href="./tag/bullying.html">bullying</a>,
+
+<a title="Posts tagged with: cake" href="./tag/cake.html">cake</a>,
+
+<a title="Posts tagged with: celebrate" href="./tag/celebrate.html">celebrate</a>,
+
+<a title="Posts tagged with: celebration" href="./tag/celebration.html">celebration</a>,
+
+<a title="Posts tagged with: celebrations" href="./tag/celebrations.html">celebrations</a>,
+
+<a title="Posts tagged with: chapter book" href="./tag/chapter-book.html">chapter book</a>,
+
+<a title="Posts tagged with: chemistry" href="./tag/chemistry.html">chemistry</a>,
+
+<a title="Posts tagged with: children" href="./tag/children.html">children</a>,
+
+<a title="Posts tagged with: childrens book" href="./tag/childrens-book.html">childrens book</a>,
+
+<a title="Posts tagged with: chocolate" href="./tag/chocolate.html">chocolate</a>,
+
+<a title="Posts tagged with: choices" href="./tag/choices.html">choices</a>,
+
+<a title="Posts tagged with: Christmas" href="./tag/christmas.html">Christmas</a>,
+
+<a title="Posts tagged with: climate" href="./tag/climate.html">climate</a>,
+
+<a title="Posts tagged with: climate change" href="./tag/climate-change.html">climate change</a>,
+
+<a title="Posts tagged with: comic" href="./tag/comic.html">comic</a>,
+
+<a title="Posts tagged with: community" href="./tag/community.html">community</a>,
+
+<a title="Posts tagged with: confidence" href="./tag/confidence.html">confidence</a>,
+
+<a title="Posts tagged with: conflict" href="./tag/conflict.html">conflict</a>,
+
+<a title="Posts tagged with: contemporary" href="./tag/contemporary.html">contemporary</a>,
+
+<a title="Posts tagged with: contraception" href="./tag/contraception.html">contraception</a>,
+
+<a title="Posts tagged with: cooking" href="./tag/cooking.html">cooking</a>,
+
+<a title="Posts tagged with: corruption" href="./tag/corruption.html">corruption</a>,
+
+<a title="Posts tagged with: costume" href="./tag/costume.html">costume</a>,
+
+<a title="Posts tagged with: couples" href="./tag/couples.html">couples</a>,
+
+<a title="Posts tagged with: craft" href="./tag/craft.html">craft</a>,
+
+<a title="Posts tagged with: creativity" href="./tag/creativity.html">creativity</a>,
+
+<a title="Posts tagged with: crime" href="./tag/crime.html">crime</a>,
+
+<a title="Posts tagged with: crisis" href="./tag/crisis.html">crisis</a>,
+
+<a title="Posts tagged with: cuisine" href="./tag/cuisine.html">cuisine</a>,
+
+<a title="Posts tagged with: culture" href="./tag/culture.html">culture</a>,
+
+<a title="Posts tagged with: curiosity" href="./tag/curiosity.html">curiosity</a>,
+
+<a title="Posts tagged with: curosity" href="./tag/curosity.html">curosity</a>,
+
+<a title="Posts tagged with: customs" href="./tag/customs.html">customs</a>,
+
+<a title="Posts tagged with: democracy" href="./tag/democracy.html">democracy</a>,
+
+<a title="Posts tagged with: dessert" href="./tag/dessert.html">dessert</a>,
+
+<a title="Posts tagged with: detective" href="./tag/detective.html">detective</a>,
+
+<a title="Posts tagged with: developent" href="./tag/developent.html">developent</a>,
+
+<a title="Posts tagged with: diet" href="./tag/diet.html">diet</a>,
+
+<a title="Posts tagged with: dilemma" href="./tag/dilemma.html">dilemma</a>,
+
+<a title="Posts tagged with: discipline" href="./tag/discipline.html">discipline</a>,
+
+<a title="Posts tagged with: discovery" href="./tag/discovery.html">discovery</a>,
+
+<a title="Posts tagged with: discrimination" href="./tag/discrimination.html">discrimination</a>,
+
+<a title="Posts tagged with: disease" href="./tag/disease.html">disease</a>,
+
+<a title="Posts tagged with: diversity" href="./tag/diversity.html">diversity</a>,
+
+<a title="Posts tagged with: domestic abuse" href="./tag/domestic-abuse.html">domestic abuse</a>,
+
+<a title="Posts tagged with: domestic violence" href="./tag/domestic-violence.html">domestic violence</a>,
+
+<a title="Posts tagged with: drama" href="./tag/drama.html">drama</a>,
+
+<a title="Posts tagged with: dystopian" href="./tag/dystopian.html">dystopian</a>,
+
+<a title="Posts tagged with: ebook" href="./tag/ebook.html">ebook</a>,
+
+<a title="Posts tagged with: ecology" href="./tag/ecology.html">ecology</a>,
+
+<a title="Posts tagged with: education" href="./tag/education.html">education</a>,
+
+<a title="Posts tagged with: emotion" href="./tag/emotion.html">emotion</a>,
+
+<a title="Posts tagged with: emotions" href="./tag/emotions.html">emotions</a>,
+
+<a title="Posts tagged with: empathy" href="./tag/empathy.html">empathy</a>,
+
+<a title="Posts tagged with: enterprise" href="./tag/enterprise.html">enterprise</a>,
+
+<a title="Posts tagged with: entertainment" href="./tag/entertainment.html">entertainment</a>,
+
+<a title="Posts tagged with: environment" href="./tag/environment.html">environment</a>,
+
+<a title="Posts tagged with: eonomics" href="./tag/eonomics.html">eonomics</a>,
+
+<a title="Posts tagged with: epic" href="./tag/epic.html">epic</a>,
+
+<a title="Posts tagged with: ethics" href="./tag/ethics.html">ethics</a>,
+
+<a title="Posts tagged with: evolution" href="./tag/evolution.html">evolution</a>,
+
+<a title="Posts tagged with: experiments" href="./tag/experiments.html">experiments</a>,
+
+<a title="Posts tagged with: explore" href="./tag/explore.html">explore</a>,
+
+<a title="Posts tagged with: fairy tales" href="./tag/fairy-tales.html">fairy tales</a>,
+
+<a title="Posts tagged with: family" href="./tag/family.html">family</a>,
+
+<a title="Posts tagged with: family friends" href="./tag/family-friends.html">family friends</a>,
+
+<a title="Posts tagged with: fantasy" href="./tag/fantasy.html">fantasy</a>,
+
+<a title="Posts tagged with: fear" href="./tag/fear.html">fear</a>,
+
+<a title="Posts tagged with: fears" href="./tag/fears.html">fears</a>,
+
+<a title="Posts tagged with: feminism" href="./tag/feminism.html">feminism</a>,
+
+<a title="Posts tagged with: festival" href="./tag/festival.html">festival</a>,
+
+<a title="Posts tagged with: festivals" href="./tag/festivals.html">festivals</a>,
+
+<a title="Posts tagged with: fiction" href="./tag/fiction.html">fiction</a>,
+
+<a title="Posts tagged with: flash fiction" href="./tag/flash-fiction.html">flash fiction</a>,
+
+<a title="Posts tagged with: flashfiction" href="./tag/flashfiction.html">flashfiction</a>,
+
+<a title="Posts tagged with: food" href="./tag/food.html">food</a>,
+
+<a title="Posts tagged with: freedom" href="./tag/freedom.html">freedom</a>,
+
+<a title="Posts tagged with: friends" href="./tag/friends.html">friends</a>,
+
+<a title="Posts tagged with: friendship" href="./tag/friendship.html">friendship</a>,
+
+<a title="Posts tagged with: fun" href="./tag/fun.html">fun</a>,
+
+<a title="Posts tagged with: fun fact" href="./tag/fun-fact.html">fun fact</a>,
+
+<a title="Posts tagged with: fun facts" href="./tag/fun-facts.html">fun facts</a>,
+
+<a title="Posts tagged with: funfact" href="./tag/funfact.html">funfact</a>,
+
+<a title="Posts tagged with: funfacts" href="./tag/funfacts.html">funfacts</a>,
+
+<a title="Posts tagged with: game" href="./tag/game.html">game</a>,
+
+<a title="Posts tagged with: games" href="./tag/games.html">games</a>,
+
+<a title="Posts tagged with: gender bias" href="./tag/gender-bias.html">gender bias</a>,
+
+<a title="Posts tagged with: genetics" href="./tag/genetics.html">genetics</a>,
+
+<a title="Posts tagged with: geography" href="./tag/geography.html">geography</a>,
+
+<a title="Posts tagged with: gift" href="./tag/gift.html">gift</a>,
+
+<a title="Posts tagged with: girls" href="./tag/girls.html">girls</a>,
+
+<a title="Posts tagged with: grief" href="./tag/grief.html">grief</a>,
+
+<a title="Posts tagged with: growing up" href="./tag/growing-up.html">growing up</a>,
+
+<a title="Posts tagged with: guest post" href="./tag/guest-post.html">guest post</a>,
+
+<a title="Posts tagged with: health" href="./tag/health.html">health</a>,
+
+<a title="Posts tagged with: historical" href="./tag/historical.html">historical</a>,
+
+<a title="Posts tagged with: history" href="./tag/history.html">history</a>,
+
+<a title="Posts tagged with: hope" href="./tag/hope.html">hope</a>,
+
+<a title="Posts tagged with: horror" href="./tag/horror.html">horror</a>,
+
+<a title="Posts tagged with: humanity" href="./tag/humanity.html">humanity</a>,
+
+<a title="Posts tagged with: humor" href="./tag/humor.html">humor</a>,
+
+<a title="Posts tagged with: humour" href="./tag/humour.html">humour</a>,
+
+<a title="Posts tagged with: hygiene" href="./tag/hygiene.html">hygiene</a>,
+
+<a title="Posts tagged with: ideas" href="./tag/ideas.html">ideas</a>,
+
+<a title="Posts tagged with: illness" href="./tag/illness.html">illness</a>,
+
+<a title="Posts tagged with: imagination" href="./tag/imagination.html">imagination</a>,
+
+<a title="Posts tagged with: independence" href="./tag/independence.html">independence</a>,
+
+<a title="Posts tagged with: India" href="./tag/india.html">India</a>,
+
+<a title="Posts tagged with: infection" href="./tag/infection.html">infection</a>,
+
+<a title="Posts tagged with: injury" href="./tag/injury.html">injury</a>,
+
+<a title="Posts tagged with: insects" href="./tag/insects.html">insects</a>,
+
+<a title="Posts tagged with: internet" href="./tag/internet.html">internet</a>,
+
+<a title="Posts tagged with: introspection" href="./tag/introspection.html">introspection</a>,
+
+<a title="Posts tagged with: joy" href="./tag/joy.html">joy</a>,
+
+<a title="Posts tagged with: kids" href="./tag/kids.html">kids</a>,
+
+<a title="Posts tagged with: kids special" href="./tag/kids-special.html">kids special</a>,
+
+<a title="Posts tagged with: language" href="./tag/language.html">language</a>,
+
+<a title="Posts tagged with: laughs" href="./tag/laughs.html">laughs</a>,
+
+<a title="Posts tagged with: laws" href="./tag/laws.html">laws</a>,
+
+<a title="Posts tagged with: learn" href="./tag/learn.html">learn</a>,
+
+<a title="Posts tagged with: learn to read" href="./tag/learn-to-read.html">learn to read</a>,
+
+<a title="Posts tagged with: learning" href="./tag/learning.html">learning</a>,
+
+<a title="Posts tagged with: life" href="./tag/life.html">life</a>,
+
+<a title="Posts tagged with: lifestyle" href="./tag/lifestyle.html">lifestyle</a>,
+
+<a title="Posts tagged with: literary" href="./tag/literary.html">literary</a>,
+
+<a title="Posts tagged with: literary fiction" href="./tag/literary-fiction.html">literary fiction</a>,
+
+<a title="Posts tagged with: literature" href="./tag/literature.html">literature</a>,
+
+<a title="Posts tagged with: love" href="./tag/love.html">love</a>,
+
+<a title="Posts tagged with: lunch" href="./tag/lunch.html">lunch</a>,
+
+<a title="Posts tagged with: magic" href="./tag/magic.html">magic</a>,
+
+<a title="Posts tagged with: mammogram" href="./tag/mammogram.html">mammogram</a>,
+
+<a title="Posts tagged with: math" href="./tag/math.html">math</a>,
+
+<a title="Posts tagged with: mathematics" href="./tag/mathematics.html">mathematics</a>,
+
+<a title="Posts tagged with: medicine" href="./tag/medicine.html">medicine</a>,
+
+<a title="Posts tagged with: milestones" href="./tag/milestones.html">milestones</a>,
+
+<a title="Posts tagged with: monsoon" href="./tag/monsoon.html">monsoon</a>,
+
+<a title="Posts tagged with: movie" href="./tag/movie.html">movie</a>,
+
+<a title="Posts tagged with: movies" href="./tag/movies.html">movies</a>,
+
+<a title="Posts tagged with: murder" href="./tag/murder.html">murder</a>,
+
+<a title="Posts tagged with: music" href="./tag/music.html">music</a>,
+
+<a title="Posts tagged with: mystery" href="./tag/mystery.html">mystery</a>,
+
+<a title="Posts tagged with: mythology" href="./tag/mythology.html">mythology</a>,
+
+<a title="Posts tagged with: nature" href="./tag/nature.html">nature</a>,
+
+<a title="Posts tagged with: news" href="./tag/news.html">news</a>,
+
+<a title="Posts tagged with: Nina and Nana" href="./tag/nina-and-nana.html">Nina and Nana</a>,
+
+<a title="Posts tagged with: nonfiction" href="./tag/nonfiction.html">nonfiction</a>,
+
+<a title="Posts tagged with: novel" href="./tag/novel.html">novel</a>,
+
+<a title="Posts tagged with: novella" href="./tag/novella.html">novella</a>,
+
+<a title="Posts tagged with: nutrition" href="./tag/nutrition.html">nutrition</a>,
+
+<a title="Posts tagged with: outdoor" href="./tag/outdoor.html">outdoor</a>,
+
+<a title="Posts tagged with: Pap smear" href="./tag/pap-smear.html">Pap smear</a>,
+
+<a title="Posts tagged with: paranormal" href="./tag/paranormal.html">paranormal</a>,
+
+<a title="Posts tagged with: parenting" href="./tag/parenting.html">parenting</a>,
+
+<a title="Posts tagged with: partnership" href="./tag/partnership.html">partnership</a>,
+
+<a title="Posts tagged with: party" href="./tag/party.html">party</a>,
+
+<a title="Posts tagged with: patriarchy" href="./tag/patriarchy.html">patriarchy</a>,
+
+<a title="Posts tagged with: pelvic pain" href="./tag/pelvic-pain.html">pelvic pain</a>,
+
+<a title="Posts tagged with: philosophy" href="./tag/philosophy.html">philosophy</a>,
+
+<a title="Posts tagged with: photoprompt" href="./tag/photoprompt.html">photoprompt</a>,
+
+<a title="Posts tagged with: physics" href="./tag/physics.html">physics</a>,
+
+<a title="Posts tagged with: picture book" href="./tag/picture-book.html">picture book</a>,
+
+<a title="Posts tagged with: plants" href="./tag/plants.html">plants</a>,
+
+<a title="Posts tagged with: poem" href="./tag/poem.html">poem</a>,
+
+<a title="Posts tagged with: poetry" href="./tag/poetry.html">poetry</a>,
+
+<a title="Posts tagged with: politics" href="./tag/politics.html">politics</a>,
+
+<a title="Posts tagged with: pop culture" href="./tag/pop-culture.html">pop culture</a>,
+
+<a title="Posts tagged with: pregnancy" href="./tag/pregnancy.html">pregnancy</a>,
+
+<a title="Posts tagged with: prejudice" href="./tag/prejudice.html">prejudice</a>,
+
+<a title="Posts tagged with: prejudices" href="./tag/prejudices.html">prejudices</a>,
+
+<a title="Posts tagged with: privacy" href="./tag/privacy.html">privacy</a>,
+
+<a title="Posts tagged with: psychology" href="./tag/psychology.html">psychology</a>,
+
+<a title="Posts tagged with: puberty" href="./tag/puberty.html">puberty</a>,
+
+<a title="Posts tagged with: puzzles" href="./tag/puzzles.html">puzzles</a>,
+
+<a title="Posts tagged with: radiation" href="./tag/radiation.html">radiation</a>,
+
+<a title="Posts tagged with: reading" href="./tag/reading.html">reading</a>,
+
+<a title="Posts tagged with: recipe" href="./tag/recipe.html">recipe</a>,
+
+<a title="Posts tagged with: recipes" href="./tag/recipes.html">recipes</a>,
+
+<a title="Posts tagged with: relationship" href="./tag/relationship.html">relationship</a>,
+
+<a title="Posts tagged with: relationships" href="./tag/relationships.html">relationships</a>,
+
+<a title="Posts tagged with: research" href="./tag/research.html">research</a>,
+
+<a title="Posts tagged with: responsibility" href="./tag/responsibility.html">responsibility</a>,
+
+<a title="Posts tagged with: review" href="./tag/review.html">review</a>,
+
+<a title="Posts tagged with: risk" href="./tag/risk.html">risk</a>,
+
+<a title="Posts tagged with: romance" href="./tag/romance.html">romance</a>,
+
+<a title="Posts tagged with: safety" href="./tag/safety.html">safety</a>,
+
+<a title="Posts tagged with: satire" href="./tag/satire.html">satire</a>,
+
+<a title="Posts tagged with: school" href="./tag/school.html">school</a>,
+
+<a title="Posts tagged with: schools" href="./tag/schools.html">schools</a>,
+
+<a title="Posts tagged with: sci-fi" href="./tag/sci-fi.html">sci-fi</a>,
+
+<a title="Posts tagged with: science" href="./tag/science.html">science</a>,
+
+<a title="Posts tagged with: science fiction" href="./tag/science-fiction.html">science fiction</a>,
+
+<a title="Posts tagged with: scifi" href="./tag/scifi.html">scifi</a>,
+
+<a title="Posts tagged with: second child" href="./tag/second-child.html">second child</a>,
+
+<a title="Posts tagged with: sex" href="./tag/sex.html">sex</a>,
+
+<a title="Posts tagged with: short stories" href="./tag/short-stories.html">short stories</a>,
+
+<a title="Posts tagged with: short story" href="./tag/short-story.html">short story</a>,
+
+<a title="Posts tagged with: shortstory" href="./tag/shortstory.html">shortstory</a>,
+
+<a title="Posts tagged with: sibling" href="./tag/sibling.html">sibling</a>,
+
+<a title="Posts tagged with: siblings" href="./tag/siblings.html">siblings</a>,
+
+<a title="Posts tagged with: snack" href="./tag/snack.html">snack</a>,
+
+<a title="Posts tagged with: social" href="./tag/social.html">social</a>,
+
+<a title="Posts tagged with: social media" href="./tag/social-media.html">social media</a>,
+
+<a title="Posts tagged with: software" href="./tag/software.html">software</a>,
+
+<a title="Posts tagged with: solar system" href="./tag/solar-system.html">solar system</a>,
+
+<a title="Posts tagged with: songs" href="./tag/songs.html">songs</a>,
+
+<a title="Posts tagged with: space" href="./tag/space.html">space</a>,
+
+<a title="Posts tagged with: sports" href="./tag/sports.html">sports</a>,
+
+<a title="Posts tagged with: stories" href="./tag/stories.html">stories</a>,
+
+<a title="Posts tagged with: story" href="./tag/story.html">story</a>,
+
+<a title="Posts tagged with: summer" href="./tag/summer.html">summer</a>,
+
+<a title="Posts tagged with: superstition" href="./tag/superstition.html">superstition</a>,
+
+<a title="Posts tagged with: surprise" href="./tag/surprise.html">surprise</a>,
+
+<a title="Posts tagged with: suspense" href="./tag/suspense.html">suspense</a>,
+
+<a title="Posts tagged with: team" href="./tag/team.html">team</a>,
+
+<a title="Posts tagged with: team work" href="./tag/team-work.html">team work</a>,
+
+<a title="Posts tagged with: teamwork" href="./tag/teamwork.html">teamwork</a>,
+
+<a title="Posts tagged with: technology" href="./tag/technology.html">technology</a>,
+
+<a title="Posts tagged with: teen" href="./tag/teen.html">teen</a>,
+
+<a title="Posts tagged with: teens" href="./tag/teens.html">teens</a>,
+
+<a title="Posts tagged with: teeth" href="./tag/teeth.html">teeth</a>,
+
+<a title="Posts tagged with: thriller" href="./tag/thriller.html">thriller</a>,
+
+<a title="Posts tagged with: time travel" href="./tag/time-travel.html">time travel</a>,
+
+<a title="Posts tagged with: toddlers" href="./tag/toddlers.html">toddlers</a>,
+
+<a title="Posts tagged with: toy" href="./tag/toy.html">toy</a>,
+
+<a title="Posts tagged with: toys" href="./tag/toys.html">toys</a>,
+
+<a title="Posts tagged with: tradition" href="./tag/tradition.html">tradition</a>,
+
+<a title="Posts tagged with: traditions" href="./tag/traditions.html">traditions</a>,
+
+<a title="Posts tagged with: travel" href="./tag/travel.html">travel</a>,
+
+<a title="Posts tagged with: TV" href="./tag/tv.html">TV</a>,
+
+<a title="Posts tagged with: TV shows" href="./tag/tv-shows.html">TV shows</a>,
+
+<a title="Posts tagged with: vacation" href="./tag/vacation.html">vacation</a>,
+
+<a title="Posts tagged with: values" href="./tag/values.html">values</a>,
+
+<a title="Posts tagged with: war" href="./tag/war.html">war</a>,
+
+<a title="Posts tagged with: weight" href="./tag/weight.html">weight</a>,
+
+<a title="Posts tagged with: women" href="./tag/women.html">women</a>,
+
+<a title="Posts tagged with: young adult" href="./tag/young-adult.html">young adult</a></nav>
+</div>
+<div class="contact">
+    <h2>contact</h2>
+    <ul>
+    <li><a href="https://www.facebook.com/kanikag.books" target="_blank"><img src="./res/facebook-logo.svg">
+            <span>Facebook</span></a></li> <li><a href="https://twitter.com/KanikaGee" target="_blank"><img src="./res/twitter-logo.svg">
+            <span>Twitter</span></a></li> <li><a href="mailto:gee.kanika@gmail.com" target="_blank"><img src="./res/email-logo.svg">
+            <span>E-mail</span></a></li>
+    </ul>
+</div>
+</footer>
+        </footer>
+        </div>
+    </body>
+</html>

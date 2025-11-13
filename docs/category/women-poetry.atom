@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Mom’s Best Friend</title>
+    <subtitle>Poetry</subtitle>
+    <author><name>Kanika G</name></author>
+    <link href="https://kanikag.com" />
+    <link href="https://kanikag.com/category/women-poetry.atom" rel="self" />
+    <id>https://kanikag.com/category/women-poetry.atom</id>
+    <updated>2025-11-13T15:22:33Z</updated>
+        <entry>
+            <title>Reflections</title>
+            <link href="https://kanikag.com/women-poetry-reflections.html" rel="alternate" type="text/html" />
+            <updated>2024-10-20T12:00:00Z</updated>
+            <summary>Making the time for reflections, and finding the courage to face them.
+</summary>
+            <id>https://kanikag.com/women-poetry-reflections.html</id>
+        </entry>
+
+        <entry>
+            <title>The Odd Odyssey</title>
+            <link href="https://kanikag.com/women-poetry-odyssey.html" rel="alternate" type="text/html" />
+            <updated>2024-06-28T12:00:00Z</updated>
+            <summary>The fleeting mellow twilight.
+</summary>
+            <id>https://kanikag.com/women-poetry-odyssey.html</id>
+        </entry>
+
+        <entry>
+            <title>The Cure</title>
+            <link href="https://kanikag.com/women-poetry-the-cure.html" rel="alternate" type="text/html" />
+            <updated>2024-03-29T12:00:00Z</updated>
+            <summary>Sometimes the cure is worse than the disease.
+</summary>
+            <id>https://kanikag.com/women-poetry-the-cure.html</id>
+        </entry>
+
+        <entry>
+            <title>A Conflict Of Interest</title>
+            <link href="https://kanikag.com/women-poetry-conflict-of-interest.html" rel="alternate" type="text/html" />
+            <updated>2024-03-06T12:00:00Z</updated>
+            <summary>Effective conflict resolution is a path to novel stable solutions.
+</summary>
+            <id>https://kanikag.com/women-poetry-conflict-of-interest.html</id>
+        </entry>
+
+        <entry>
+            <title>The Celestial Dance</title>
+            <link href="https://kanikag.com/women-poetry-the-celestial-dance.html" rel="alternate" type="text/html" />
+            <updated>2024-02-08T12:00:00Z</updated>
+            <summary>A poem that illustrates, true confidence and power, need not hog the limelight.
+</summary>
+            <id>https://kanikag.com/women-poetry-the-celestial-dance.html</id>
+        </entry>
+
+        <entry>
+            <title>Twilight</title>
+            <link href="https://kanikag.com/women-poetry-twilight.html" rel="alternate" type="text/html" />
+            <updated>2023-11-24T12:00:00Z</updated>
+            <summary>The fleeting mellow twilight.
+</summary>
+            <id>https://kanikag.com/women-poetry-twilight.html</id>
+        </entry>
+
+        <entry>
+            <title>Time Enough To Be Me</title>
+            <link href="https://kanikag.com/women-poetry-time-machine.html" rel="alternate" type="text/html" />
+            <updated>2023-11-23T12:00:00Z</updated>
+            <summary>So much me, so little time! How do we fix that?
+</summary>
+            <id>https://kanikag.com/women-poetry-time-machine.html</id>
+        </entry>
+
+        <entry>
+            <title>Views For News</title>
+            <link href="https://kanikag.com/women-poetry-news.html" rel="alternate" type="text/html" />
+            <updated>2023-10-20T12:00:00Z</updated>
+            <summary>When the news decides to interpret the facts, instead of relaying them
+</summary>
+            <id>https://kanikag.com/women-poetry-news.html</id>
+        </entry>
+
+        <entry>
+            <title>The Feedback Loop</title>
+            <link href="https://kanikag.com/women-poetry-feedback.html" rel="alternate" type="text/html" />
+            <updated>2023-06-22T12:00:00Z</updated>
+            <summary>The feedback loops of emotion can be explosive, or NOT.
+</summary>
+            <id>https://kanikag.com/women-poetry-feedback.html</id>
+        </entry>
+
+        <entry>
+            <title>The Sentinel Song</title>
+            <link href="https://kanikag.com/women-poetry-the-sentinel-song.html" rel="alternate" type="text/html" />
+            <updated>2023-05-29T12:00:00Z</updated>
+            <summary>A tribute to the awe inspiring Himalayas
+</summary>
+            <id>https://kanikag.com/women-poetry-the-sentinel-song.html</id>
+        </entry>
+
+        <entry>
+            <title>The Eloquent Pendulum</title>
+            <link href="https://kanikag.com/women-poetry-pendulum.html" rel="alternate" type="text/html" />
+            <updated>2023-01-12T12:00:00Z</updated>
+            <summary>The humble swinging pendulum is an elegant physical model and an insightful metaphor.
+</summary>
+            <id>https://kanikag.com/women-poetry-pendulum.html</id>
+        </entry>
+
+        <entry>
+            <title>Up And Down, Round And Round</title>
+            <link href="https://kanikag.com/women-poetry-up-and-down.html" rel="alternate" type="text/html" />
+            <updated>2023-01-05T12:00:00Z</updated>
+            <summary>The cycle of history, repeats endlessly, so if you don’t like what you see, know that it will soon be, replaced by the next eventuality.
+</summary>
+            <id>https://kanikag.com/women-poetry-up-and-down.html</id>
+        </entry>
+
+        <entry>
+            <title>Happy Endings</title>
+            <link href="https://kanikag.com/women-poetry-happy-endings.html" rel="alternate" type="text/html" />
+            <updated>2022-07-14T12:00:00Z</updated>
+            <summary>A poem that questions if happy endings are really endings.
+</summary>
+            <id>https://kanikag.com/women-poetry-happy-endings.html</id>
+        </entry>
+
+        <entry>
+            <title>One by One, Down to the Last One</title>
+            <link href="https://kanikag.com/women-poetry-one-by-one.html" rel="alternate" type="text/html" />
+            <updated>2022-04-22T12:00:00Z</updated>
+            <summary>How long can you tap dance your way around a raging fire unscathed?
+</summary>
+            <id>https://kanikag.com/women-poetry-one-by-one.html</id>
+        </entry>
+
+        <entry>
+            <title>What Kind Of Society?</title>
+            <link href="https://kanikag.com/women-poetry-what-kind-society.html" rel="alternate" type="text/html" />
+            <updated>2022-02-14T12:00:00Z</updated>
+            <summary>What kind of society do we want to be? It's time for some introspection.
+</summary>
+            <id>https://kanikag.com/women-poetry-what-kind-society.html</id>
+        </entry>
+
+        <entry>
+            <title>Flawed Fight For Freedom</title>
+            <link href="https://kanikag.com/women-poetry-flawed-fight-for-freedom.html" rel="alternate" type="text/html" />
+            <updated>2021-11-23T12:00:00Z</updated>
+            <summary>Flawed, fumbling and yet effective, our freedom struggle was a learning experience.
+</summary>
+            <id>https://kanikag.com/women-poetry-flawed-fight-for-freedom.html</id>
+        </entry>
+
+        <entry>
+            <title>Broken</title>
+            <link href="https://kanikag.com/women-poetry-gagged.html" rel="alternate" type="text/html" />
+            <updated>2021-07-26T12:00:00Z</updated>
+            <summary>When speech isn't free and voices are crushed, we're BROKEN
+</summary>
+            <id>https://kanikag.com/women-poetry-gagged.html</id>
+        </entry>
+
+        <entry>
+            <title>The Battle of the Bullies</title>
+            <link href="https://kanikag.com/women-poetry-battle-of-the-bullies.html" rel="alternate" type="text/html" />
+            <updated>2021-06-24T12:00:00Z</updated>
+            <summary>The internet, a valuable public resource, has reached a defining moment in history. How we proceed today, will determine how it serves us in the future.
+</summary>
+            <id>https://kanikag.com/women-poetry-battle-of-the-bullies.html</id>
+        </entry>
+
+        <entry>
+            <title>What, Why, How?</title>
+            <link href="https://kanikag.com/women-poetry-curiosity.html" rel="alternate" type="text/html" />
+            <updated>2021-03-04T12:00:00Z</updated>
+            <summary>A poem about, what I believe, makes life tick.
+</summary>
+            <id>https://kanikag.com/women-poetry-curiosity.html</id>
+        </entry>
+
+        <entry>
+            <title>The Inner Voice</title>
+            <link href="https://kanikag.com/women-poetry-inner-voice.html" rel="alternate" type="text/html" />
+            <updated>2021-03-02T12:00:00Z</updated>
+            <summary>A poem inspired by A Mid Summer’s Equation by Keigo Higashino
+</summary>
+            <id>https://kanikag.com/women-poetry-inner-voice.html</id>
+        </entry>
+
+        <entry>
+            <title>Identity Crisis</title>
+            <link href="https://kanikag.com/women-poetry-indian-identity.html" rel="alternate" type="text/html" />
+            <updated>2020-11-12T12:00:00Z</updated>
+            <summary>When a culture is oppressed by alien rule for over two centuries, they struggle to regain their identity and confidence. This is especially true, when the aliens have deliberately rewritten the cultural identities of the oppressed to suit their own purposes. How do we get over this identity crisis?
+</summary>
+            <id>https://kanikag.com/women-poetry-indian-identity.html</id>
+        </entry>
+
+        <entry>
+            <title>The Lesser Evil</title>
+            <link href="https://kanikag.com/women-poetry-the-lesser-evil.html" rel="alternate" type="text/html" />
+            <updated>2020-09-26T12:00:00Z</updated>
+            <summary>This is a poem I wrote for myself.
+</summary>
+            <id>https://kanikag.com/women-poetry-the-lesser-evil.html</id>
+        </entry>
+
+        <entry>
+            <title>March Of The Virus</title>
+            <link href="https://kanikag.com/women-poetry-march-virus.html" rel="alternate" type="text/html" />
+            <updated>2020-04-23T12:00:00Z</updated>
+            <summary>The virus has taken the world by storm. So here's a little recap in poem form.
+</summary>
+            <id>https://kanikag.com/women-poetry-march-virus.html</id>
+        </entry>
+
+        <entry>
+            <title>Hobgoblins At The Hive Of Horrors</title>
+            <link href="https://kanikag.com/women-poetry-hive-of-horrors.html" rel="alternate" type="text/html" />
+            <updated>2020-01-22T12:00:00Z</updated>
+            <summary>Enter enthusiastically, enjoy the show, check all your body parts, before you go. We've stolen hearts, kidneys and more, we at The Hive are hungry for gore. Horror of any kind is welcome here, stop by to learn all about fear.
+</summary>
+            <id>https://kanikag.com/women-poetry-hive-of-horrors.html</id>
+        </entry>
+
+        <entry>
+            <title>A Cacophonous Symphony</title>
+            <link href="https://kanikag.com/women-poetry-chocophony.html" rel="alternate" type="text/html" />
+            <updated>2019-11-10T12:00:00Z</updated>
+            <summary>This poem was inspired by the movie Chocolat and should perhaps be called Chocophony.
+</summary>
+            <id>https://kanikag.com/women-poetry-chocophony.html</id>
+        </entry>
+</feed>
