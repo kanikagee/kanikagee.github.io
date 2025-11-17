@@ -6,11 +6,20 @@
     <link href="https://kanikag.com" />
     <link href="https://kanikag.com/category/index.atom" rel="self" />
     <id>https://kanikag.com/category/index.atom</id>
-    <updated>2025-11-13T16:49:14Z</updated>
+    <updated>2025-11-17T05:34:56Z</updated>
+        <entry>
+            <title>Lost and Found</title>
+            <link href="https://kanikag.com/women-stories-the-necklace.html" rel="alternate" type="text/html" />
+            <updated>2025-11-17T12:00:00Z</updated>
+            <summary>A lost symbol that links the stories of two families on either side of the The Radcliffe Line, through a strange twist of fate, ends up fulfilling its destiny.
+</summary>
+            <id>https://kanikag.com/women-stories-the-necklace.html</id>
+        </entry>
+
         <entry>
             <title>Constructive Use of AI in Schools</title>
             <link href="https://kanikag.com/parenting-philosophies-ai-use.html" rel="alternate" type="text/html" />
-            <updated>2035-09-30T12:00:00Z</updated>
+            <updated>2025-09-30T12:00:00Z</updated>
             <summary>To AI or not to AI, that is the question!
 </summary>
             <id>https://kanikag.com/parenting-philosophies-ai-use.html</id>
@@ -221,14 +230,5 @@
             <summary>A poem that illustrates, true confidence and power, need not hog the limelight.
 </summary>
             <id>https://kanikag.com/women-poetry-the-celestial-dance.html</id>
-        </entry>
-
-        <entry>
-            <title>Fast And Furious</title>
-            <link href="https://kanikag.com/women-health-fast-and-furious.html" rel="alternate" type="text/html" />
-            <updated>2024-01-31T12:00:00Z</updated>
-            <summary>Intermittent fasting is all the rage these days. But can someone prone to being hangry manage it? Read on to find out.
-</summary>
-            <id>https://kanikag.com/women-health-fast-and-furious.html</id>
         </entry>
 </feed>

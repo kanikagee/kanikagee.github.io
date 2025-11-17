@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mom’s Best Friend - Lost and Found</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="./res/favicon.png" />
+        <link rel="alternate" type="application/atom+xml" title="RSS feed for Mom&#x27;s Best Friend" href="./category/index.atom" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53439504-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+	    function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-53439504-2');
+        </script>
+        <style type="text/css">
+/* {{{ Reset
+ * http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ *  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* }}} */
+
+/* Fonts {{{ */
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url(./res/title-font.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* }}} */
+
+/* Global {{{ */
+/* Body */
+body {
+    background: #F5F4EF;
+    color: #000305;
+    font-size: 87.5%; /* Base font size: 14px */
+    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.429;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+/* Headings */
+h1 {font-size: 2em }
+h2 {font-size: 1.571em} /* 22px */
+h3 {font-size: 1.429em} /* 20px */
+h4 {font-size: 1.286em} /* 18px */
+h5 {font-size: 1.143em} /* 16px */
+h6 {font-size: 1em}     /* 14px */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: .8em;
+    font-family: 'Yanone Kaffeesatz', arial, serif;
+}
+
+h3, h4, h5, h6 { margin-top: .8em; }
+
+hr { border: 2px solid #EEEEEE; }
+
+/* Anchors */
+a {outline: 0;}
+a img {border: 0px; text-decoration: none;}
+a:link, a:visited {
+    color: #C74350;
+    padding: 0 1px;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover, a:active {
+    background-color: #C74350;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #333;
+}
+
+h1 a:hover {
+    background-color: inherit
+}
+
+/* Paragraphs */
+div.line-block, p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+strong, b {font-weight: bold;}
+em, i {font-style: italic;}
+
+/* Lists */
+ul {
+    list-style: outside disc;
+    margin: 0em 0 0 1.5em;
+}
+
+ol {
+    list-style: outside decimal;
+    margin: 0em 0 0 1.5em;
+}
+
+li { margin-top: 0.5em;
+     margin-bottom: 1em; }
+
+dl {margin: 0 0 1.5em 0;}
+dt {font-weight: bold;}
+dd {margin-left: 1.5em;}
+
+pre{background-color:  rgb(238, 238, 238); padding: 10px; margin: 10px; overflow: auto;}
+
+/* Quotes */
+blockquote {
+    margin: 20px;
+    font-style: italic;
+}
+cite {}
+
+q {}
+
+/* Tables */
+table {margin: .5em auto 1.5em auto; width: 98%;}
+
+/* Thead */
+thead th {padding: .5em .4em; text-align: left;}
+thead td {}
+
+/* Tbody */
+tbody td {padding: .5em .4em;}
+tbody th {}
+
+tbody .alt td {}
+tbody .alt th {}
+
+/* Tfoot */
+tfoot th {}
+tfoot td {}
+
+/* HTML5 tags */
+header, section, footer,
+aside, nav, article, figure {
+    display: block;
+}
+
+/* }}} */
+
+/* Layout  {{{ */
+.body {clear: both; margin: 0 auto;}
+#container { max-width: 800px; margin: 0 auto; }
+img.right, figure.right {float: right; margin: 0 0 2em 2em;}
+img.left, figure.left {float: left; margin: 0 2em 2em 0;}
+/* }}} */
+
+/* Header {{{ */
+/* Banner */
+
+#banner {
+    padding-top: 4px;
+}
+
+#banner h1 {
+    font-size: 3.571em; overflow: visible; white-space: nowrap; margin-bottom: 0
+}
+
+#banner .editorial-link {
+    font-family: 'Yanone Kaffeesatz', arial, serif;
+    font-size: 2.5em;
+}
+
+#banner h1 a:link, #banner h1 a:visited {
+    color: #000305;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+}
+#banner h1 a:hover, #banner h1 a:active {
+    background: none;
+    color: #C74350;
+    text-shadow: none;
+}
+
+#banner h1 strong {font-size: 0.36em; font-weight: normal;}
+
+/* Main Nav */
+#banner nav ul {
+    background: #000305;
+    font-size: 1.143em;
+    line-height: 30px;
+    margin: 0 auto 2em auto;
+    padding: 0;
+    text-align: center;
+    border-radius: 5px;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+#banner nav li {float: left; display: inline-block; margin: 0;}
+#banner nav li a { background: #000305; }
+
+#banner nav a:link, #banner nav a:visited {
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    padding: 5px 1em;
+    text-decoration: none;
+}
+#banner nav a:hover, #banner nav a:active,
+#banner nav .active a:link, #banner nav .active a:visited {
+    background: #C74451 !important;
+    color: #fff;
+    text-shadow: none !important;
+}
+#banner nav .up a:link, #banner nav .up a:visited {
+    background: #555;
+    color: #fff;
+    text-shadow: none !important;
+}
+
+
+/* }}} */
+
+/* Body {{{ */
+
+#content {
+    background: #fff;
+    margin-bottom: 2em;
+    margin-top: -1em;
+    overflow: hidden;
+    padding: 10px 20px;
+
+    border-radius: 10px;
+}
+
+.article-meta {
+    display: flex;
+    justify-content: space-between;
+}
+
+#share {
+    display: flex;
+}
+
+#share .fb-like {
+    margin-left: 0.5em;
+}
+
+#content .published {
+    font-style: italic;
+    color: gray
+}
+
+.summary .published {
+    margin-left: 1em;
+    padding-top: 1ex;
+}
+
+#content img.align-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+#content img.align-left {
+    display: block;
+    margin: 0.5em 1em;
+    margin-left: 0;
+    border-radius: 5px;
+    float: left;
+}
+
+#content img.align-right {
+    display: block;
+    margin: 0.5em 1em;
+    margin-right: 0;
+    border-radius: 5px;
+    float: right;
+}
+
+
+.entry-title {font-size: 3em; margin-bottom: 10px; margin-top: 0;}
+.entry-title a:link, .entry-title a:visited {text-decoration: none; color: #333;}
+.entry-title a:visited {background-color: #fff;}
+
+#content .full-article-nav {
+    display: flex;
+    border-top: solid 1px currentColor;
+    padding-top: 1em;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* }}} */
+
+/* Article list {{{ */
+ul.article-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+ul.article-list li {
+    clear: both;
+}
+
+article.summary header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+article.summary header h1 {
+    margin-bottom: 0;
+}
+
+article.summary a.img-link {
+    max-width: 35%;
+    display: block;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    padding: 0;
+    float: left;
+}
+
+article.summary hr { clear: both; }
+
+article.summary a.img-link:hover, article.summary a.img-link:active {
+    text-shadow: none;
+}
+
+article.summary a.img-link img {
+    max-width: 100%;
+    max-height: 96px;
+    border-radius: 5px;
+}
+
+article.summary a.img-link img:hover {
+    transform: scale(1.5);
+}
+
+article.summary div.read-more {
+    text-align: right;
+}
+
+nav.paginator {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* }}} */
+
+/* Footer {{{ */
+footer.page-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer.page-bottom .tag-cloud {
+    margin-right: 1em;
+}
+
+footer.page-bottom .contact {
+    margin-left: 1em;
+}
+
+footer.page-bottom .contact ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+footer.page-bottom .contact li {
+    white-space: nowrap;
+}
+
+footer.page-bottom .contact a:hover, a:active {
+    background-color: transparent;
+    color: currentColor;
+    text-shadow: none;
+}
+
+footer.page-bottom .contact li:hover span {
+    background-color: #C74350;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #333;
+}
+
+footer.page-bottom .contact img {
+    height: 2.5ex;
+    width: auto;
+    vertical-align: text-bottom;
+}
+
+
+/* }}} */
+
+        </style>
+    </head>
+    <body id="index" class="home">
+        <div id="fb-root"></div>
+        <div id="container">
+        <header id="banner" class="body">
+            <div style="display: flex; justify-content: space-between;">
+                <h1><a href="./index.html">Mom’s Best Friend</a></h1>
+                <div class="editorial-link"><a href="./editorial.html">Editing Services</a>&nbsp;</div>
+            </div>
+            <nav><ul>
+        <li class="up">
+            <a href="./category/women.html">⬆ Women</a>
+        </li>
+
+        <li class="">
+            <a href="./category/women-comics.html">Nina and Nana</a>
+        </li>
+
+        <li class="">
+            <a href="./category/women-health.html">Health</a>
+        </li>
+
+        <li class="">
+            <a href="./category/women-poetry.html">Poetry</a>
+        </li>
+
+        <li class="">
+            <a href="./category/women-relationships.html">Relationships</a>
+        </li>
+
+        <li class="">
+            <a href="./category/women-social.html">Social</a>
+        </li>
+
+        <li class="active">
+            <a href="./category/women-stories.html">Stories</a>
+        </li></ul></nav>
+        </header>
+
+        <section id="content" class="body">
+            
+<article>
+<header>
+<h1 class="entry-title">Lost and Found</h1>
+<div class="article-meta">
+<div class="published">17 Nov 2025</div>
+<div id="share">
+    <div>
+        <a href="https://twitter.com/share" class="twitter-share-button"
+            data-show-count="false" data-related="kanikagee">Tweet</a>
+    </div>
+    <div class="fb-like" data-layout="button" data-action="like" data-size="small"
+        data-share="true"></div>
+    <script>
+    document.querySelector('#share .fb-like').dataset.href = window.location;
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_IN/sdk.js#xfbml=1&version=v2.10";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+</div>
+</header>
+<div class="entry-content"><img alt="cover" class="align-center" src="./images/articles-Women-Stories-The-Necklace-cover.jpeg" style="width: 35%;" />
+<p><em>Cover image created using Copilot</em></p>
+<blockquote>
+<p>A lost symbol that links the stories of two families on either side of the The Radcliffe Line, through a strange twist of fate, ends up fulfilling its destiny.</p>
+</blockquote>
+<p>It has been days since I have been stuck in this claustrophobic grave. I can’t help but feel distraught when I think of what I was destined for, certainly not to be buried under composting rubbish. But I can hardly feel sorry for myself knowing everything that has happened here in the last month. Disgusting as my surroundings may be, at least I am safe.</p>
+<p>I still remember the moment I became conscious. It was about a month ago. Rizwaan, my creator breathed life into me. I still remember the sparkle in his eyes as the first thing I ever saw.</p>
+<p>“Muskaan, come here, it’s ready,” were the first words I ever heard, and they were so joyful, I, sparkled with happiness. Rizwaan was calling his wife to tell her about me.</p>
+<p>I heard the tinkle of her bangles and <em>payals</em>, as she rushed in from the other room. “It’s beautiful Rizzu,” she whispered fingering me gently. “I wish I could have it.” She looked longingly at me with her hazel colored doe eyes. Her silky brown hair cascaded down delicate shoulders, and a green <em>bindi</em> adorned her ivory colored face.</p>
+<p>“Have you any idea how much this costs?” Rizwaan was shocked. “We couldn’t afford it, if we starved ourselves. See these diamonds? They alone cost way more than my yearly income. Then there are the rubies and the gold.”</p>
+<p>“But it’s so beautiful and sparkly Rizzu. As a jeweler's wife, I only get to be taunted by such beauties before they make their way to some rich woman’s neck. It’s so cruel.” She pouted.</p>
+<p>“Well Hina’s husband embroiders beautiful silk clothes and she never gets to wear them. Rashida’s husband weaves beautiful carpets and rugs, but she doesn't get to keep any in her own home. That’s how our village is. We are all artisans.”</p>
+<p>“Why is that so? How come none of us are farmers, herdsmen or <em>munshis</em>?”</p>
+<p>“After the British came to power in Bengal, they started destroying the workshops of artisans, especially weavers, because their coarse machine made products could not compete with our fine creations. So our ancestors, who had served the noblemen at the Sultan’s court fled to this remote land outside Kolkata and set up this village. Because we create only custom ordered products with intricate designs their machines can’t make, and sell only to a niche clientele of wealthy <em>zamindaars</em> and aristocrats, the British have left us alone.”</p>
+<p>“Is that why our village is called Kalarnagar, the village of art?” Muskaan asked.</p>
+<p>“Yes.” Rizwaan smiled. “We create beauty, but we also know how ephemeral it is. We barely get to grasp it, before it slips through our fingers. So we create more.”</p>
+<p>“It’s not fair,” Muskaan pouted. “To always be surrounded by beauty, but never own any of it.”</p>
+<p>“I don’t think so.” Rizwaan objected. “I’m always surrounded by beauty I don’t own, and I couldn’t be happier.” He took her into his arms and smiled as he looked into her eyes. “Eyes that twinkle like diamonds, skin as soft as velvet, hair that shines like silk ...”</p>
+<p>“Oh Rizzu, you make me blush,” Muskaan giggled, and I was the one feeling jealous. The joyous melody in her laughter made my largest, best cut diamond seem like a cheap trinket in comparison. Nothing I had to offer, gold, delicate carvings, or gemstones, could match the lively mischievous sparkle in her loving gaze. But I had only just met her.</p>
+<p>As I got to know her, it was impossible not to love her for her genuine and cheerful nature. Soon, my jealousy was a long forgotten fleeting feeling.  I learned that Rizwaan and Muskaan had been married for about a year and were thinking about having children. As I lie in this stinking grime, I can at least cherish the memories of the few love filled days I spent with them.</p>
+<p>Rizwaan put me on a velvet cloth inside a glass case set on a small wooden pedestal. That’s where, I learned he put all his best creations for a few days, so he could admire them, before he had to deliver them to his customers.</p>
+<p>Soon after he put me inside the case, Muskaan and he sat on a <em>chaarpai</em> next to me and he told her my story. I listened with rapt attention.</p>
+<p>“So tell me Rizzu, I’ve been waiting to hear about this one. It looks so exquisite. Is it your design? You know I am curious and talkative, yet you won’t let me ask any questions till you are done. It drives me crazy!”</p>
+<p>Rizwaan laughed heartily. “Muskaan, you’re such an impatient little chatterbox. Yes, I love to tell you about my work, but I can’t talk about my work to anyone until I finish a project, and before you start pouting again, that includes you too. It’s just how I am.” He folded his arms across his chest.</p>
+<p>“Fine Rizzu, tell me about this. It doesn’t look like any of your designs. Your designs are usually lighter and more delicate. What’s that paper you have been hiding from me? Is it a love letter?” Muskaan frowned.</p>
+<p>“Oh you miserable witch. You’ll go to hell for that. You know I love only you, yet you tease me so.”</p>
+<p>Muskaan shrugged. “Then what is that paper? Can I see now, at least?”</p>
+<p>“Yes,” Rizwaan took out a neatly folded piece of paper from his <em>kurta</em> pocket and handed it to Muskaan. “Open it carefully, and you will see. It is precious though, so be careful.”</p>
+<p>“This yellowing paper? Precious?” Muskaan scoffed. “It’s so brittle.”</p>
+<p>“That’s why you need to be careful.” Rizwaan cautioned.</p>
+<p>Muskaan carefully unfolded the paper and gasped. “Goodness, it looks just like the necklace you have made. Who painted this?”</p>
+<p>“This painting belongs to the Debjani Debi. She is the wife of a very rich <em>zamindaar</em>, Anirban Chaudhari from Khulna.”</p>
+<p>“Did she design it herself?” Muskaan demanded. “Some of these <em>zamindaari</em> women are so accomplished,” she added admiringly.</p>
+<p>“No, no. This was a family heirloom,” Rizwaan replied.</p>
+<p>“An heirloom?” Muskaan was puzzled. “That means she already has it. So why did she commission you to make it?”</p>
+<p>“She had it, but she doesn’t anymore.” Rizwaan sighed.</p>
+<p>“What?” Muskaan’s eyes widened in amazement. “Did she lose it? How careless of her!”</p>
+<p>“No,” Rizwaan bit his lips. I could see he was reluctant to explain, but he continued anyway. “Do you remember that famine four years ago?”</p>
+<p>“Yes, many, many people died. Those British brutes just watched and laughed. My <em>khala</em> lost her youngest daughter. She was barely three years old. Food was so scarce, and she fell sick. It was horrible.” Tears streamed down Muskaan’s cheeks.</p>
+<p>“It was terrible everywhere. And these British officers were still demanding tax from starving farmers. When the officials came to the Chaudhari Baari in Khulna to collect tax from the tenants, who Debjani Debi had been feeding at her own expense, she lost it. She upbraided the British official, trying to explain the situation, but he was unmoved. Finally, disgusted by his uncouth barbarism, she offered to pay the combined tax owed by all the tenants, herself. She asked the official to wait just one day and he agreed.”</p>
+<p>“Oh why are these Britishers such monsters? I am so glad they are finally leaving. Good riddance. But I must say, I am surprised. I thought the <em>zamindaars</em> exploited their tenants and even used them as bonded labor. I hear they can be quite cruel too. Isn’t that right, Rizzu?”</p>
+<p>“The British have created a cruel system, and no doubt many <em>zamindaars</em> do exploit their tenants, but not all of them can stomach the extent of cruelty they have to inflict in order to collect exorbitant taxes especially during famines. Besides, the British forced many rice farmers to switch to opium cultivation, which has led to food shortages. Their greed knows no bounds. They see people suffering and dying, but as though possessed by the devil, they can only think of their profits and ...”</p>
+<p>Muskaan realized Rizwaan was veering off into one of his angry anti-British rants. She could not bear to see him so upset, so she interrupted him. “Rizzu, let it be. Their going away. Forget about them. Tell me about Debjani Debi. Why did she ask for one day? Where would she get the money so quickly?”</p>
+<p>“She asked for one day, so she could do this.” Rizwaan pointed at the folded paper. “Her granddaughter Moushumi was a talented painter, so Debjani Debi had her make a painting of the family heirloom. Then when the British officer arrived she offered him this necklace in exchange for all the taxes owed by all the tenants. He snatched it from her, but when she asked him to pay back the excess as the heirloom had a monetary value that somewhat exceeded the taxes owed, the officer simply laughed and left with his loot.”</p>
+<p>Angry tears clouded Muskaan’s eyes. I too felt enraged. Who were these awful thugs plundering respectable people?</p>
+<p>“That’s horrible,” Muskaan shook her head and sighed. “But then why did she commission a duplicate now?” Muskaan asked.</p>
+<p>“Her granddaughter, Moushumi …”</p>
+<p>“You mean the one who did painted the duplicate?” Muskaan interrupted.</p>
+<p>“Yes,” Rizwaan continued, “She is getting married in a week to Shoumik Rai of the Rai Baari <em>zamindaari</em> and Debjani Debi wants to give this,” he pointed at me, “to Moushumi as her wedding gift. She had planned to pass down the family heirloom, but now this is the best she can do.”</p>
+<p>“But how can she afford this so soon after a famine?” Muskaan asked.</p>
+<p>“The <em>zamindaars</em> may be kinder than the British, but they too have amassed loads of wealth through generations of exploitation. Yet, I believe this particular lady has always been kind and generous with her tenants, and I suppose one should not begrudge her this happiness.”</p>
+<p>Muskaan nodded. “So will you be leaving soon to deliver this?” she asked, pointing towards me.</p>
+<p>Rizwaan nodded. “I will leave the morning after tomorrow. Abdul is going to a nearby <em>zamindaari</em> to deliver some carpets. So we will leave together.”</p>
+<p>“How long will you be gone. I wish you didn’t have to go so often. I miss you terribly. And I worry about dacoits too, because of all the expensive jewelry you carry.” Muskaan looked worried.</p>
+<p>“Don’t worry, my love. I will only be gone a week. We’ll leave from here by cart in the morning and catch the steamer in the afternoon. Abdul’s brother will be there too. His cargo is heavy, so they always go together. I’ll be safe from dacoits in their company, I promise.” He kissed her forehead.</p>
+<p>Something in the way he spoke made me feel worried, but he succeeded in reassuring Muskaan, who hugged him and then went to fetch some <em>halwa</em> she had made earlier in the day. They shared the dessert and then whispered sweet nothings to each other as they headed off to bed.</p>
+<p>The nights were lonely for me, so I spent them imagining what Debjani Debi’s granddaughter, Moushumi would be like. Would her eyes light up with happiness upon seeing me? Would she be surprised or was she waiting restlessly for my arrival. Would she be a kind and joyful like Muskaan?</p>
+<p>But then my thoughts wandered back to Rizwaan. What was he tense about? What was he not telling Muskaan? I wanted to know. I wanted her to know, but I had no way of finding out.</p>
+<p>The next day, Rizwaan took me to his workshop to carefully examine me, polish up any bit he had missed until I sparkled and shone. He had just taken out a beautifully carved wooden box lined with velvet to put me into, when a short bearded man entered.</p>
+<p>“Abdul,” Rizwaan smiled. “Is everything ready for tomorrow?” he asked cheerfully. But Abdul’s grim face frightened him. “So the rumors are true?” His complexion paled. “I can’t believe it.” He shook his head. “I won’t.”</p>
+<p>Abdul nodded. “I think they’re true. I’m hearing a lot of unpleasant chatter. It’s best we leave early, you know, just in case there is trouble on the way.”</p>
+<p>Rizwaan nodded. “I will meet you at 8:00. But please don’t say anything to Muskaan. I don’t want her to worry.”</p>
+<p>“I won’t. I haven’t told Fizza either. I’ll have the cart ready and waiting near the well. See you tomorrow. Don’t be late.”</p>
+<p>What trouble were they talking about? I had no idea. But it all sounded so ominous . Their words were optimistic, but I could hear the fear in their voices. It frightened me terribly. Rizwaan had put me in the cozy wooden box and I was glad for the comfort of it.</p>
+<p>That evening I heard Muskaan and Rizwaan discussing something about independence being just days away. Muskaan sounded so excited as she talked about Gandhiji and Cha-cha Nehru, whoever they might be. I was puzzled. Why was Rizwaan so tense and Muskaan so excited about the upcoming events. Obviously they seemed important, but how could these two people so deeply in love with each other, have such vastly different emotions about it. Something strange was going on.</p>
+<p>Then it all happened so quickly. Muskaan had packed <em>parathas</em>, <em>aachar</em>, some cashews, dates and fruits neatly in a <em>potli</em> for Rizwaan’s long journey. They hugged, then Rizwaan picked up the metal trunk containing his clothes and my velvet lined wooden container with his right hand and the <em>potli</em> containing his food with his left. I was already placed safely in an inside pocket of his coat.</p>
+<p>Rizwaan stepped out. He was shocked to see a horde of strangers on the road outside, so early in the morning. Upon noticing him, the strangers rushed towards his house. Puzzled he called out to Muskaan. “Were you expecting anybody?” he asked. But now the strangers were much closer and Rizwaan realized they were angry.</p>
+<p>His eyes widened when he saw the knives, hammers and scythes they were carrying. Then he recognized Noren Da, the grocer from the neighboring village. “Noren Da,” he called out. “Did your daughter like the <em>nath</em> I made for her wedding?” he asked trying to keep calm, but I could feel Rizwaan’s heart racing and sweat drenching the coat whose pocket I lay in.</p>
+<p>Noren Da, in frenzied rage, a did not seem to recognize Rizwaan, but the sound of his name caught his attention. He charged towards Rizwaan and stabbed his chest with a knife. The knife struck Rizwaan just over me, and I was overwhelmed by the smell of alcohol from Noren Da’s breath. Rizwaan received only a minor wound, but he was too shocked to run or speak. Then two or three other people pounced upon him. I could feel the blows they inflicted as they called him a filthy traitorous swine and a savage ungrateful brute betraying the land that fed him.</p>
+<p>Hearing the commotion, Muskaan stepped out. A man from the mob noticed her presence as she began to shout and scream for help. He stabbed Rizwaan several times in his abdomen before dashing off to molest her. I despaired as there was little I could do to help my creator. I had protected him from the first lethal stab, but now his heart splintered as the mob carried away his beloved Muskaan, while she fought in vain to fend them off.</p>
+<p>He could do nothing to help her, so he screamed in agony and crawled after her for a few feet. When he reached the corner of his yard, Muskaan was already out of sight. He could see another mob raiding his neighbor’s house. Baffled, and distraught, he collapsed near the compost heap Muskaan had been preparing to fertilize her roses.</p>
+<p>As he put his hand on his heart to say a prayer for Muskaan, he remembered me. He pulled me out of his pocket and buried me under the compost heap. “You’ll be safe here,” he whispered. “The hooligans will come later to loot the place, but they won’t look here. You’ll be safe,” he promised me with his dying breath.</p>
+<p>And here I have been since. Just as Rizwaan had said, that very night, looters came and ransacked his house and yard. They even feasted on the <em>parathas</em> Muskaan had so lovingly made. But just like Rizwaan had expected, they all avoided the smelly compost heap.</p>
+<p>The next morning the looters seemed to awaken from a daze. They gloated  about victory and independence.</p>
+<p>“We did the right thing, didn’t we?” I heard Noren Da wonder.</p>
+<p>“Yes of course we did!” was the defiant reply from another. “They don’t belong here anymore. They tore apart our Bharat Mata so they could have their own country. We can’t have a village full of traitors in our midst.”</p>
+<p>“But these people have been our friends for so long ...” Noren Da sighed.</p>
+<p>“You shouldn’t feel sad for them. They used to be our friends. Rizwaan once loaned me some money so I could pay the British tax collector in time. He saved me a lot of misery. But now, they are all our enemies. Last night, their country declared it’s independence, and tonight ours will. We can no longer be friends with the likes of them. They are the enemy.”</p>
+<p>I couldn’t believe anyone could be so ruthless. I wondered if he is looking at Rizwaan’s lifeless form as he spoke. Maybe, he had to say those cruel words to silence his own conscience.</p>
+<p>“But did we have to kill them all like this, so brutally? Will god ever forgive us for such crimes?” Noren Da asked.</p>
+<p>The other man replied. “I don’t know about god, but I know they are doing the same to our people on the other side of the border. I got word that my cousin’s family living in the Rai Baari <em>zamindaari</em> near Khulna was slaughtered by a mob of these filthy swine. I hear Shoumik Rai himself was slaughtered just days before he was supposed to be married. So, no, I feel no regret. An eye for an eye, it is.” His voice was hard.</p>
+<p>I was stunned by how dramatically my world had changed overnight. Just until a day ago I shared it with two loving sweet people, and now I was surrounded by violence, bitterness and misery.</p>
+<p>“But didn’t we just fight off the British hand in hand with these friends and gain victory?” Noren Da asked.</p>
+<p>“That was then. This is now.” The man growled. “You need to keep up with the times, or you too will end up dead,” he warned.</p>
+<p>By afternoon, everyone had left the village. And since then, I have been alone with my thoughts replaying these images and sounds over and over again in my mind. I did not know what had happened to Muskaan, but I knew I would never see her twinkling eyes or hear her melodious voice again. I wondered, if I would even see the light of day again. What did Rizwaan mean by I would be safe? I had no idea. He probably didn’t either.</p>
+<p>Days went by. The silence was deafening. The village that produced art and beauty, was haunted by a macabre silence. Deserted by humanity, it became the feasting grounds for a variety of carrion birds and other scavenger species. Even the sound of these creatures was a welcome change to the total silence, but a couple of weeks later, once all the bones had been picked clean, even the scavengers disappeared, and once again there was total silence. I was going crazy. How long would I be stuck here? Forever is a very long time to be stuck in a dark, silent grave.</p>
+<p>I listen everyday carefully for any sounds of people, but there have been none, until now. In the last hour, I’ve been hearing wheels of a carts, the thudding of luggage and footsteps. I’ve been hearing the voices of children, the sighs of women, and the righteous anger of men. They’re talking about a refugee camp the government is setting up in the deserted village. Then I hear someone standing right above me, and I am surprised anyone wants to be near a compost heap. But then I remember, it has been over a month. The compost must have rotted away.</p>
+<p>“Pishi, come here, look at this.” A child’s delighted voice calls out. “See how fresh and green this is, and look at all the pretty yellow flowers.”</p>
+<p>Someone else comes up to the child. “Oh, it’s a clump of mustard plants. You’re right Rinki. It is very fresh. We’re low on food supplies, so we should dig up these plants and cook them for dinner. They’ll taste really good with <em>rotis</em>.”</p>
+<p>Rinki and her <em>pishi</em> get busy digging, and my heart begins to race. Will I be discovered? If I am , what will happen to me?</p>
+<p>I don’t have much time to worry before I hear the little Rinki squealing with delight. “Pishi, look here, look what I have found. You’ll never believe it.”</p>
+<p>Then I see them looking straight at me. The sunlight makes me blink. I haven’t seen the light of day in over a month. My rubies and diamonds begin to sparkle again. But I am scared. Who are these people?</p>
+<p>“Isn’t this Rizwaan Kaku’s village? Boro Dida had asked him to make this necklace for your wedding, right? You know before ...”</p>
+<p>“Yes, Rinki. I can’t believe this. We had to flee before …” she gulps. “Baba made us leave in the middle of the night when he heard news of rioters heading our way. We made it across the border just in time. I don’t know what happened to Rizwaan. He was supposed to have arrived the next night.”</p>
+<p>She looks again at me. “My goodness!” she exclaims. “This means, this means …” She chokes, too upset to complete her sentence. Tears stream down her cheeks. “Thamma, Thamma, come here, look, see.” The young woman picks me up gingerly and cleans out some of the mud sticking to me, while an old stately lady slowly makes her way over.</p>
+<p>“What is it Moushumi?’ she asks in a gentle voice.</p>
+<p>“Thamma look,” she holds me up, and my gemstones glitter like never before in the bright morning sunshine.</p>
+<p>Moushumi, I think. No way. It can’t be, can it? Am I really in the hands I was destined for? Then, this old lady must be Debjani Debi herself. She looks at me, her eyes wide with disbelief. Her face lights up with joy as she reaches out for me. But then her expression darkens as she turns to look at the house. Tears gush down her face.</p>
+<p>“I have known Rizwaan for so long. He has brought so much joy an beauty into our lives. May his soul rest in peace.” In spite of her age, she kneels down at the doorway in front of Rizwaan’s house to say a prayer for him and his family.</p>
+<p>Moushumi joins her grandmother. “I pray to all the gods, requesting that the gentle souls of Rizwaan, and my fiance, Shoumik, both find peace in the heavenly abode that welcomes all good people.”</p>
+<p>The sight of Moushumi’s beautiful tear stained face reminds me of my beloved Muskaan, and I miss her more than ever. So I pray for everyone in the village and outside, who have lost their lives and loved ones in this senseless violence.</p>
+</div>
+</article>
+<p>Tags: <a href="./tag/values.html" title="Posts tagged with: values">values</a>, <a href="./tag/shortstory.html" title="Posts tagged with: shortstory">shortstory</a>, <a href="./tag/community.html" title="Posts tagged with: community">community</a>, <a href="./tag/drama.html" title="Posts tagged with: drama">drama</a>, <a href="./tag/family.html" title="Posts tagged with: family">family</a>, <a href="./tag/story.html" title="Posts tagged with: story">story</a></p>
+<nav class="full-article-nav">
+<div> </div><div>In: <a href="./category/women.html">Women</a>/<a href="./category/women-stories.html">Stories</a></div><div><a href="./women-stories-desert-bloom.html"             title="Desert Bloom">Next ➡</a></div>
+</nav>
+
+<hr>
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+    this.page.url = "https://kanikag.com/women-stories-the-necklace.html";
+    this.page.identifier = "women-stories-the-necklace";
+};
+(function() {
+var d = document, s = d.createElement('script');
+s.src = 'https://kanikag.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+
+        </section>
+
+        <footer id="extras" class="body">
+            
+<footer class="page-bottom">
+<div class="tag-cloud">
+    <h2>all tags</h2>
+    <nav>
+<a title="Posts tagged with: " href="./tag/.html"></a>,
+
+<a title="Posts tagged with: abuse" href="./tag/abuse.html">abuse</a>,
+
+<a title="Posts tagged with: action" href="./tag/action.html">action</a>,
+
+<a title="Posts tagged with: activities" href="./tag/activities.html">activities</a>,
+
+<a title="Posts tagged with: activity" href="./tag/activity.html">activity</a>,
+
+<a title="Posts tagged with: addiction" href="./tag/addiction.html">addiction</a>,
+
+<a title="Posts tagged with: adventure" href="./tag/adventure.html">adventure</a>,
+
+<a title="Posts tagged with: ageing" href="./tag/ageing.html">ageing</a>,
+
+<a title="Posts tagged with: aliens" href="./tag/aliens.html">aliens</a>,
+
+<a title="Posts tagged with: anger" href="./tag/anger.html">anger</a>,
+
+<a title="Posts tagged with: animals" href="./tag/animals.html">animals</a>,
+
+<a title="Posts tagged with: archaeology" href="./tag/archaeology.html">archaeology</a>,
+
+<a title="Posts tagged with: archeology" href="./tag/archeology.html">archeology</a>,
+
+<a title="Posts tagged with: art" href="./tag/art.html">art</a>,
+
+<a title="Posts tagged with: astronomy" href="./tag/astronomy.html">astronomy</a>,
+
+<a title="Posts tagged with: AtoZ Challenge" href="./tag/atoz-challenge.html">AtoZ Challenge</a>,
+
+<a title="Posts tagged with: baby" href="./tag/baby.html">baby</a>,
+
+<a title="Posts tagged with: beauty" href="./tag/beauty.html">beauty</a>,
+
+<a title="Posts tagged with: behavior" href="./tag/behavior.html">behavior</a>,
+
+<a title="Posts tagged with: bias" href="./tag/bias.html">bias</a>,
+
+<a title="Posts tagged with: biography" href="./tag/biography.html">biography</a>,
+
+<a title="Posts tagged with: biology" href="./tag/biology.html">biology</a>,
+
+<a title="Posts tagged with: birthday" href="./tag/birthday.html">birthday</a>,
+
+<a title="Posts tagged with: birthdays" href="./tag/birthdays.html">birthdays</a>,
+
+<a title="Posts tagged with: bonding" href="./tag/bonding.html">bonding</a>,
+
+<a title="Posts tagged with: book" href="./tag/book.html">book</a>,
+
+<a title="Posts tagged with: books" href="./tag/books.html">books</a>,
+
+<a title="Posts tagged with: botany" href="./tag/botany.html">botany</a>,
+
+<a title="Posts tagged with: braces" href="./tag/braces.html">braces</a>,
+
+<a title="Posts tagged with: breakfast" href="./tag/breakfast.html">breakfast</a>,
+
+<a title="Posts tagged with: breast exam" href="./tag/breast-exam.html">breast exam</a>,
+
+<a title="Posts tagged with: bullying" href="./tag/bullying.html">bullying</a>,
+
+<a title="Posts tagged with: cake" href="./tag/cake.html">cake</a>,
+
+<a title="Posts tagged with: celebrate" href="./tag/celebrate.html">celebrate</a>,
+
+<a title="Posts tagged with: celebration" href="./tag/celebration.html">celebration</a>,
+
+<a title="Posts tagged with: celebrations" href="./tag/celebrations.html">celebrations</a>,
+
+<a title="Posts tagged with: chapter book" href="./tag/chapter-book.html">chapter book</a>,
+
+<a title="Posts tagged with: chemistry" href="./tag/chemistry.html">chemistry</a>,
+
+<a title="Posts tagged with: children" href="./tag/children.html">children</a>,
+
+<a title="Posts tagged with: childrens book" href="./tag/childrens-book.html">childrens book</a>,
+
+<a title="Posts tagged with: chocolate" href="./tag/chocolate.html">chocolate</a>,
+
+<a title="Posts tagged with: choices" href="./tag/choices.html">choices</a>,
+
+<a title="Posts tagged with: Christmas" href="./tag/christmas.html">Christmas</a>,
+
+<a title="Posts tagged with: climate" href="./tag/climate.html">climate</a>,
+
+<a title="Posts tagged with: climate change" href="./tag/climate-change.html">climate change</a>,
+
+<a title="Posts tagged with: comic" href="./tag/comic.html">comic</a>,
+
+<a title="Posts tagged with: community" href="./tag/community.html">community</a>,
+
+<a title="Posts tagged with: confidence" href="./tag/confidence.html">confidence</a>,
+
+<a title="Posts tagged with: conflict" href="./tag/conflict.html">conflict</a>,
+
+<a title="Posts tagged with: contemporary" href="./tag/contemporary.html">contemporary</a>,
+
+<a title="Posts tagged with: contraception" href="./tag/contraception.html">contraception</a>,
+
+<a title="Posts tagged with: cooking" href="./tag/cooking.html">cooking</a>,
+
+<a title="Posts tagged with: corruption" href="./tag/corruption.html">corruption</a>,
+
+<a title="Posts tagged with: costume" href="./tag/costume.html">costume</a>,
+
+<a title="Posts tagged with: couples" href="./tag/couples.html">couples</a>,
+
+<a title="Posts tagged with: craft" href="./tag/craft.html">craft</a>,
+
+<a title="Posts tagged with: creativity" href="./tag/creativity.html">creativity</a>,
+
+<a title="Posts tagged with: crime" href="./tag/crime.html">crime</a>,
+
+<a title="Posts tagged with: crisis" href="./tag/crisis.html">crisis</a>,
+
+<a title="Posts tagged with: cuisine" href="./tag/cuisine.html">cuisine</a>,
+
+<a title="Posts tagged with: culture" href="./tag/culture.html">culture</a>,
+
+<a title="Posts tagged with: curiosity" href="./tag/curiosity.html">curiosity</a>,
+
+<a title="Posts tagged with: curosity" href="./tag/curosity.html">curosity</a>,
+
+<a title="Posts tagged with: customs" href="./tag/customs.html">customs</a>,
+
+<a title="Posts tagged with: democracy" href="./tag/democracy.html">democracy</a>,
+
+<a title="Posts tagged with: dessert" href="./tag/dessert.html">dessert</a>,
+
+<a title="Posts tagged with: detective" href="./tag/detective.html">detective</a>,
+
+<a title="Posts tagged with: developent" href="./tag/developent.html">developent</a>,
+
+<a title="Posts tagged with: diet" href="./tag/diet.html">diet</a>,
+
+<a title="Posts tagged with: dilemma" href="./tag/dilemma.html">dilemma</a>,
+
+<a title="Posts tagged with: discipline" href="./tag/discipline.html">discipline</a>,
+
+<a title="Posts tagged with: discovery" href="./tag/discovery.html">discovery</a>,
+
+<a title="Posts tagged with: discrimination" href="./tag/discrimination.html">discrimination</a>,
+
+<a title="Posts tagged with: disease" href="./tag/disease.html">disease</a>,
+
+<a title="Posts tagged with: diversity" href="./tag/diversity.html">diversity</a>,
+
+<a title="Posts tagged with: domestic abuse" href="./tag/domestic-abuse.html">domestic abuse</a>,
+
+<a title="Posts tagged with: domestic violence" href="./tag/domestic-violence.html">domestic violence</a>,
+
+<a title="Posts tagged with: drama" href="./tag/drama.html">drama</a>,
+
+<a title="Posts tagged with: dystopian" href="./tag/dystopian.html">dystopian</a>,
+
+<a title="Posts tagged with: ebook" href="./tag/ebook.html">ebook</a>,
+
+<a title="Posts tagged with: ecology" href="./tag/ecology.html">ecology</a>,
+
+<a title="Posts tagged with: education" href="./tag/education.html">education</a>,
+
+<a title="Posts tagged with: emotion" href="./tag/emotion.html">emotion</a>,
+
+<a title="Posts tagged with: emotions" href="./tag/emotions.html">emotions</a>,
+
+<a title="Posts tagged with: empathy" href="./tag/empathy.html">empathy</a>,
+
+<a title="Posts tagged with: enterprise" href="./tag/enterprise.html">enterprise</a>,
+
+<a title="Posts tagged with: entertainment" href="./tag/entertainment.html">entertainment</a>,
+
+<a title="Posts tagged with: environment" href="./tag/environment.html">environment</a>,
+
+<a title="Posts tagged with: eonomics" href="./tag/eonomics.html">eonomics</a>,
+
+<a title="Posts tagged with: epic" href="./tag/epic.html">epic</a>,
+
+<a title="Posts tagged with: ethics" href="./tag/ethics.html">ethics</a>,
+
+<a title="Posts tagged with: evolution" href="./tag/evolution.html">evolution</a>,
+
+<a title="Posts tagged with: experiments" href="./tag/experiments.html">experiments</a>,
+
+<a title="Posts tagged with: explore" href="./tag/explore.html">explore</a>,
+
+<a title="Posts tagged with: fairy tales" href="./tag/fairy-tales.html">fairy tales</a>,
+
+<a title="Posts tagged with: family" href="./tag/family.html">family</a>,
+
+<a title="Posts tagged with: family friends" href="./tag/family-friends.html">family friends</a>,
+
+<a title="Posts tagged with: fantasy" href="./tag/fantasy.html">fantasy</a>,
+
+<a title="Posts tagged with: fear" href="./tag/fear.html">fear</a>,
+
+<a title="Posts tagged with: fears" href="./tag/fears.html">fears</a>,
+
+<a title="Posts tagged with: feminism" href="./tag/feminism.html">feminism</a>,
+
+<a title="Posts tagged with: festival" href="./tag/festival.html">festival</a>,
+
+<a title="Posts tagged with: festivals" href="./tag/festivals.html">festivals</a>,
+
+<a title="Posts tagged with: fiction" href="./tag/fiction.html">fiction</a>,
+
+<a title="Posts tagged with: flash fiction" href="./tag/flash-fiction.html">flash fiction</a>,
+
+<a title="Posts tagged with: flashfiction" href="./tag/flashfiction.html">flashfiction</a>,
+
+<a title="Posts tagged with: food" href="./tag/food.html">food</a>,
+
+<a title="Posts tagged with: freedom" href="./tag/freedom.html">freedom</a>,
+
+<a title="Posts tagged with: friends" href="./tag/friends.html">friends</a>,
+
+<a title="Posts tagged with: friendship" href="./tag/friendship.html">friendship</a>,
+
+<a title="Posts tagged with: fun" href="./tag/fun.html">fun</a>,
+
+<a title="Posts tagged with: fun fact" href="./tag/fun-fact.html">fun fact</a>,
+
+<a title="Posts tagged with: fun facts" href="./tag/fun-facts.html">fun facts</a>,
+
+<a title="Posts tagged with: funfact" href="./tag/funfact.html">funfact</a>,
+
+<a title="Posts tagged with: funfacts" href="./tag/funfacts.html">funfacts</a>,
+
+<a title="Posts tagged with: game" href="./tag/game.html">game</a>,
+
+<a title="Posts tagged with: games" href="./tag/games.html">games</a>,
+
+<a title="Posts tagged with: gender bias" href="./tag/gender-bias.html">gender bias</a>,
+
+<a title="Posts tagged with: genetics" href="./tag/genetics.html">genetics</a>,
+
+<a title="Posts tagged with: geography" href="./tag/geography.html">geography</a>,
+
+<a title="Posts tagged with: gift" href="./tag/gift.html">gift</a>,
+
+<a title="Posts tagged with: girls" href="./tag/girls.html">girls</a>,
+
+<a title="Posts tagged with: grief" href="./tag/grief.html">grief</a>,
+
+<a title="Posts tagged with: growing up" href="./tag/growing-up.html">growing up</a>,
+
+<a title="Posts tagged with: guest post" href="./tag/guest-post.html">guest post</a>,
+
+<a title="Posts tagged with: health" href="./tag/health.html">health</a>,
+
+<a title="Posts tagged with: historical" href="./tag/historical.html">historical</a>,
+
+<a title="Posts tagged with: history" href="./tag/history.html">history</a>,
+
+<a title="Posts tagged with: hope" href="./tag/hope.html">hope</a>,
+
+<a title="Posts tagged with: horror" href="./tag/horror.html">horror</a>,
+
+<a title="Posts tagged with: humanity" href="./tag/humanity.html">humanity</a>,
+
+<a title="Posts tagged with: humor" href="./tag/humor.html">humor</a>,
+
+<a title="Posts tagged with: humour" href="./tag/humour.html">humour</a>,
+
+<a title="Posts tagged with: hygiene" href="./tag/hygiene.html">hygiene</a>,
+
+<a title="Posts tagged with: ideas" href="./tag/ideas.html">ideas</a>,
+
+<a title="Posts tagged with: illness" href="./tag/illness.html">illness</a>,
+
+<a title="Posts tagged with: imagination" href="./tag/imagination.html">imagination</a>,
+
+<a title="Posts tagged with: independence" href="./tag/independence.html">independence</a>,
+
+<a title="Posts tagged with: India" href="./tag/india.html">India</a>,
+
+<a title="Posts tagged with: infection" href="./tag/infection.html">infection</a>,
+
+<a title="Posts tagged with: injury" href="./tag/injury.html">injury</a>,
+
+<a title="Posts tagged with: insects" href="./tag/insects.html">insects</a>,
+
+<a title="Posts tagged with: internet" href="./tag/internet.html">internet</a>,
+
+<a title="Posts tagged with: introspection" href="./tag/introspection.html">introspection</a>,
+
+<a title="Posts tagged with: joy" href="./tag/joy.html">joy</a>,
+
+<a title="Posts tagged with: kids" href="./tag/kids.html">kids</a>,
+
+<a title="Posts tagged with: kids special" href="./tag/kids-special.html">kids special</a>,
+
+<a title="Posts tagged with: language" href="./tag/language.html">language</a>,
+
+<a title="Posts tagged with: laughs" href="./tag/laughs.html">laughs</a>,
+
+<a title="Posts tagged with: laws" href="./tag/laws.html">laws</a>,
+
+<a title="Posts tagged with: learn" href="./tag/learn.html">learn</a>,
+
+<a title="Posts tagged with: learn to read" href="./tag/learn-to-read.html">learn to read</a>,
+
+<a title="Posts tagged with: learning" href="./tag/learning.html">learning</a>,
+
+<a title="Posts tagged with: life" href="./tag/life.html">life</a>,
+
+<a title="Posts tagged with: lifestyle" href="./tag/lifestyle.html">lifestyle</a>,
+
+<a title="Posts tagged with: literary" href="./tag/literary.html">literary</a>,
+
+<a title="Posts tagged with: literary fiction" href="./tag/literary-fiction.html">literary fiction</a>,
+
+<a title="Posts tagged with: literature" href="./tag/literature.html">literature</a>,
+
+<a title="Posts tagged with: love" href="./tag/love.html">love</a>,
+
+<a title="Posts tagged with: lunch" href="./tag/lunch.html">lunch</a>,
+
+<a title="Posts tagged with: magic" href="./tag/magic.html">magic</a>,
+
+<a title="Posts tagged with: mammogram" href="./tag/mammogram.html">mammogram</a>,
+
+<a title="Posts tagged with: math" href="./tag/math.html">math</a>,
+
+<a title="Posts tagged with: mathematics" href="./tag/mathematics.html">mathematics</a>,
+
+<a title="Posts tagged with: medicine" href="./tag/medicine.html">medicine</a>,
+
+<a title="Posts tagged with: milestones" href="./tag/milestones.html">milestones</a>,
+
+<a title="Posts tagged with: monsoon" href="./tag/monsoon.html">monsoon</a>,
+
+<a title="Posts tagged with: movie" href="./tag/movie.html">movie</a>,
+
+<a title="Posts tagged with: movies" href="./tag/movies.html">movies</a>,
+
+<a title="Posts tagged with: murder" href="./tag/murder.html">murder</a>,
+
+<a title="Posts tagged with: music" href="./tag/music.html">music</a>,
+
+<a title="Posts tagged with: mystery" href="./tag/mystery.html">mystery</a>,
+
+<a title="Posts tagged with: mythology" href="./tag/mythology.html">mythology</a>,
+
+<a title="Posts tagged with: nature" href="./tag/nature.html">nature</a>,
+
+<a title="Posts tagged with: news" href="./tag/news.html">news</a>,
+
+<a title="Posts tagged with: Nina and Nana" href="./tag/nina-and-nana.html">Nina and Nana</a>,
+
+<a title="Posts tagged with: nonfiction" href="./tag/nonfiction.html">nonfiction</a>,
+
+<a title="Posts tagged with: novel" href="./tag/novel.html">novel</a>,
+
+<a title="Posts tagged with: novella" href="./tag/novella.html">novella</a>,
+
+<a title="Posts tagged with: nutrition" href="./tag/nutrition.html">nutrition</a>,
+
+<a title="Posts tagged with: outdoor" href="./tag/outdoor.html">outdoor</a>,
+
+<a title="Posts tagged with: Pap smear" href="./tag/pap-smear.html">Pap smear</a>,
+
+<a title="Posts tagged with: paranormal" href="./tag/paranormal.html">paranormal</a>,
+
+<a title="Posts tagged with: parenting" href="./tag/parenting.html">parenting</a>,
+
+<a title="Posts tagged with: partnership" href="./tag/partnership.html">partnership</a>,
+
+<a title="Posts tagged with: party" href="./tag/party.html">party</a>,
+
+<a title="Posts tagged with: patriarchy" href="./tag/patriarchy.html">patriarchy</a>,
+
+<a title="Posts tagged with: pelvic pain" href="./tag/pelvic-pain.html">pelvic pain</a>,
+
+<a title="Posts tagged with: philosophy" href="./tag/philosophy.html">philosophy</a>,
+
+<a title="Posts tagged with: photoprompt" href="./tag/photoprompt.html">photoprompt</a>,
+
+<a title="Posts tagged with: physics" href="./tag/physics.html">physics</a>,
+
+<a title="Posts tagged with: picture book" href="./tag/picture-book.html">picture book</a>,
+
+<a title="Posts tagged with: plants" href="./tag/plants.html">plants</a>,
+
+<a title="Posts tagged with: poem" href="./tag/poem.html">poem</a>,
+
+<a title="Posts tagged with: poetry" href="./tag/poetry.html">poetry</a>,
+
+<a title="Posts tagged with: politics" href="./tag/politics.html">politics</a>,
+
+<a title="Posts tagged with: pop culture" href="./tag/pop-culture.html">pop culture</a>,
+
+<a title="Posts tagged with: pregnancy" href="./tag/pregnancy.html">pregnancy</a>,
+
+<a title="Posts tagged with: prejudice" href="./tag/prejudice.html">prejudice</a>,
+
+<a title="Posts tagged with: prejudices" href="./tag/prejudices.html">prejudices</a>,
+
+<a title="Posts tagged with: privacy" href="./tag/privacy.html">privacy</a>,
+
+<a title="Posts tagged with: psychology" href="./tag/psychology.html">psychology</a>,
+
+<a title="Posts tagged with: puberty" href="./tag/puberty.html">puberty</a>,
+
+<a title="Posts tagged with: puzzles" href="./tag/puzzles.html">puzzles</a>,
+
+<a title="Posts tagged with: radiation" href="./tag/radiation.html">radiation</a>,
+
+<a title="Posts tagged with: reading" href="./tag/reading.html">reading</a>,
+
+<a title="Posts tagged with: recipe" href="./tag/recipe.html">recipe</a>,
+
+<a title="Posts tagged with: recipes" href="./tag/recipes.html">recipes</a>,
+
+<a title="Posts tagged with: relationship" href="./tag/relationship.html">relationship</a>,
+
+<a title="Posts tagged with: relationships" href="./tag/relationships.html">relationships</a>,
+
+<a title="Posts tagged with: research" href="./tag/research.html">research</a>,
+
+<a title="Posts tagged with: responsibility" href="./tag/responsibility.html">responsibility</a>,
+
+<a title="Posts tagged with: review" href="./tag/review.html">review</a>,
+
+<a title="Posts tagged with: risk" href="./tag/risk.html">risk</a>,
+
+<a title="Posts tagged with: romance" href="./tag/romance.html">romance</a>,
+
+<a title="Posts tagged with: safety" href="./tag/safety.html">safety</a>,
+
+<a title="Posts tagged with: satire" href="./tag/satire.html">satire</a>,
+
+<a title="Posts tagged with: school" href="./tag/school.html">school</a>,
+
+<a title="Posts tagged with: schools" href="./tag/schools.html">schools</a>,
+
+<a title="Posts tagged with: sci-fi" href="./tag/sci-fi.html">sci-fi</a>,
+
+<a title="Posts tagged with: science" href="./tag/science.html">science</a>,
+
+<a title="Posts tagged with: science fiction" href="./tag/science-fiction.html">science fiction</a>,
+
+<a title="Posts tagged with: scifi" href="./tag/scifi.html">scifi</a>,
+
+<a title="Posts tagged with: second child" href="./tag/second-child.html">second child</a>,
+
+<a title="Posts tagged with: sex" href="./tag/sex.html">sex</a>,
+
+<a title="Posts tagged with: short stories" href="./tag/short-stories.html">short stories</a>,
+
+<a title="Posts tagged with: short story" href="./tag/short-story.html">short story</a>,
+
+<a title="Posts tagged with: shortstory" href="./tag/shortstory.html">shortstory</a>,
+
+<a title="Posts tagged with: sibling" href="./tag/sibling.html">sibling</a>,
+
+<a title="Posts tagged with: siblings" href="./tag/siblings.html">siblings</a>,
+
+<a title="Posts tagged with: snack" href="./tag/snack.html">snack</a>,
+
+<a title="Posts tagged with: social" href="./tag/social.html">social</a>,
+
+<a title="Posts tagged with: social media" href="./tag/social-media.html">social media</a>,
+
+<a title="Posts tagged with: software" href="./tag/software.html">software</a>,
+
+<a title="Posts tagged with: solar system" href="./tag/solar-system.html">solar system</a>,
+
+<a title="Posts tagged with: songs" href="./tag/songs.html">songs</a>,
+
+<a title="Posts tagged with: space" href="./tag/space.html">space</a>,
+
+<a title="Posts tagged with: sports" href="./tag/sports.html">sports</a>,
+
+<a title="Posts tagged with: stories" href="./tag/stories.html">stories</a>,
+
+<a title="Posts tagged with: story" href="./tag/story.html">story</a>,
+
+<a title="Posts tagged with: summer" href="./tag/summer.html">summer</a>,
+
+<a title="Posts tagged with: superstition" href="./tag/superstition.html">superstition</a>,
+
+<a title="Posts tagged with: surprise" href="./tag/surprise.html">surprise</a>,
+
+<a title="Posts tagged with: suspense" href="./tag/suspense.html">suspense</a>,
+
+<a title="Posts tagged with: team" href="./tag/team.html">team</a>,
+
+<a title="Posts tagged with: team work" href="./tag/team-work.html">team work</a>,
+
+<a title="Posts tagged with: teamwork" href="./tag/teamwork.html">teamwork</a>,
+
+<a title="Posts tagged with: technology" href="./tag/technology.html">technology</a>,
+
+<a title="Posts tagged with: teen" href="./tag/teen.html">teen</a>,
+
+<a title="Posts tagged with: teens" href="./tag/teens.html">teens</a>,
+
+<a title="Posts tagged with: teeth" href="./tag/teeth.html">teeth</a>,
+
+<a title="Posts tagged with: thriller" href="./tag/thriller.html">thriller</a>,
+
+<a title="Posts tagged with: time travel" href="./tag/time-travel.html">time travel</a>,
+
+<a title="Posts tagged with: toddlers" href="./tag/toddlers.html">toddlers</a>,
+
+<a title="Posts tagged with: toy" href="./tag/toy.html">toy</a>,
+
+<a title="Posts tagged with: toys" href="./tag/toys.html">toys</a>,
+
+<a title="Posts tagged with: tradition" href="./tag/tradition.html">tradition</a>,
+
+<a title="Posts tagged with: traditions" href="./tag/traditions.html">traditions</a>,
+
+<a title="Posts tagged with: travel" href="./tag/travel.html">travel</a>,
+
+<a title="Posts tagged with: TV" href="./tag/tv.html">TV</a>,
+
+<a title="Posts tagged with: TV shows" href="./tag/tv-shows.html">TV shows</a>,
+
+<a title="Posts tagged with: vacation" href="./tag/vacation.html">vacation</a>,
+
+<a title="Posts tagged with: values" href="./tag/values.html">values</a>,
+
+<a title="Posts tagged with: war" href="./tag/war.html">war</a>,
+
+<a title="Posts tagged with: weight" href="./tag/weight.html">weight</a>,
+
+<a title="Posts tagged with: women" href="./tag/women.html">women</a>,
+
+<a title="Posts tagged with: young adult" href="./tag/young-adult.html">young adult</a></nav>
+</div>
+<div class="contact">
+    <h2>contact</h2>
+    <ul>
+    <li><a href="https://www.facebook.com/kanikag.books" target="_blank"><img src="./res/facebook-logo.svg">
+            <span>Facebook</span></a></li> <li><a href="https://twitter.com/KanikaGee" target="_blank"><img src="./res/twitter-logo.svg">
+            <span>Twitter</span></a></li> <li><a href="mailto:gee.kanika@gmail.com" target="_blank"><img src="./res/email-logo.svg">
+            <span>E-mail</span></a></li>
+    </ul>
+</div>
+</footer>
+        </footer>
+        </div>
+    </body>
+</html>

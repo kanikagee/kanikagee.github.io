@@ -6,7 +6,16 @@
     <link href="https://kanikag.com" />
     <link href="https://kanikag.com/category/women.atom" rel="self" />
     <id>https://kanikag.com/category/women.atom</id>
-    <updated>2025-11-13T16:49:14Z</updated>
+    <updated>2025-11-17T05:34:56Z</updated>
+        <entry>
+            <title>Lost and Found</title>
+            <link href="https://kanikag.com/women-stories-the-necklace.html" rel="alternate" type="text/html" />
+            <updated>2025-11-17T12:00:00Z</updated>
+            <summary>A lost symbol that links the stories of two families on either side of the The Radcliffe Line, through a strange twist of fate, ends up fulfilling its destiny.
+</summary>
+            <id>https://kanikag.com/women-stories-the-necklace.html</id>
+        </entry>
+
         <entry>
             <title>Desert Bloom</title>
             <link href="https://kanikag.com/women-stories-desert-bloom.html" rel="alternate" type="text/html" />
@@ -221,14 +230,5 @@
             <summary>When the news decides to interpret the facts, instead of relaying them
 </summary>
             <id>https://kanikag.com/women-poetry-news.html</id>
-        </entry>
-
-        <entry>
-            <title>If You’re Indifferent to Barbie ...</title>
-            <link href="https://kanikag.com/women-social-barbie-review.html" rel="alternate" type="text/html" />
-            <updated>2023-08-01T12:00:00Z</updated>
-            <summary>A review of Barbie, a cleverly made movie exploring patriarchy and the evolution of feminism, through the eyes of the popular doll.
-</summary>
-            <id>https://kanikag.com/women-social-barbie-review.html</id>
         </entry>
 </feed>
