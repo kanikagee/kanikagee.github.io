@@ -6,7 +6,16 @@
     <link href="https://kanikag.com" />
     <link href="https://kanikag.com/category/women-poetry.atom" rel="self" />
     <id>https://kanikag.com/category/women-poetry.atom</id>
-    <updated>2025-11-17T10:25:05Z</updated>
+    <updated>2026-01-18T11:47:48Z</updated>
+        <entry>
+            <title>Of Forgotten Yesterdays and Abandoned Tomorrows</title>
+            <link href="https://kanikag.com/women-poetry-yesterdays-and-tomorrows.html" rel="alternate" type="text/html" />
+            <updated>2026-01-18T12:00:00Z</updated>
+            <summary>Like it or not, the winds of change are blowing.
+</summary>
+            <id>https://kanikag.com/women-poetry-yesterdays-and-tomorrows.html</id>
+        </entry>
+
         <entry>
             <title>Reflections</title>
             <link href="https://kanikag.com/women-poetry-reflections.html" rel="alternate" type="text/html" />
@@ -221,14 +230,5 @@
             <summary>Enter enthusiastically, enjoy the show, check all your body parts, before you go. We've stolen hearts, kidneys and more, we at The Hive are hungry for gore. Horror of any kind is welcome here, stop by to learn all about fear.
 </summary>
             <id>https://kanikag.com/women-poetry-hive-of-horrors.html</id>
-        </entry>
-
-        <entry>
-            <title>A Cacophonous Symphony</title>
-            <link href="https://kanikag.com/women-poetry-chocophony.html" rel="alternate" type="text/html" />
-            <updated>2019-11-10T12:00:00Z</updated>
-            <summary>This poem was inspired by the movie Chocolat and should perhaps be called Chocophony.
-</summary>
-            <id>https://kanikag.com/women-poetry-chocophony.html</id>
         </entry>
 </feed>

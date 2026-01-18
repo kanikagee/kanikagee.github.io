@@ -6,7 +6,16 @@
     <link href="https://kanikag.com" />
     <link href="https://kanikag.com/category/women.atom" rel="self" />
     <id>https://kanikag.com/category/women.atom</id>
-    <updated>2025-11-17T10:25:05Z</updated>
+    <updated>2026-01-18T11:47:48Z</updated>
+        <entry>
+            <title>Of Forgotten Yesterdays and Abandoned Tomorrows</title>
+            <link href="https://kanikag.com/women-poetry-yesterdays-and-tomorrows.html" rel="alternate" type="text/html" />
+            <updated>2026-01-18T12:00:00Z</updated>
+            <summary>Like it or not, the winds of change are blowing.
+</summary>
+            <id>https://kanikag.com/women-poetry-yesterdays-and-tomorrows.html</id>
+        </entry>
+
         <entry>
             <title>Lost and Found</title>
             <link href="https://kanikag.com/women-stories-the-necklace.html" rel="alternate" type="text/html" />
@@ -221,14 +230,5 @@
             <summary>A science teacher tackles a murder mystery.
 </summary>
             <id>https://kanikag.com/women-stories-emerging-identity.html</id>
-        </entry>
-
-        <entry>
-            <title>Views For News</title>
-            <link href="https://kanikag.com/women-poetry-news.html" rel="alternate" type="text/html" />
-            <updated>2023-10-20T12:00:00Z</updated>
-            <summary>When the news decides to interpret the facts, instead of relaying them
-</summary>
-            <id>https://kanikag.com/women-poetry-news.html</id>
         </entry>
 </feed>
