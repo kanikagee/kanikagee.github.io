@@ -6,7 +6,16 @@
     <link href="https://kanikag.com" />
     <link href="https://kanikag.com/category/index.atom" rel="self" />
     <id>https://kanikag.com/category/index.atom</id>
-    <updated>2026-01-23T15:03:25Z</updated>
+    <updated>2026-08-18T11:36:07Z</updated>
+        <entry>
+            <title>Sober, Sweet, Sad and Silly</title>
+            <link href="https://kanikag.com/women-social-main-vaapas-aaunga-review.html" rel="alternate" type="text/html" />
+            <updated>2026-08-18T12:00:00Z</updated>
+            <summary>A review of Main Vaapas Aaunga, a sensitive and emotional partition story with a light sprinkling of humor.
+</summary>
+            <id>https://kanikag.com/women-social-main-vaapas-aaunga-review.html</id>
+        </entry>
+
         <entry>
             <title>Yes Day: Movie Review</title>
             <link href="https://kanikag.com/parenting-philosophies-yes-day-review.html" rel="alternate" type="text/html" />
@@ -221,14 +230,5 @@
             <summary>Three friends reevaluate their high-school experiences at their ten year reunion.
 </summary>
             <id>https://kanikag.com/women-stories-the-three-misfiteers.html</id>
-        </entry>
-
-        <entry>
-            <title>Blood Brothers</title>
-            <link href="https://kanikag.com/women-stories-blood-brothers.html" rel="alternate" type="text/html" />
-            <updated>2024-03-16T12:00:00Z</updated>
-            <summary>Two childhood friends happen to meet again as grownups. Will their friendship revive?
-</summary>
-            <id>https://kanikag.com/women-stories-blood-brothers.html</id>
         </entry>
 </feed>
