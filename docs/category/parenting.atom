@@ -6,7 +6,16 @@
     <link href="https://kanikag.com" />
     <link href="https://kanikag.com/category/parenting.atom" rel="self" />
     <id>https://kanikag.com/category/parenting.atom</id>
-    <updated>2026-08-18T16:01:07Z</updated>
+    <updated>2026-10-05T14:45:25Z</updated>
+        <entry>
+            <title>Me, Myself and AI</title>
+            <link href="https://kanikag.com/parenting-experiences-me-myself-and-ai.html" rel="alternate" type="text/html" />
+            <updated>2026-10-05T12:00:00Z</updated>
+            <summary>A comparison of passive AI consumption v/s product development using AI for AI novices, the tools, hurdles and possibilities.
+</summary>
+            <id>https://kanikag.com/parenting-experiences-me-myself-and-ai.html</id>
+        </entry>
+
         <entry>
             <title>Yes Day: Movie Review</title>
             <link href="https://kanikag.com/parenting-philosophies-yes-day-review.html" rel="alternate" type="text/html" />
@@ -221,14 +230,5 @@
             <summary>A review of Wonder Park, an animated children's movie that reminds you that everything in life is tangled up! Whether it is art and technology or happiness and sadness, they all overlap and are mixed up and that’s what makes life beautiful.
 </summary>
             <id>https://kanikag.com/parenting-resources-a-rview-of-wonder-park.html</id>
-        </entry>
-
-        <entry>
-            <title>Beat The Heat With Books</title>
-            <link href="https://kanikag.com/parenting-resources-summer-reading-list.html" rel="alternate" type="text/html" />
-            <updated>2019-04-29T12:00:00Z</updated>
-            <summary>A diverse list of books so every kid (ages 4 to 10) can find something to transport them to fascinating new worlds where they meet quirky characters and get tangled up in ticklish or exciting situations.
-</summary>
-            <id>https://kanikag.com/parenting-resources-summer-reading-list.html</id>
         </entry>
 </feed>

@@ -6,7 +6,16 @@
     <link href="https://kanikag.com" />
     <link href="https://kanikag.com/category/parenting-experiences.atom" rel="self" />
     <id>https://kanikag.com/category/parenting-experiences.atom</id>
-    <updated>2026-08-18T16:01:07Z</updated>
+    <updated>2026-10-05T14:45:25Z</updated>
+        <entry>
+            <title>Me, Myself and AI</title>
+            <link href="https://kanikag.com/parenting-experiences-me-myself-and-ai.html" rel="alternate" type="text/html" />
+            <updated>2026-10-05T12:00:00Z</updated>
+            <summary>A comparison of passive AI consumption v/s product development using AI for AI novices, the tools, hurdles and possibilities.
+</summary>
+            <id>https://kanikag.com/parenting-experiences-me-myself-and-ai.html</id>
+        </entry>
+
         <entry>
             <title>Post COVID Rejuvination</title>
             <link href="https://kanikag.com/parenting-experiences-post-covid-rejuvination.html" rel="alternate" type="text/html" />
@@ -222,14 +231,5 @@ I, myself, am not sure who or what God is.
             <summary>I have been a stay at home mom (SAHM) for 4 years, dabbling in writing for fun. I have set my own deadlines, and worked only as much as I felt like, whenever I felt like. But I noticed that I felt like it more and more often.
 </summary>
             <id>https://kanikag.com/parenting-experiences-the-everyday-insecurities-of-a-mom.html</id>
-        </entry>
-
-        <entry>
-            <title>About Spirits And Bones</title>
-            <link href="https://kanikag.com/parenting-experiences-about-spirits-and-bones.html" rel="alternate" type="text/html" />
-            <updated>2016-04-28T12:00:00Z</updated>
-            <summary>This is not a disturbing story about the frightening contents of a grave that escaped it's confines, or about any native American rituals. Actually this is about my 18 month old baby and her indomitable spirit.
-</summary>
-            <id>https://kanikag.com/parenting-experiences-about-spirits-and-bones.html</id>
         </entry>
 </feed>
